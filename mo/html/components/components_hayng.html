@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Components - LLoyd</title>
+    <!-- .icon -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+    <link rel="stylesheet" type="text/css" href="./css/guide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/vs.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="Component">
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Category: Scroll Tab</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="scroll-tab">
+                <ul class="scroll-tab-list">
+                  <li class="scroll-tab-item is-current"><a class="scroll-tab-link" href="#;">All</a></li>
+                  <li class="scroll-tab-item"><a class="scroll-tab-link" href="#;">Earring</a></li>
+                  <li class="scroll-tab-item"><a class="scroll-tab-link" href="#;">Onetouch</a></li>
+                  <li class="scroll-tab-item"><a class="scroll-tab-link" href="#;">Piercing</a></li>
+                  <li class="scroll-tab-item"><a class="scroll-tab-link" href="#;">Kids Earring</a></li>
+                </ul>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="scroll-tab"&gt;
+    &lt;ul class="scroll-tab-list"&gt;
+      &lt;li class="scroll-tab-item is-current"&gt;&lt;a class="scroll-tab-link" href="#;"&gt;All&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="scroll-tab-item"&gt;&lt;a class="scroll-tab-link" href="#;"&gt;Earring&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="scroll-tab-item"&gt;&lt;a class="scroll-tab-link" href="#;"&gt;Onetouch&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="scroll-tab-item"&gt;&lt;a class="scroll-tab-link" href="#;"&gt;Piercing&lt;/a&gt;&lt;/li&gt;
+      &lt;li class="scroll-tab-item"&gt;&lt;a class="scroll-tab-link" href="#;"&gt;Kids Earring&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Category: Product Banner</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="product-topbanner">
+                <div class="product-topbanner-thumbnail"><img class="product-topbanner-img" src="../../assets/images/product/pd_hero_01.png" alt="" /></div>
+                <div class="product-topbanner-title"><span class="product-topbanner-name">Earring</span><span class="product-topbanner-count">(3,147)</span></div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="product-topbanner"&gt;
+    &lt;div class="product-topbanner-thumbnail"&gt;&lt;img class="product-topbanner-img" src="../../assets/images/product/pd_hero_01.png" alt="" /&gt;&lt;/div&gt;
+    &lt;div class="product-topbanner-title"&gt;&lt;span class="product-topbanner-name"&gt;Earring&lt;/span&gt;&lt;span class="product-topbanner-count"&gt;(3,147)&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Category: fliter header</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="filter-head">
+                <div class="check-view">
+                  <input type="checkbox" id="arView" class="check-view-input">
+                  <label for="arView" class="check-view-label"><span class="text-eng">AR</span> 가능 상품 보기</label>
+                </div>
+                <div class="filter-head-link">
+                  <div class="sort-select-item">
+                    <a href="#;" class="sort-select-label">신상품</a>
+                    <ul class="sort-select-list">
+                      <li class="sort-select-list-item is-current">
+                        <a class="sort-select-list-link" href="#;">신상품</a>
+                      </li>
+                      <li class="sort-select-list-item">
+                        <a class="sort-select-list-link" href="#;">판매순</a>
+                      </li>
+                      <li class="sort-select-list-item">
+                        <a class="sort-select-list-link" href="#;">고가순</a>
+                      </li>
+                      <li class="sort-select-list-item">
+                        <a class="sort-select-list-link" href="#;">저가순</a>
+                      </li>
+                      <li class="sort-select-list-item">
+                        <a class="sort-select-list-link" href="#;">추천순</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button type="button" class="filter-button">필터</button>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="filter-head"&gt;
+    &lt;div class="check-view"&gt;
+      &lt;input type="checkbox" id="arView" class="check-view-input"&gt;
+      &lt;label for="arView" class="check-view-label"&gt;&lt;span class="text-eng"&gt;AR&lt;/span&gt; 가능 상품 보기&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="filter-head-link"&gt;
+      &lt;div class="sort-select-item"&gt;
+        &lt;label for="optionValue" class="sort-select-label"&gt;신상품순&lt;/label&gt;
+        &lt;select id="optionValue" class="sort-select"&gt;
+          &lt;option&gt;신상품순&lt;/option&gt;
+          &lt;option&gt;판매순&lt;/option&gt;
+          &lt;option&gt;고가순&lt;/option&gt;
+          &lt;option&gt;저가순&lt;/option&gt;
+          &lt;option&gt;추천순&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+      &lt;button type="button" class="filter-button"&gt;필터&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Category: Middle Banner</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <a href="#;" class="middle-banner">
+                <div class="middle-banner-thumbnail"><img class="middle-banner-img" src="http://placehold.it/360x120" alt="" /></div>
+                <div class="middle-banner-textbox">
+                  <h3 class="middle-banner-title">지금 가장<br />인기있는 이어링</h3>
+                  <div class="middle-banner-text">BEST JEWERLY</div>
+                </div>
+              </a>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;a href="#;" class="middle-banner"&gt;
+    &lt;div class="middle-banner-thumbnail"&gt;&lt;img class="middle-banner-img" src="http://placehold.it/360x120" alt="" /&gt;&lt;/div&gt;
+    &lt;div class="middle-banner-textbox"&gt;
+      &lt;h3 class="middle-banner-title"&gt;지금 가장&lt;br /&gt;인기있는 이어링&lt;/h3&gt;
+      &lt;div class="middle-banner-text"&gt;BEST JEWERLY&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Category: Product Box</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="product-basic">
+                <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                <a href="#;" class="product-basic-link">
+                  <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                  <div class="product-basic-content">
+                    <div class="product-basic-state new">NEW</div>
+                    <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                    <div class="product-basic-price">
+                      <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                      <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="product-basic"&gt;
+    &lt;button type="button" class="product-basic-like is-active"&gt;&lt;span class="ab-text"&gt;like&lt;/span&gt;&lt;/button&gt;
+    &lt;a href="#;" class="product-basic-link"&gt;
+      &lt;div class="product-basic-thumbnail"&gt;&lt;img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /&gt;&lt;span class="product-basic-ar"&gt;&lt;span class="ab-text"&gt;AR&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="product-basic-content"&gt;
+        &lt;div class="product-basic-state new"&gt;NEW&lt;/div&gt;
+        &lt;h4 class="product-basic-title"&gt;크리스마스 트리 비쥬참&lt;/h4&gt;
+        &lt;div class="product-basic-price"&gt;
+          &lt;span class="product-basic-price-before"&gt;79,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+          &lt;span class="product-basic-price-after"&gt;59,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Category: Product Post</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="product-post">
+                <ul class="product-post-list">
+                  <li class="product-post-item">
+                    <div class="product-basic">
+                      <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                      <a href="#;" class="product-basic-link">
+                        <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                        <div class="product-basic-content">
+                          <div class="product-basic-state new">NEW</div>
+                          <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                          <div class="product-basic-price">
+                            <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                            <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="product-post-item">
+                    <div class="product-basic">
+                      <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                      <a href="#;" class="product-basic-link">
+                        <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                        <div class="product-basic-content">
+                          <div class="product-basic-state new">NEW</div>
+                          <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                          <div class="product-basic-price">
+                            <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                            <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="product-post-item">
+                    <div class="product-basic">
+                      <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                      <a href="#;" class="product-basic-link">
+                        <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                        <div class="product-basic-content">
+                          <div class="product-basic-state new">NEW</div>
+                          <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                          <div class="product-basic-price">
+                            <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                            <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="product-post-item">
+                    <div class="product-basic">
+                      <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                      <a href="#;" class="product-basic-link">
+                        <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                        <div class="product-basic-content">
+                          <div class="product-basic-state new">NEW</div>
+                          <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                          <div class="product-basic-price">
+                            <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                            <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="product-post"&gt;
+    &lt;ul class="product-post-list"&gt;
+      &lt;li class="product-post-item"&gt;
+        &lt;div class="product-basic"&gt;
+          &lt;button type="button" class="product-basic-like is-active"&gt;&lt;span class="ab-text"&gt;like&lt;/span&gt;&lt;/button&gt;
+          &lt;a href="#;" class="product-basic-link"&gt;
+            &lt;div class="product-basic-thumbnail"&gt;&lt;img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /&gt;&lt;span class="product-basic-ar"&gt;&lt;span class="ab-text"&gt;AR&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="product-basic-content"&gt;
+              &lt;div class="product-basic-state new"&gt;NEW&lt;/div&gt;
+              &lt;h4 class="product-basic-title"&gt;크리스마스 트리 비쥬참&lt;/h4&gt;
+              &lt;div class="product-basic-price"&gt;
+                &lt;span class="product-basic-price-before"&gt;79,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+                &lt;span class="product-basic-price-after"&gt;59,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="product-post-item"&gt;
+        &lt;div class="product-basic"&gt;
+          &lt;button type="button" class="product-basic-like is-active"&gt;&lt;span class="ab-text"&gt;like&lt;/span&gt;&lt;/button&gt;
+          &lt;a href="#;" class="product-basic-link"&gt;
+            &lt;div class="product-basic-thumbnail"&gt;&lt;img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /&gt;&lt;span class="product-basic-ar"&gt;&lt;span class="ab-text"&gt;AR&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="product-basic-content"&gt;
+              &lt;div class="product-basic-state new"&gt;NEW&lt;/div&gt;
+              &lt;h4 class="product-basic-title"&gt;크리스마스 트리 비쥬참&lt;/h4&gt;
+              &lt;div class="product-basic-price"&gt;
+                &lt;span class="product-basic-price-before"&gt;79,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+                &lt;span class="product-basic-price-after"&gt;59,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="product-post-item"&gt;
+        &lt;div class="product-basic"&gt;
+          &lt;button type="button" class="product-basic-like is-active"&gt;&lt;span class="ab-text"&gt;like&lt;/span&gt;&lt;/button&gt;
+          &lt;a href="#;" class="product-basic-link"&gt;
+            &lt;div class="product-basic-thumbnail"&gt;&lt;img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /&gt;&lt;span class="product-basic-ar"&gt;&lt;span class="ab-text"&gt;AR&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="product-basic-content"&gt;
+              &lt;div class="product-basic-state new"&gt;NEW&lt;/div&gt;
+              &lt;h4 class="product-basic-title"&gt;크리스마스 트리 비쥬참&lt;/h4&gt;
+              &lt;div class="product-basic-price"&gt;
+                &lt;span class="product-basic-price-before"&gt;79,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+                &lt;span class="product-basic-price-after"&gt;59,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li class="product-post-item"&gt;
+        &lt;div class="product-basic"&gt;
+          &lt;button type="button" class="product-basic-like is-active"&gt;&lt;span class="ab-text"&gt;like&lt;/span&gt;&lt;/button&gt;
+          &lt;a href="#;" class="product-basic-link"&gt;
+            &lt;div class="product-basic-thumbnail"&gt;&lt;img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /&gt;&lt;span class="product-basic-ar"&gt;&lt;span class="ab-text"&gt;AR&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="product-basic-content"&gt;
+              &lt;div class="product-basic-state new"&gt;NEW&lt;/div&gt;
+              &lt;h4 class="product-basic-title"&gt;크리스마스 트리 비쥬참&lt;/h4&gt;
+              &lt;div class="product-basic-price"&gt;
+                &lt;span class="product-basic-price-before"&gt;79,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+                &lt;span class="product-basic-price-after"&gt;59,900&lt;span class="text-eng"&gt;원&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Detail: Slider</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="detail-slide">
+                <div class="detail-slide-link-icon">
+                  <button class="detail-view-icon"><span class="ab-text">View</span></button>
+                  <button class="detail-ar-icon"><span class="ab-text">AR</span></button>
+                </div>
+                <div class="detail-thumbnail-tab">
+                  <ul class="detail-thumbnail-tab-list">
+                    <li class="detail-thumbnail-tab-item is-current">
+                      <!-- option slider -->
+                      <div class="detail-slide-color-container">
+                        <ul class="detail-option-slide-list">
+                          <li class="detail-option-slide-item is-current">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- .option slider -->
+                    </li>
+                    <li class="detail-thumbnail-tab-item">
+                      <!-- option slider -->
+                      <div class="detail-slide-stone-container">
+                        <ul class="detail-option-slide-list">
+                          <li class="detail-option-slide-item is-current">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                          <li class="detail-option-slide-item">
+                            <!-- detail-slide-thumbnail  -->
+                            <div class="detail-slide-thumbnail">
+                              <div class="detail-slide-thumbnail-container swiper-container">
+                                <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                                  </li>
+                                  <li class="detail-slide-thumbnail-item swiper-slide">
+                                    <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                                  </li>
+                                </ul>
+                                <!-- Add Scrollbar -->
+                                <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                              </div>
+                            </div>
+                            <!-- .detail-slide-thumbnail  -->
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- .option slider -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- detail-slide-tab  -->
+                <div class="detail-slide-tab">
+                  <ul class="detail-slide-tab-list">
+                    <li class="detail-slide-tab-item is-current">
+                      <a href="#;" class="detail-slide-tab-link">캐럿/컬러</a>
+                    </li>
+                    <li class="detail-slide-tab-item">
+                      <a href="#;" class="detail-slide-tab-link">스톤</a>
+                    </li>
+                  </ul>
+                  <div class="detail-slide-tab-bar"></div>
+                </div>
+                <!-- detail-slide-tab  -->
+                <!-- detail-slide-option -->
+                <div class="detail-slide-option">
+                  <ul class="detail-slide-option-list">
+                    <li class="detail-slide-option-item is-current">
+                      <div class="detail-option-color-inner">
+                        <div class="detail-option-carat">
+                          <ul class="detail-option-carat-list">
+                            <li class="detail-option-carat-item is-current"><input class="detail-option-carat-input" type="radio" id="carat10k" name="carat" checked><label class="detail-option-link" for="carat10k">10K</label></li>
+                            <li class="detail-option-carat-item"><input class="detail-option-carat-input" type="radio" id="carat14k" name="carat"><label class="detail-option-link" for="carat14k">14K</label></li>
+                            <li class="detail-option-carat-item"><input class="detail-option-carat-input" type="radio" id="carat18k" name="carat"><label class="detail-option-link" for="carat18k">18K</label></li>
+                          </ul>
+                        </div>
+                        <div class="detail-option-slidetab">
+                          <ul class="detail-option-slidetab-list">
+                            <li class="detail-option-slidetab-item is-current">
+                              <div class="detail-option-color">
+                                <div class="detail-option-color-container">
+                                  <ul class="detail-option-color-list">
+                                    <li class="detail-option-color-item is-current">
+                                      <input class="detail-option-color-input" type="radio" id="optionColor1" name="optionColor" checked>
+                                      <label class="detail-option-color-box" for="optionColor1">
+                                        <div class="detail-option-color-icon"><img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 화이트골드</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-color-item">
+                                      <input class="detail-option-color-input" type="radio" id="optionColor2" name="optionColor">
+                                      <label class="detail-option-color-box" for="optionColor2">
+                                        <div class="detail-option-color-icon"><img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 로즈골드</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-color-item">
+                                      <input class="detail-option-color-input" type="radio" id="optionColor3" name="optionColor">
+                                      <label class="detail-option-color-box" for="optionColor3">
+                                        <div class="detail-option-color-icon"><img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 옐로골드</div>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="detail-slide-option-item">
+                      <div class="detail-option-stone-inner">
+                        <div class="detail-option-slidetab">
+                          <ul class="detail-option-slidetab-list">
+                            <li class="detail-option-slidetab-item is-current">
+                              <div class="detail-option-stone">
+                                <div class="detail-option-stone-container">
+                                  <ul class="detail-option-stone-list">
+                                    <li class="detail-option-stone-item is-current">
+                                      <input class="detail-option-stone-input" type="radio" id="optionStone1" name="optionStone" checked>
+                                      <label class="detail-option-stone-box" for="optionStone1">
+                                        <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-stone-text">블루사파이어</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-stone-item">
+                                      <input class="detail-option-stone-input" type="radio" id="optionStone2" name="optionStone">
+                                      <label class="detail-option-stone-box" for="optionStone2">
+                                        <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-stone-text">다이아몬드</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-stone-item">
+                                      <input class="detail-option-stone-input" type="radio" id="optionStone3" name="optionStone">
+                                      <label class="detail-option-stone-box" for="optionStone3">
+                                        <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-stone-text">루비</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-stone-item">
+                                      <input class="detail-option-stone-input" type="radio" id="optionStone4" name="optionStone">
+                                      <label class="detail-option-stone-box" for="optionStone4">
+                                        <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-stone-text">블루사파이어</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-stone-item">
+                                      <input class="detail-option-stone-input" type="radio" id="optionStone5" name="optionStone">
+                                      <label class="detail-option-stone-box" for="optionStone5">
+                                        <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-stone-text">다이아몬드</div>
+                                      </label>
+                                    </li>
+                                    <li class="detail-option-stone-item">
+                                      <input class="detail-option-stone-input" type="radio" id="optionStone6" name="optionStone">
+                                      <label class="detail-option-stone-box" for="optionStone6">
+                                        <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                        <div class="detail-option-stone-text">루비</div>
+                                      </label>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- .detail-slide-option -->
+              </div>
+              <!-- 팝업 -->
+              <div class="guide-detail-popup" style="position:absolute;display:none">
+                <div class="guide-text-box">
+                  오른쪽으로 밀어보세요<br />AR 서비스를 경험하실 수 있습니다.
+                </div>
+              </div>
+              <!-- .팝업 -->
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="detail-slide"&gt;
+    &lt;div class="detail-slide-link-icon"&gt;
+      &lt;button class="detail-view-icon"&gt;&lt;span class="ab-text"&gt;View&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="detail-ar-icon"&gt;&lt;span class="ab-text"&gt;AR&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="detail-thumbnail-tab"&gt;
+      &lt;ul class="detail-thumbnail-tab-list"&gt;
+        &lt;li class="detail-thumbnail-tab-item is-current"&gt;
+          &lt;!-- option slider --&gt;
+          &lt;div class="detail-slide-color-container"&gt;
+            &lt;ul class="detail-option-slide-list"&gt;
+              &lt;li class="detail-option-slide-item is-current"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;!-- .option slider --&gt;
+        &lt;/li&gt;
+        &lt;li class="detail-thumbnail-tab-item"&gt;
+          &lt;!-- option slider --&gt;
+          &lt;div class="detail-slide-stone-container"&gt;
+            &lt;ul class="detail-option-slide-list"&gt;
+              &lt;li class="detail-option-slide-item is-current"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+              &lt;li class="detail-option-slide-item"&gt;
+                &lt;!-- detail-slide-thumbnail  --&gt;
+                &lt;div class="detail-slide-thumbnail"&gt;
+                  &lt;div class="detail-slide-thumbnail-container swiper-container"&gt;
+                    &lt;ul class="detail-slide-thumbnail-list swiper-wrapper"&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                      &lt;li class="detail-slide-thumbnail-item swiper-slide"&gt;
+                        &lt;div class="detail-slide-thumbnail-box"&gt;&lt;img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /&gt;&lt;/div&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;!-- Add Scrollbar --&gt;
+                    &lt;div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- .detail-slide-thumbnail  --&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;!-- .option slider --&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;!-- detail-slide-tab  --&gt;
+    &lt;div class="detail-slide-tab"&gt;
+      &lt;ul class="detail-slide-tab-list"&gt;
+        &lt;li class="detail-slide-tab-item is-current"&gt;
+          &lt;a href="#;" class="detail-slide-tab-link"&gt;캐럿/컬러&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="detail-slide-tab-item"&gt;
+          &lt;a href="#;" class="detail-slide-tab-link"&gt;스톤&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class="detail-slide-tab-bar"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- detail-slide-tab  --&gt;
+    &lt;!-- detail-slide-option --&gt;
+    &lt;div class="detail-slide-option"&gt;
+      &lt;ul class="detail-slide-option-list"&gt;
+        &lt;li class="detail-slide-option-item is-current"&gt;
+          &lt;div class="detail-option-color-inner"&gt;
+            &lt;div class="detail-option-carat"&gt;
+              &lt;ul class="detail-option-carat-list"&gt;
+                &lt;li class="detail-option-carat-item is-current"&gt;&lt;input class="detail-option-carat-input" type="radio" id="carat10k" name="carat" checked&gt;&lt;label class="detail-option-link" for="carat10k"&gt;10K&lt;/label&gt;&lt;/li&gt;
+                &lt;li class="detail-option-carat-item"&gt;&lt;input class="detail-option-carat-input" type="radio" id="carat14k" name="carat"&gt;&lt;label class="detail-option-link" for="carat14k"&gt;14K&lt;/label&gt;&lt;/li&gt;
+                &lt;li class="detail-option-carat-item"&gt;&lt;input class="detail-option-carat-input" type="radio" id="carat18k" name="carat"&gt;&lt;label class="detail-option-link" for="carat18k"&gt;18K&lt;/label&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="detail-option-slidetab"&gt;
+              &lt;ul class="detail-option-slidetab-list"&gt;
+                &lt;li class="detail-option-slidetab-item is-current"&gt;
+                  &lt;div class="detail-option-color"&gt;
+                    &lt;div class="detail-option-color-container"&gt;
+                      &lt;ul class="detail-option-color-list"&gt;
+                        &lt;li class="detail-option-color-item is-current"&gt;
+                          &lt;input class="detail-option-color-input" type="radio" id="optionColor1" name="optionColor" checked&gt;
+                          &lt;label class="detail-option-color-box" for="optionColor1"&gt;
+                            &lt;div class="detail-option-color-icon"&gt;&lt;img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-color-text"&gt;&lt;span class="detail-option-color-sub"&gt;10K&lt;/span&gt; 화이트골드&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-color-item"&gt;
+                          &lt;input class="detail-option-color-input" type="radio" id="optionColor2" name="optionColor"&gt;
+                          &lt;label class="detail-option-color-box" for="optionColor2"&gt;
+                            &lt;div class="detail-option-color-icon"&gt;&lt;img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-color-text"&gt;&lt;span class="detail-option-color-sub"&gt;10K&lt;/span&gt; 로즈골드&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-color-item"&gt;
+                          &lt;input class="detail-option-color-input" type="radio" id="optionColor3" name="optionColor"&gt;
+                          &lt;label class="detail-option-color-box" for="optionColor3"&gt;
+                            &lt;div class="detail-option-color-icon"&gt;&lt;img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-color-text"&gt;&lt;span class="detail-option-color-sub"&gt;10K&lt;/span&gt; 옐로골드&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="detail-slide-option-item"&gt;
+          &lt;div class="detail-option-stone-inner"&gt;
+            &lt;div class="detail-option-slidetab"&gt;
+              &lt;ul class="detail-option-slidetab-list"&gt;
+                &lt;li class="detail-option-slidetab-item is-current"&gt;
+                  &lt;div class="detail-option-stone"&gt;
+                    &lt;div class="detail-option-stone-container"&gt;
+                      &lt;ul class="detail-option-stone-list"&gt;
+                        &lt;li class="detail-option-stone-item is-current"&gt;
+                          &lt;input class="detail-option-stone-input" type="radio" id="optionStone1" name="optionStone" checked&gt;
+                          &lt;label class="detail-option-stone-box" for="optionStone1"&gt;
+                            &lt;div class="detail-option-stone-icon"&gt;&lt;img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-stone-text"&gt;블루사파이어&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-stone-item"&gt;
+                          &lt;input class="detail-option-stone-input" type="radio" id="optionStone2" name="optionStone"&gt;
+                          &lt;label class="detail-option-stone-box" for="optionStone2"&gt;
+                            &lt;div class="detail-option-stone-icon"&gt;&lt;img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-stone-text"&gt;다이아몬드&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-stone-item"&gt;
+                          &lt;input class="detail-option-stone-input" type="radio" id="optionStone3" name="optionStone"&gt;
+                          &lt;label class="detail-option-stone-box" for="optionStone3"&gt;
+                            &lt;div class="detail-option-stone-icon"&gt;&lt;img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-stone-text"&gt;루비&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-stone-item"&gt;
+                          &lt;input class="detail-option-stone-input" type="radio" id="optionStone4" name="optionStone"&gt;
+                          &lt;label class="detail-option-stone-box" for="optionStone4"&gt;
+                            &lt;div class="detail-option-stone-icon"&gt;&lt;img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-stone-text"&gt;블루사파이어&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-stone-item"&gt;
+                          &lt;input class="detail-option-stone-input" type="radio" id="optionStone5" name="optionStone"&gt;
+                          &lt;label class="detail-option-stone-box" for="optionStone5"&gt;
+                            &lt;div class="detail-option-stone-icon"&gt;&lt;img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-stone-text"&gt;다이아몬드&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                        &lt;li class="detail-option-stone-item"&gt;
+                          &lt;input class="detail-option-stone-input" type="radio" id="optionStone6" name="optionStone"&gt;
+                          &lt;label class="detail-option-stone-box" for="optionStone6"&gt;
+                            &lt;div class="detail-option-stone-icon"&gt;&lt;img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /&gt;&lt;/div&gt;
+                            &lt;div class="detail-option-stone-text"&gt;루비&lt;/div&gt;
+                          &lt;/label&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;!-- .detail-slide-option --&gt;
+  &lt;/div&gt;
+  &lt;!-- 팝업 --&gt;
+  &lt;div class="guide-detail-popup"&gt;
+    &lt;div class="guide-text-box"&gt;
+      오른쪽으로 밀어보세요&lt;br /&gt;AR 서비스를 경험하실 수 있습니다.
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- .팝업 --&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+  <script src="./js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    $(".ComponentBoxView-link").on("click", function (e) {
+      $(this).closest(".ComponentBox").toggleClass("is-view");
+
+    });
+  </script>
+</body>
+</html>

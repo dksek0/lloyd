@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+    </div>
+    <div class="header-title">
+      <button class="title-ko">선물하기 인증</button>
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail">
+      <div class="gift-certify">
+        <div class="gift-certify-inner">
+          <div class="cart-info-result-box">
+            <div class="cart-info-text">
+              연락처로 전송된<br><span class="cart-info-point">선물번호</span>를<br>입력해주세요
+            </div>
+            <div class="gift-info-extra">
+              선물받을 배송정보 입력 및 확인을 위해서는<br>인증절차가 필요합니다.
+            </div>
+          </div>
+          <ul>
+            <li class="today-address-item">
+              <div class="today-address-box required">
+                <span class="today-address-title">선물 번호</span>
+                <div class="today-input-box">
+                  <label for="tel1" class="sr-only">선물 번호</label>
+                  <div class="ui-textinput ui-corner-all ui-shadow-inset ui-textinput-text ui-body-inherit"><input type="tel" name="tel1" id="tel1" placeholder="번호를 입력해주세요." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" class="today-input-text"></div>
+                  <p class="input-error-msg">올바른 번호를 입력하세요</p>
+                </div>
+              </div>
+            </li>
+            <li class="today-address-item">
+              <div class="today-address-box required">
+                <span class="today-address-title">연락처</span>
+                <ul class="today-address-contact">
+                  <li class="today-input-box input-phone">
+                    <a href=#; class="input-phone-label">
+                      <div class="input-phone-text">010</div>
+                    </a>
+                    <div class="input-phone-box">
+                      <ul class="input-phone-list">
+                        <li class="input-phone-item active"><a href="#;" class="input-phone-link">010</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">011</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">012</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">016</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">017</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">018</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">019</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">02</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">032</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="today-input-box">
+                    <label for="tel1" class="sr-only">연락처</label>
+                    <input type="tel" name="tel1" id="tel1" placeholder="연락처를 입력해주세요."  value="" class="today-input-text">
+                    <p class="input-error-msg">올바른 연락처를 입력하세요</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="gift-personal-info">
+          <p class="qna-info-text">
+            선물 받으신 기록은 최대 90일까지만 저장됩니다.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- //wrapper -->
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <button class="bottom-btn-black" onclick="openPopup('noGiftPopup')">
+      선물 받기 인증
+    </button>
+  </div>
+  <!-- //bottom-bar -->
+
+  <div class="popup common" id="noGiftPopup">
+  <!-- pop_pre_0102 선물 거절 팝업 -->
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선물을 거절하여 확인되는 선물이 없습니다.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('noGiftPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="giftDatePopup">
+  <!-- 선물 수락 유효기간 팝업 -->
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선물 수령 기간이 지나 자동 취소 되었습니다.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('giftDatePopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="giftNumPopup">
+  <!-- 인증 오류 팝업 -->
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선물 인증 번호를 확인해주세요.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('giftNumPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

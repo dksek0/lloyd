@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Lloyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/fonts.css" media="none" onload=" this.media='all';"/>
+  <link rel="stylesheet" href="../../assets/css/reboot.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+    </div>
+    <div class="header-title">
+      <button class="title">Login</button>
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a> -->
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail login">
+      <div class="my-tab login">
+        <ul class="my-tab-list login">
+          <li class="my-tab-list-item is-current"><a class="my-tab-list-link" href="#;">통합회원</a></li>
+          <li class="my-tab-list-item"><a class="my-tab-list-link" href="#;">비회원(주문조회)</a></li>
+        </ul>
+        <div class="my-tab-con">
+          <!-- 통합회원 -->
+          <div class="my-tab-con-inner is-current">
+            <div class="login-box">
+              <div class="login-inner">
+                <div class="login-intro">SNS 계정으로 로그인 하기</div>
+                <ul class="login-sns">
+                  <li class="login-sns-item">
+                    <a href=""><img src="../../assets/images/icons/sns-kakao.png" alt="kakaotalk"></a>
+                  </li>
+                  <li class="login-sns-item">
+                    <a href=""><img src="../../assets/images/icons/sns-naver.png" alt="naver"></a>
+                  </li>
+                  <li class="login-sns-item">
+                    <a href=""><img src="../../assets/images/icons/sns-facebook.png" alt="facebook"></a>
+                  </li>
+                  <li class="login-sns-item">
+                    <a href=""><img src="../../assets/images/icons/sns-apple.png" alt="apple"></a>
+                  </li>
+                </ul>
+                <div class="login-info">
+                  <span class="login-info-text">통합회원은 한 아이디로 로이드더기프트닷컴 및 이랜드 그룹 브랜드에서 서비스를 이용할 수 있습니다.</span>
+                  <span class="login-info-text">아이디와 비밀번호는 대소문자를 구분합니다.</span>
+                </div>
+                <div class="login-keyboard">
+                  <button class="login-keyboard-btn">한글자판 보기</button>
+                </div>
+                <div class="login-keyboard-box">
+                  <img src="../../assets/images/shopping/login-keyboard.png">
+                </div>
+                <div class="login-input">
+                <!-- 값이 유효하지 않을 경우 error 클래스 추가 -->
+                  <div class="today-input-box">
+                    <label for="id" class="sr-only">아이디</label>
+                    <input type="text" name="id" id="id" placeholder="아이디" value="" class="today-input-text">
+                  </div>
+                  <div class="today-input-box">
+                    <label for="password" class="sr-only">비밀번호</label>
+                    <input type="password" name="password" id="password" placeholder="비밀번호" value="" class="today-input-text">
+                  </div>
+                  <ul class="login-checkbox">
+                    <li class="login-checkbox-item">
+                      <div class="check-box medium text-small">
+                        <label for="check1">
+                          <input type="checkbox" name="" id="check1">
+                          <span class="text">자동 로그인</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="login-checkbox-item">
+                      <div class="check-box medium text-small">
+                        <label for="check2">
+                          <input type="checkbox" name="" id="check2">
+                          <span class="text">아이디 저장</span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="login-error-msg">
+                    아이디 또는 비밀번호가 일치하지 않습니다.
+                  </div>
+                </div>
+                <div class="login-help">
+                  <div class="login-help-left">
+                    <ul class="login-help-list">
+                      <li class="login-help-item"><a href="#;" class="login-help-link">아이디찾기</a></li>
+                      <li class="login-help-item"><a href="#;" class="login-help-link">비밀번호 찾기</a></li>
+                    </ul>
+                  </div>
+                  <div class="login-help-right">
+                    <a href="#;" class="login-help-join">회원가입</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 통합회원 -->
+          <!-- 비회원(주문조회) -->
+          <div class="my-tab-con-inner">
+            <div class="login-box">
+              <div class="login-inner">
+                <div class="cart-info-text">
+                  <span class="cart-info-point">비회원</span> 구매 시<br>
+                  입력했던 정보로<br>
+                  로그인 해 주세요.
+                </div>
+                <div class="login-info-subtext">
+                  이름/휴대폰번호/주문번호를 모두 입력하셔야 정상조회가 가능합니다. 주문정보가 생각나지 않으시면 고객센터<br>(1600-0455)로 문의 주세요.
+                </div>
+                <div class="login-keyboard">
+                  <button class="login-keyboard-btn">한글자판 보기</button>
+                </div>
+                <div class="login-keyboard-box">
+                  <img src="../../assets/images/shopping/login-keyboard.png">
+                </div>
+                <div class="login-input">
+                <!-- 값이 유효하지 않을 경우 error 클래스 추가 -->
+                  <div class="today-input-box">
+                    <label for="name" class="sr-only">구매자명</label>
+                    <input type="text" name="name" id="name" placeholder="구매자명" value="" class="today-input-text">
+                  </div>
+                  <div class="today-input-box">
+                    <label for="phone" class="sr-only">휴대폰 번호</label>
+                    <input type="text" name="phone" id="phone" placeholder="휴대폰 번호(“-”없이 입력)" value="" class="today-input-text">
+                  </div>
+                  <div class="today-input-box">
+                    <label for="orderNum" class="sr-only">주문번호</label>
+                    <input type="text" name="orderNum" id="orderNum" placeholder="주문번호" value="" class="today-input-text">
+                  </div>
+                  <div class="login-error-msg">
+                    일치하는 내역이 없습니다. 확인 후 다시 입력해 주세요.
+                  </div>
+                </div>
+                <div class="login-help">
+                  <div class="login-help-left">
+                    <div class="login-help-subtext">회원으로 가입하시고 푸짐한 혜택을 누리세요.</div>
+                  </div>
+                  <div class="login-help-right">
+                    <a href="#;" class="login-help-join">회원가입</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /비회원(주문조회) -->
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-black" onclick="openPopup('rejectPopup')">
+        로그인
+      </button>
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

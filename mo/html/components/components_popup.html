@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Components - LLoyd</title>
+    <!-- .icon -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+    <link rel="stylesheet" type="text/css" href="./css/guide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/vs.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="Component">
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">confirm popup with two button</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content" style="height: 600px;">
+              <!-- code -->
+              <div class="popup common on">
+                <div class="popup-dim" style="position: absolute; height: 100%;"></div>
+                <div class="common-popup" style="position: absolute; height: 100%;">
+                  <div class="common-popup-box">
+                    <div class="common-popup-content">
+                      <span class="common-popup-text">취소하시겠습니까?</span>
+                    </div>
+                    <div class="common-popup-btn">
+                      <button class="popup-btn popup-btn-left" onclick="closePopup('cancelPopup')">CANCEL</button>
+                      <button class="popup-btn popup-btn-right" onclick="closePopup('cancelPopup'), closePopup('qnaPopup')">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="popup common"&gt;
+    &lt;div class="popup-dim"&gt;&lt;/div&gt;
+    &lt;div class="common-popup"&gt;
+      &lt;div class="common-popup-box"&gt;
+        &lt;div class="common-popup-content"&gt;
+          &lt;span class="common-popup-text"&gt;취소하시겠습니까?&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="common-popup-btn"&gt;
+          &lt;button class="popup-btn popup-btn-left" onclick="closePopup('cancelPopup')"&gt;CANCEL&lt;/button&gt;
+          &lt;button class="popup-btn popup-btn-right" onclick="closePopup('cancelPopup'), closePopup('qnaPopup')"&gt;OK&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">confirm popup with one button</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content" style="height: 600px;">
+              <!-- code -->
+              <div class="popup common on">
+                <div class="popup-dim" style="position: absolute; height: 100%;"></div>
+                <div class="common-popup" style="position: absolute; height: 100%;">
+                  <div class="common-popup-box">
+                    <div class="common-popup-content">
+                      <span class="common-popup-text">삭제하시겠습니까?</span>
+                    </div>
+                    <div class="common-popup-btn">
+                      <button class="popup-btn popup-btn-full" onclick="closePopup('deletePopup')">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="popup common"&gt;
+    &lt;div class="popup-dim"&gt;&lt;/div&gt;
+    &lt;div class="common-popup"&gt;
+      &lt;div class="common-popup-box"&gt;
+        &lt;div class="common-popup-content"&gt;
+          &lt;span class="common-popup-text"&gt;삭제하시겠습니까?&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="common-popup-btn"&gt;
+          &lt;button class="popup-btn popup-btn-full" onclick="closePopup('deletePopup')"&gt;OK&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">option popup</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content" style="height: 700px;">
+              <!-- code -->
+              <div class="popup on">
+                <div class="popup-dim" style="position: absolute; height: 100%;"></div>
+                <div class="popup-option">
+                  <div class="popup-option-box" style="position: absolute; bottom: 0; max-height: 700px;">
+                    <button class="popup-close-box">
+                      <span class="popup-close-bar"></span>
+                      <span class="popup-close-bar"></span>
+                    </button>
+                    <div class="popup-option-content">
+                      <div class="option-select">
+                        <div class="option-select-item">
+                          <a href="#none" class="option-select-label">
+                            <span class="option-select-text">캐럿/컬러를 선택하세요</span>
+                            <span class="option-select-extra">+50,000</span>
+                            <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+                          </a>
+                          <ul class="option-select-list">
+                            <li>
+                              <label for="check1" class="option-select-row">
+                                <input type="checkbox" id="check1" class="select-row-checkbox">
+                                <span class="select-row-text">10K 로즈골드</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check2" class="option-select-row">
+                                <input type="checkbox" id="check2" class="select-row-checkbox">
+                                <span class="select-row-text">14K 로즈골드</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check3" class="option-select-row">
+                                <input type="checkbox" id="check3" class="select-row-checkbox">
+                                <span class="select-row-text">18K 로즈골드</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check4" class="option-select-row">
+                                <input type="checkbox" id="check4" class="select-row-checkbox">
+                                <span class="select-row-text">10K 옐로우골드</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check5" class="option-select-row">
+                                <input type="checkbox" id="check5" class="select-row-checkbox">
+                                <span class="select-row-text">14K 옐로우골드</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check6" class="option-select-row">
+                                <input type="checkbox" id="check6" class="select-row-checkbox">
+                                <span class="select-row-text">18K 옐로우골드</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="option-select-item">
+                          <a href="#none" class="option-select-label">
+                            <span class="option-select-text">스톤을 선택하세요</span>
+                            <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+                          </a>
+                          <ul class="option-select-list">
+                            <li>
+                              <label for="check7" class="option-select-row">
+                                <input type="checkbox" id="check7" class="select-row-checkbox">
+                                <span class="select-row-text">블루사파이어</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check8" class="option-select-row">
+                                <input type="checkbox" id="check8" class="select-row-checkbox">
+                                <span class="select-row-text">투어마린</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check9" class="option-select-row">
+                                <input type="checkbox" id="check9" class="select-row-checkbox">
+                                <span class="select-row-text">시트린</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check10" class="option-select-row">
+                                <input type="checkbox" id="check10" class="select-row-checkbox">
+                                <span class="select-row-text">탄자나이트</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check11" class="option-select-row">
+                                <input type="checkbox" id="check11" class="select-row-checkbox">
+                                <span class="select-row-text">블루사파이어</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check12" class="option-select-row">
+                                <input type="checkbox" id="check12" class="select-row-checkbox">
+                                <span class="select-row-text">투어마린</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check13" class="option-select-row">
+                                <input type="checkbox" id="check13" class="select-row-checkbox">
+                                <span class="select-row-text">시트린</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check14" class="option-select-row">
+                                <input type="checkbox" id="check14" class="select-row-checkbox">
+                                <span class="select-row-text">블루사파이탄자나이트어</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="option-select-item">
+                          <a href="#none" class="option-select-label">
+                            <span class="option-select-text">이니셜을 선택하세요</span>
+                            <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+                          </a>
+                          <ul class="option-select-list">
+                            <li>
+                              <label for="check15" class="option-select-row">
+                                <input type="checkbox" id="check15" class="select-row-checkbox">
+                                <span class="select-row-text">A</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check16" class="option-select-row">
+                                <input type="checkbox" id="check16" class="select-row-checkbox">
+                                <span class="select-row-text">B</span>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check17" class="option-select-row">
+                                <input type="checkbox" id="check17" class="select-row-checkbox">
+                                <span class="select-row-text">C</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="option-select-item">
+                          <a href="#none" class="option-select-label">
+                            <span class="option-select-text">각인을 선택하세요</span>
+                            <span class="option-select-extra"></span>
+                            <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+                          </a>
+                          <ul class="option-select-list">
+                            <li>
+                              <label for="check18" class="option-select-row has-input">
+                                <input type="checkbox" id="check18" class="select-row-checkbox">
+                                <span class="select-row-text">겉각인</span>
+                                <input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input" maxlength='10'>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check19" class="option-select-row has-input">
+                                <input type="checkbox" id="check19" class="select-row-checkbox">
+                                <span class="select-row-text">속각인</span>
+                                <input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input"  maxlength='10'>
+                              </label>
+                            </li>
+                            <li>
+                              <label for="check20" class="option-select-row">
+                                <input type="checkbox" id="check20" class="select-row-checkbox">
+                                <span class="select-row-text">사용안함</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="option-result">
+                        <div class="option-result-item">
+                          <div class="option-result-title">선택 01.</div>
+                          <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+                          <div class="option-result-bottom">
+                            <div class="option-result-spinner">
+                              <button class="spinner-btn spinner-remove"><span class="blind">remove</span></button>
+                              <div class="spinner-value">1</div>
+                              <button class="spinner-btn spinner-add"><span class="blind">add</span></button>
+                            </div>
+                            <div class="option-result-price">320,100원</div>
+                          </div>
+                          <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+                        </div>
+                        <div class="option-result-item">
+                          <div class="option-result-title">선택 01.</div>
+                          <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+                          <div class="option-result-bottom">
+                            <div class="option-result-spinner">
+                              <button class="spinner-btn spinner-remove"><span class="blind">remove</span></button>
+                              <div class="spinner-value">1</div>
+                              <button class="spinner-btn spinner-add"><span class="blind">add</span></button>
+                            </div>
+                            <div class="option-result-price">320,100원</div>
+                          </div>
+                          <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="option-total">
+                      <span class="option-total-desc">총 상품 금액</span>
+                      <span class="option-total-price">644,200</span>
+                      <span class="option-total-currency">원</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="popup"&gt;
+    &lt;div class="popup-dim"&gt;&lt;/div&gt;
+    &lt;div class="popup-option"&gt;
+      &lt;div class="popup-option-box"&gt;
+        &lt;button class="popup-close-box"&gt;
+          &lt;span class="popup-close-bar"&gt;&lt;/span&gt;
+          &lt;span class="popup-close-bar"&gt;&lt;/span&gt;
+        &lt;/button&gt;
+        &lt;div class="popup-option-content"&gt;
+          &lt;div class="option-select"&gt;
+            &lt;div class="option-select-item"&gt;
+              &lt;a href="#none" class="option-select-label"&gt;
+                &lt;span class="option-select-text"&gt;캐럿/컬러를 선택하세요&lt;/span&gt;
+                &lt;span class="option-select-extra"&gt;+50,000&lt;/span&gt;
+                &lt;img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow"&gt;
+              &lt;/a&gt;
+              &lt;ul class="option-select-list"&gt;
+                &lt;li&gt;
+                  &lt;label for="check1" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check1" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;10K 로즈골드&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check2" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check2" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;14K 로즈골드&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check3" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check3" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;18K 로즈골드&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check4" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check4" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;10K 옐로우골드&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check5" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check5" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;14K 옐로우골드&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check6" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check6" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;18K 옐로우골드&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="option-select-item"&gt;
+              &lt;a href="#none" class="option-select-label"&gt;
+                &lt;span class="option-select-text"&gt;스톤을 선택하세요&lt;/span&gt;
+                &lt;img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow"&gt;
+              &lt;/a&gt;
+              &lt;ul class="option-select-list"&gt;
+                &lt;li&gt;
+                  &lt;label for="check7" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check7" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;블루사파이어&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check8" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check8" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;투어마린&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check9" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check9" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;시트린&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check10" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check10" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;탄자나이트&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check11" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check11" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;블루사파이어&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check12" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check12" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;투어마린&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check13" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check13" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;시트린&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check14" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check14" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;블루사파이탄자나이트어&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="option-select-item"&gt;
+              &lt;a href="#none" class="option-select-label"&gt;
+                &lt;span class="option-select-text"&gt;이니셜을 선택하세요&lt;/span&gt;
+                &lt;img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow"&gt;
+              &lt;/a&gt;
+              &lt;ul class="option-select-list"&gt;
+                &lt;li&gt;
+                  &lt;label for="check15" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check15" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;A&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check16" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check16" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;B&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check17" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check17" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;C&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="option-select-item"&gt;
+              &lt;a href="#none" class="option-select-label"&gt;
+                &lt;span class="option-select-text"&gt;각인을 선택하세요&lt;/span&gt;
+                &lt;span class="option-select-extra"&gt;&lt;/span&gt;
+                &lt;img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow"&gt;
+              &lt;/a&gt;
+              &lt;ul class="option-select-list"&gt;
+                &lt;li&gt;
+                  &lt;label for="check18" class="option-select-row has-input"&gt;
+                    &lt;input type="checkbox" id="check18" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;겉각인&lt;/span&gt;
+                    &lt;input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input" maxlength='10'&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check19" class="option-select-row has-input"&gt;
+                    &lt;input type="checkbox" id="check19" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;속각인&lt;/span&gt;
+                    &lt;input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input"  maxlength='10'&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;label for="check20" class="option-select-row"&gt;
+                    &lt;input type="checkbox" id="check20" class="select-row-checkbox"&gt;
+                    &lt;span class="select-row-text"&gt;사용안함&lt;/span&gt;
+                  &lt;/label&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="option-result"&gt;
+            &lt;div class="option-result-item"&gt;
+              &lt;div class="option-result-title"&gt;선택 01.&lt;/div&gt;
+              &lt;div class="option-result-desc"&gt;택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함&lt;/div&gt;
+              &lt;div class="option-result-bottom"&gt;
+                &lt;div class="option-result-spinner"&gt;
+                  &lt;button class="spinner-btn spinner-remove"&gt;&lt;span class="blind"&gt;remove&lt;/span&gt;&lt;/button&gt;
+                  &lt;div class="spinner-value"&gt;1&lt;/div&gt;
+                  &lt;button class="spinner-btn spinner-add"&gt;&lt;span class="blind"&gt;add&lt;/span&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="option-result-price"&gt;320,100원&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;button class="option-result-close"&gt;&lt;img src="../../assets/images/icons/option_close.png" alt="close" class=""&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="option-result-item"&gt;
+              &lt;div class="option-result-title"&gt;선택 01.&lt;/div&gt;
+              &lt;div class="option-result-desc"&gt;택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함&lt;/div&gt;
+              &lt;div class="option-result-bottom"&gt;
+                &lt;div class="option-result-spinner"&gt;
+                  &lt;button class="spinner-btn spinner-remove"&gt;&lt;span class="blind"&gt;remove&lt;/span&gt;&lt;/button&gt;
+                  &lt;div class="spinner-value"&gt;1&lt;/div&gt;
+                  &lt;button class="spinner-btn spinner-add"&gt;&lt;span class="blind"&gt;add&lt;/span&gt;&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="option-result-price"&gt;320,100원&lt;/div&gt;
+              &lt;/div&gt;
+              &lt;button class="option-result-close"&gt;&lt;img src="../../assets/images/icons/option_close.png" alt="close" class=""&gt;&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="option-total"&gt;
+          &lt;span class="option-total-desc"&gt;총 상품 금액&lt;/span&gt;
+          &lt;span class="option-total-price"&gt;644,200&lt;/span&gt;
+          &lt;span class="option-total-currency"&gt;원&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">full height popup</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content" style="height: 600px;">
+              <!-- code -->
+              <div class="popup on">
+                <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+                <div class="popup-full with-btn" style="position: absolute; height: 100%;">
+                  <div class="popup-full-box">
+                    <div class="popup-full-top">
+                      <div class="popup-full-title">Q&A</div>
+                      <button class="popup-full-close" onclick="openPopup('cancelPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+                    </div>
+                    <div class="popup-full-content">
+                      
+                    </div>
+                  </div>
+                  <div class="popup-full-bottom" style="position: absolute;">
+                    <button class="popup-full-btn" onclick="openPopup('savePopup')">SAVE</button>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="popup"&gt;
+    &lt;!-- 버튼 활성화시 with-btn 클래스 추가 --&gt;
+    &lt;div class="popup-full with-btn"&gt;
+      &lt;div class="popup-full-box"&gt;
+        &lt;div class="popup-full-top"&gt;
+          &lt;div class="popup-full-title"&gt;Q&A&lt;/div&gt;
+          &lt;button class="popup-full-close" onclick="openPopup('cancelPopup')"&gt;&lt;img src="../../assets/images/icons/close.png" alt=""&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="popup-full-content"&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="popup-full-bottom"&gt;
+        &lt;button class="popup-full-btn" onclick="openPopup('savePopup')"&gt;SAVE&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+      </div>
+    </div>
+  </div>
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+  <script src="./js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    $(".ComponentBoxView-link").on("click", function (e) {
+      $(this).closest(".ComponentBox").toggleClass("is-view");
+
+    });
+  </script>
+</body>
+</html>

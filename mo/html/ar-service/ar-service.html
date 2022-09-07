@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container ar" style="background-image: url(../../assets/images/content/ar-sample.png); background-repeat: no-repeat; background-size: cover; background-position: top center;">
+      <div class="ar-wrap">
+        <div class="ar-top">
+          <button class="ar-top-change"><img src="../../assets/images/icons/ar-screen-change.png" alt="screen change"></button>
+          <button class="ar-top-close"><img src="../../assets/images/icons/ar-close.png" alt="close"></button>
+        </div>
+        <div class="ar-face">
+          <img src="../../assets/images/content/ar-face-guide.png" alt="" class="ar-face-guide">
+        </div>
+        <div class="ar-desc">
+          <div class="ar-desc-title">퓨어드롭 물방울 로즈컷 탄생석 10k Gold 목걸이 목걸이 목걸이</div>
+          <div class="ar-desc-price">
+            <span class="ar-desc-preprice">79,900원</span>
+            <span class="ar-desc-sale">59,900</span>
+            <span class="ar-desc-currency">원</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="ar-content-dim">
+        <div class="ar-guide-prev">
+          <button class="ar-guide-button" onclick="closeArPopup('arEarring')"><img src="../../assets/images/icons/ar-prev.png" alt="prev"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AR defalt -->
+  <div class="popup-ar-box" id="arEarring">
+    <div class="try-item">
+      <div class="try-item-top">
+        <ul class="try-item-list">
+          <li class="try-item-item">
+            <!-- 선택된 아이템 try-item-item : .active 클래스 필요 -->
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-white.png" alt=""></a>
+            <!-- 선택된 아이템 이미지 파일명 : -active 필요 -->
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-rose.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-yellow.png" alt=""></a>
+          </li>
+        </ul>
+        <a href="#;" class="try-item-change" onclick="closeArPopup('ringGuide')">
+          <img src="../../assets/images/icons/ar-convert-ring.png" alt="">
+        </a>
+      </div>
+      <div class="try-item-content">
+        <div class="detail-slide-option">
+          <div class="detail-option-color">
+            <div class="detail-option-color-container ar swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="try-item-shutter">
+        <!-- 활성화시 is-active 클래스 추가 -->
+          <div class="try-item-shutter-box"><img src="../../assets/images/content/ar-shutter.png" alt="" class="try-item-shutter-img"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /AR defalt -->
+
+  <!-- ring -->
+  <div class="popup-ar-box" id="arRing">
+    <div class="try-item">
+      <div class="try-item-top">
+        <a href="#;" class="try-item-reselect" onclick="closeArPopup('arRingChoice')">
+          <img src="../../assets/images/icons/ar-reselect.png" alt="cart">
+        </a>
+        <ul class="try-item-list">
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-white.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-rose.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-yellow.png" alt=""></a>
+          </li>
+        </ul>
+        <a href="#;" class="try-item-change" onclick="closeArPopup('arEarring')">
+          <img src="../../assets/images/icons/ar-convert-earring.png" alt="">
+        </a>
+      </div>
+      <div class="try-item-content">
+        <div class="detail-slide-option">
+          <div class="detail-option-color">
+            <div class="detail-option-color-container ar swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /ring -->
+
+  <!-- ring 초기진입 --> 
+  <div class="ar-guide ring" id="ringGuide">
+    <div class="ar-guide-prev">
+      <button class="ar-guide-button" onclick="closeArPopup('arEarring')"><img src="../../assets/images/icons/ar-prev.png" alt="prev"></button>
+    </div>
+    <div class="ar-guide-content ring">
+      <div class="ar-guide-content-text">
+        Ring 상품을 체험할 방법을 선택하세요
+      </div>
+      <div class="ar-guide-nav">
+        <div class="ring-nav-content">
+          <ul class="ring-nav-list">
+            <li class="ring-nav-item">
+              <a href="#" class="ring-nav-link" onclick="closeArPopup('arRing')">
+                <img src="../../assets/images/icons/ar-reshot.png" alt="" class="ring-nav-icon">
+              </a>
+            </li>
+            <li class="ring-nav-item">
+              <a href="#" class="ring-nav-link">
+                <img src="../../assets/images/icons/ar-gallary.png" alt="" class="ring-nav-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /ring 초기진입 -->
+
+  <!-- ring 체험 방법 선택  --> 
+  <div class="ar-guide ring reChoice" id="arRingChoice">
+    <div class="ar-guide-prev">
+      <button class="ar-guide-button" onclick="closeArPopup('arRing')"><img src="../../assets/images/icons/ar-prev.png" alt="prev"></button>
+    </div>
+    <div class="ar-guide-content ring">
+      <div class="ar-guide-content-text">
+        Ring 상품을 체험할 방법을 선택하세요
+      </div>
+      <div class="ar-guide-nav">
+        <div class="ring-nav-content">
+          <ul class="ring-nav-list">
+            <li class="ring-nav-item">
+              <a href="#" class="ring-nav-link" onclick="closeArPopup('arRing')">
+                <img src="../../assets/images/icons/ar-reshot.png" alt="" class="ring-nav-icon">
+              </a>
+            </li>
+            <li class="ring-nav-item">
+              <a href="#" class="ring-nav-link">
+                <img src="../../assets/images/icons/ar-gallary.png" alt="" class="ring-nav-icon">
+              </a>
+            </li>
+            <li class="ring-nav-item">
+              <a href="#" class="ring-nav-link">
+                <img src="../../assets/images/icons/ar-ex-img.png" alt="" class="ring-nav-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /ring 체험 방법 선택  -->
+
+  <!-- ring 체험 방법 선택 -->
+  <div class="popup-ar-box">
+    <div class="ring-nav">
+      <div class="ring-nav-top">
+        <div class="ring-nav-desc">Ring 상품을 체험할 방법을 선택하세요</div>
+        <a href="#" class="ring-nav-back" onclick="closeArPopup('arEarring')"><img src="../../assets/images/icons/back_white.png" alt="back"></a>
+      </div>
+      <div class="ring-nav-content">
+        <ul class="ring-nav-list">
+          <li class="ring-nav-item">
+            <a href="#" class="ring-nav-link" onclick="closeArPopup('arRing')">
+              <img src="../../assets/images/icons/ar-reshot.png" alt="" class="ring-nav-icon">
+              <div class="ring-nav-text">새로 촬영</div>
+            </a>
+          </li>
+          <li class="ring-nav-item">
+            <a href="#" class="ring-nav-link">
+              <img src="../../assets/images/icons/ar-gallary.png" alt="" class="ring-nav-icon">
+              <div class="ring-nav-text">갤러리</div>
+            </a>
+          </li>
+          <li class="ring-nav-item">
+            <a href="#" class="ring-nav-link">
+              <img src="../../assets/images/icons/ar-ex-img.png" alt="" class="ring-nav-icon">
+              <div class="ring-nav-text">이전 사진</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /ring 체험 방법 선택 -->
+
+  <!-- 사진 저장 및 장바구니 -->
+  <div class="popup-ar-box" id="arSave">
+    <div class="popup-ar-close"><a href="#;" class="popup-ar-close-bar" onclick="closeArPopup('arEarring')"></a></div>
+    <div class="save-content">
+      <div class="save-content-left">
+        <div class="save-content-img"><img src="../../assets/images/content/ar-ring-rose01.png"></div>
+      </div>
+      <div class="save-content-right">
+        <div class="save-content-title">퓨어드롭 물방울 로즈컷 탄생석 10k Gold 귀걸이</div>
+        <div class="save-content-price">
+          <span class="save-content-preprice">79,900<span class="save-content-preprice-won">원</span></span>
+          <span class="save-content-sale">59,900<span class="save-content-sale-won">원</span></span>
+        </div>
+      </div>
+    </div>
+    <div class="save-nav">
+      <ul class="save-nav-list">
+        <li class="save-nav-item">
+          <a href="#" class="save-nav-link link-btn">
+            <img src="../../assets/images/icons/ar-save.png" alt="" class="save-nav-icon">
+          </a>
+        </li>
+        <li class="save-nav-item">
+          <a href="#" class="save-nav-link link-btn">
+            <img src="../../assets/images/icons/ar-instagram.png" alt="" class="save-nav-icon">
+          </a>
+        </li>
+        <li class="save-nav-item">
+          <a href="#" class="save-nav-link buy-btn" onclick="closeArPopup('bottombar'); closeArPopup('optionPopup')" id="goToBuy">BUY</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /사진 저장 및 장바구니 -->
+  
+  <!-- bottom-bar -->
+  <div class="bottom-bar pop ar" id="bottombar">
+    <div class="bottom-bar-box">
+      <div class="bottom-bar-left">
+        <div class="option-btn-left">
+        <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+          <a href="#;" class="option-btn-gift">
+            <img src="../../assets/images/icons/option-gift.png" alt="선물하기" class="option-btn-gift-icon">
+            <img src="../../assets/images/icons/option-gift-gray.png" alt="선물하기" class="option-btn-gift-icon-light">
+          </a>
+        </div>
+      </div>
+      <div class="option-btn-right">
+      <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+        <button class="option-btn-cart" onclick="openPopup('cartPopup')">
+          CART
+        </button>
+        <button class="option-btn-buy" id="arBuy">
+          BUY
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <!-- popup option -->
+  <div class="popup pop ar" id="optionPopup">
+    <div class="popup-dim">
+      <div class="ar-guide-prev">
+        <button class="ar-guide-button"><img src="../../assets/images/icons/ar-prev.png" alt="prev"></button>
+      </div>
+    </div>
+    <div class="popup-option">
+      <div class="popup-option-box">
+        <div class="popup-ar-close"><a href="#;" class="popup-ar-close-bar"></a></div>
+        <div class="popup-option-content">
+          <div class="option-select">
+            <!-- 세트상품일 경우에만 노출 -->
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">상품을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check28" class="option-select-row">
+                    <input type="checkbox" id="check28" class="select-row-checkbox">
+                    <span class="select-row-text">상품1</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check29" class="option-select-row">
+                    <input type="checkbox" id="check29" class="select-row-checkbox">
+                    <span class="select-row-text">상품2</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check30" class="option-select-row">
+                    <input type="checkbox" id="check30" class="select-row-checkbox">
+                    <span class="select-row-text">상품3</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">캐럿/컬러를 선택하세요</span>
+                <span class="option-select-extra">+50,000</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check1" class="option-select-row">
+                    <input type="checkbox" id="check1" class="select-row-checkbox">
+                    <span class="select-row-text">10K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check2" class="option-select-row">
+                    <input type="checkbox" id="check2" class="select-row-checkbox">
+                    <span class="select-row-text">14K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check3" class="option-select-row">
+                    <input type="checkbox" id="check3" class="select-row-checkbox">
+                    <span class="select-row-text">18K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check4" class="option-select-row">
+                    <input type="checkbox" id="check4" class="select-row-checkbox">
+                    <span class="select-row-text">10K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check5" class="option-select-row">
+                    <input type="checkbox" id="check5" class="select-row-checkbox">
+                    <span class="select-row-text">14K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check6" class="option-select-row">
+                    <input type="checkbox" id="check6" class="select-row-checkbox">
+                    <span class="select-row-text">18K 옐로우골드</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">스톤을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check7" class="option-select-row">
+                    <input type="checkbox" id="check7" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check8" class="option-select-row">
+                    <input type="checkbox" id="check8" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check9" class="option-select-row">
+                    <input type="checkbox" id="check9" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check10" class="option-select-row">
+                    <input type="checkbox" id="check10" class="select-row-checkbox">
+                    <span class="select-row-text">탄자나이트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check11" class="option-select-row">
+                    <input type="checkbox" id="check11" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check12" class="option-select-row">
+                    <input type="checkbox" id="check12" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check13" class="option-select-row">
+                    <input type="checkbox" id="check13" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check14" class="option-select-row">
+                    <input type="checkbox" id="check14" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이탄자나이트어</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">이니셜을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check15" class="option-select-row">
+                    <input type="checkbox" id="check15" class="select-row-checkbox">
+                    <span class="select-row-text">A</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check16" class="option-select-row">
+                    <input type="checkbox" id="check16" class="select-row-checkbox">
+                    <span class="select-row-text">B</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check17" class="option-select-row">
+                    <input type="checkbox" id="check17" class="select-row-checkbox">
+                    <span class="select-row-text">C</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">호수를 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check18" class="option-select-row">
+                    <input type="checkbox" id="check18" class="select-row-checkbox">
+                    <span class="select-row-text">14</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check19" class="option-select-row">
+                    <input type="checkbox" id="check19" class="select-row-checkbox">
+                    <span class="select-row-text">14.5</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check20" class="option-select-row">
+                    <input type="checkbox" id="check20" class="select-row-checkbox">
+                    <span class="select-row-text">15</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check21" class="option-select-row">
+                    <input type="checkbox" id="check21" class="select-row-checkbox">
+                    <span class="select-row-text">16</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check22" class="option-select-row">
+                    <input type="checkbox" id="check22" class="select-row-checkbox">
+                    <span class="select-row-text">17</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">각인을 선택하세요</span>
+                <span class="option-select-extra"></span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check23" class="option-select-row">
+                    <input type="checkbox" id="check23" class="select-row-checkbox">
+                    <span class="select-row-text">겉각인</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check24" class="option-select-row">
+                    <input type="checkbox" id="check24" class="select-row-checkbox">
+                    <span class="select-row-text">속각인</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check25" class="option-select-row">
+                    <input type="checkbox" id="check25" class="select-row-checkbox">
+                    <span class="select-row-text">사용안함</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <div class="option-select-input-box">
+                <input type="text" class="option-select-input" placeholder="최대 10자 (공백포함)" maxlength="10">
+              </div>
+              <button class="option-select-save-btn" type="button">완료</button>
+            </div>
+          </div>
+          <div class="option-result">
+            <div class="option-result-item">
+              <div class="option-result-title">선택 01.</div>
+              <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+              <div class="option-result-bottom">
+                <div class="option-result-spinner">
+                  <button class="spinner-btn spinner-remove"><span class="sr-only">remove</span></button>
+                  <div class="spinner-value">1</div>
+                  <button class="spinner-btn spinner-add"><span class="sr-only">add</span></button>
+                </div>
+                <div class="option-result-price">320,100원</div>
+              </div>
+              <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+            </div>
+            <div class="option-result-item">
+              <div class="option-result-title">선택 01.</div>
+              <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+              <div class="option-result-bottom">
+                <div class="option-result-spinner">
+                  <button class="spinner-btn spinner-remove"><span class="sr-only">remove</span></button>
+                  <div class="spinner-value">1</div>
+                  <button class="spinner-btn spinner-add"><span class="sr-only">add</span></button>
+                </div>
+                <div class="option-result-price">320,100원</div>
+              </div>
+              <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="option-total">
+          <span class="option-total-desc">총 상품 금액</span>
+          <span class="option-total-price">644,200</span>
+          <span class="option-total-currency">원</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /popup option -->
+
+  <div class="popup common ar" id="memberPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="ar-popup-box">
+        <div class="ar-popup-content">
+          <span class="ar-popup-text">회원 전용 서비스입니다.<br>로그인 하시겠습니까?</span>
+        </div>
+        <div class="ar-popup-btn">
+          <button class="ar-btn ar-btn-left" onclick="closePopup('memberPopup')">취소</button>
+          <button class="ar-btn ar-btn-right">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common ar" id="noOptionPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="ar-popup-box">
+        <div class="ar-popup-content">
+          <span class="ar-popup-text">옵션이 선택되지 않았습니다.<br>옵션을 선택해 주세요.</span>
+        </div>
+        <div class="ar-popup-btn">
+          <button class="ar-btn ar-btn-full" onclick="closePopup('noOptionPopup')">확인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common ar" id="cartPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="ar-popup-box">
+        <div class="ar-popup-content">
+          <span class="ar-popup-text">상품을 장바구니 목록에 추가하였습니다.<br>장바구니 목록으로 이동하시겠습니까?</span>
+        </div>
+        <div class="ar-popup-btn">
+          <button class="ar-btn ar-btn-left" onclick="closePopup('cartPopup')">쇼핑 계속하기</button>
+          <button class="ar-btn ar-btn-right">장바구니 목록 보기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="appPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">앱 전용 기능입니다.<br>다운로드 받으시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('appPopup')">취소</button>
+          <button class="popup-btn popup-btn-right">앱 다운로드</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="agreePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">허용하지 않으면 AR 서비스를<br>이용하실 수 없습니다.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('agreePopup')">취소</button>
+          <button class="popup-btn popup-btn-right">허용</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

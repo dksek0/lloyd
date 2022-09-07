@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/fonts.css" media="none" onload=" this.media='all';"/>
+  <link rel="stylesheet" href="../../assets/css/reboot.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" type="text/css" href="./css/guide.css" />
+  <link rel="stylesheet" type="text/css" href="./css/vs.css" />
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+    </div>
+    <div class="header-title">
+      <!-- <button class="title-btn">Earring</button> -->
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- menu-wrap -->
+  <div class="menu-wrap top">
+  <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+  <div class="menu-dim"></div>
+
+  <div class="menu-content">
+    <nav class="menu">
+      <ul class="dep1-list">
+        <li>
+          <a href="#;" class="dep1-item">Jewelry</a>
+          <ul class="dep2-list">
+            <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+            <li><a href="#;" class="dep2-item">Bracelet</a></li>
+            <li><a href="#;" class="dep2-item">Ring</a></li>
+            <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Watch</a>
+          <ul class="dep2-list">
+            <li><a href="#;" class="dep2-item">Women's watch</a></li>
+            <li><a href="#;" class="dep2-item">Men's watch</a></li>
+            <li><a href="#;" class="dep2-item">Couple</a></li>
+            <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Gift</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /menu-content -->
+  </div>
+  <!-- /menu-wrap -->
+  <div class="wrapper">
+    <div class="container detail">
+      <!-- 구매상세 -->
+      <div class="detail-slide">
+        <div class="detail-slide-link-icon">
+          <button class="detail-view-icon" onclick="openPopup('viewPopup')"><span class="ab-text">View</span></button>
+          <button class="detail-ar-icon"><span class="ab-text">AR</span></button>
+        </div>
+        <div class="detail-thumbnail-tab">
+          <ul class="detail-thumbnail-tab-list">
+            <li class="detail-thumbnail-tab-item is-current">
+              <!-- option slider -->
+              <div class="detail-slide-color-container">
+                <ul class="detail-option-slide-list">
+                  <li class="detail-option-slide-item is-current">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eeeeee?text=White Gold" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Rose Gold" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Yellow Gold" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                </ul>
+              </div>
+              <!-- .option slider -->
+            </li>
+            <li class="detail-thumbnail-tab-item">
+              <!-- option slider -->
+              <div class="detail-slide-stone-container">
+                <ul class="detail-option-slide-list">
+                  <li class="detail-option-slide-item is-current">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Sapphire" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/fad8bd?text=Diamond" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                  <li class="detail-option-slide-item">
+                    <!-- detail-slide-thumbnail  -->
+                    <div class="detail-slide-thumbnail">
+                      <div class="detail-slide-thumbnail-container swiper-container">
+                        <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                          </li>
+                          <li class="detail-slide-thumbnail-item swiper-slide">
+                            <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="http://placehold.it/720x810/eee99f?text=Ruby" alt="" /></div>
+                          </li>
+                        </ul>
+                        <!-- Add Scrollbar -->
+                        <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                      </div>
+                    </div>
+                    <!-- .detail-slide-thumbnail  -->
+                  </li>
+                </ul>
+              </div>
+              <!-- .option slider -->
+            </li>
+          </ul>
+        </div>
+        <!-- detail-slide-tab  -->
+        <div class="detail-slide-tab">
+          <ul class="detail-slide-tab-list">
+            <li class="detail-slide-tab-item is-current">
+              <a href="#;" class="detail-slide-tab-link">캐럿/컬러</a>
+            </li>
+            <li class="detail-slide-tab-item">
+              <a href="#;" class="detail-slide-tab-link">스톤</a>
+            </li>
+          </ul>
+          <div class="detail-slide-tab-bar"></div>
+        </div>
+        <!-- detail-slide-tab  -->
+        <!-- detail-slide-option -->
+        <div class="detail-slide-option">
+          <ul class="detail-slide-option-list">
+            <li class="detail-slide-option-item is-current">
+              <div class="detail-option-color-inner">
+                <div class="detail-option-carat">
+                  <ul class="detail-option-carat-list">
+                    <li class="detail-option-carat-item is-current"><input class="detail-option-carat-input" type="radio" id="carat10k" name="carat" checked><label class="detail-option-link" for="carat10k">10K</label></li>
+                    <li class="detail-option-carat-item"><input class="detail-option-carat-input" type="radio" id="carat14k" name="carat"><label class="detail-option-link" for="carat14k">14K</label></li>
+                    <li class="detail-option-carat-item"><input class="detail-option-carat-input" type="radio" id="carat18k" name="carat"><label class="detail-option-link" for="carat18k">18K</label></li>
+                  </ul>
+                </div>
+                <div class="detail-option-slidetab">
+                  <ul class="detail-option-slidetab-list">
+                    <li class="detail-option-slidetab-item is-current">
+                      <div class="detail-option-color">
+                        <div class="detail-option-color-container">
+                          <ul class="detail-option-color-list">
+                            <li class="detail-option-color-item is-current">
+                              <input class="detail-option-color-input" type="radio" id="optionColor1" name="optionColor" checked>
+                              <label class="detail-option-color-box" for="optionColor1">
+                                <div class="detail-option-color-icon"><img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 화이트골드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-color-item">
+                              <input class="detail-option-color-input" type="radio" id="optionColor2" name="optionColor">
+                              <label class="detail-option-color-box" for="optionColor2">
+                                <div class="detail-option-color-icon"><img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 로즈골드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-color-item">
+                              <input class="detail-option-color-input" type="radio" id="optionColor3" name="optionColor">
+                              <label class="detail-option-color-box" for="optionColor3">
+                                <div class="detail-option-color-icon"><img class="detail-option-color-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 옐로골드</div>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="detail-slide-option-item">
+              <div class="detail-option-stone-inner">
+                <div class="detail-option-slidetab">
+                  <ul class="detail-option-slidetab-list">
+                    <li class="detail-option-slidetab-item is-current">
+                      <div class="detail-option-stone">
+                        <div class="detail-option-stone-container">
+                          <ul class="detail-option-stone-list">
+                            <li class="detail-option-stone-item is-current">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone1" name="optionStone" checked>
+                              <label class="detail-option-stone-box" for="optionStone1">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-stone-text">블루사파이어</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone2" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone2">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-stone-text">다이아몬드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone3" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone3">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-stone-text">루비</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone4" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone4">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-stone-text">블루사파이어</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone5" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone5">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-stone-text">다이아몬드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone6" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone6">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="http://placehold.it/68x68/cbd0e5" alt="" /></div>
+                                <div class="detail-option-stone-text">루비</div>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- detail-slide-option -->
+      </div>
+      <!-- 팝업 -->
+      <div class="guide-detail-popup" style="display: none;">
+        <div class="guide-text-box">
+          오른쪽으로 밀어보세요<br />AR 서비스를 경험하실 수 있습니다.
+        </div>
+      </div>
+      <!-- .팝업 -->
+      <div class="prd-detail">
+        <div class="prd-info">
+          <span class="prd-badge is-new">NEW</span>
+          <span class="prd-badge">오늘도착</span>
+          <div class="prd-info-name">
+            로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트
+          </div>
+          <div class="prd-info-code">LRT2005T</div>
+          <div class="prd-info-price">
+            <span class="num">139,900<span class="won">원</span></span>
+            <span class="num-sale">172,500<span class="won">원</span></span>
+          </div>
+        </div>
+        <div class="prd-info-more">
+          <div class="point">
+            포인트 <span>450P</span>
+          </div>
+          <div class="gift">
+            사은품 <span>인형</span>
+          </div>
+        </div>
+        <div class="prd-deliver">
+          <div class="title">배송정보</div>
+          <div class="prd-deliver-inner">
+            <div class="prd-deliver-title"><span>택배</span></div>
+            <div class="prd-deliver-con">
+              <div class="prd-deliver-item">
+                <em>2,500</em>원 <span>(30,000원 이상 무료배송)</span>
+              </div>
+              <div class="prd-deliver-item">
+                <em>15</em>일 이내 배송가능 <span>(토,일,공휴일 제외) </span>
+              </div>
+            </div>
+          </div>
+          <div class="prd-deliver-inner">
+            <div class="prd-deliver-title"><span>오늘도착</span></div>
+            <div class="prd-deliver-con">
+              <div class="prd-deliver-item">
+                <em>2,500</em>원 또는 <em>5,000</em>원
+                <button class="today-info-button" onclick="openPopup('deliOptionPopup')"><img src="../../assets/images/icons/option-info.png" alt="delivery info"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- prd-detail -->
+        <div class="prd-detail-wrap">
+          <div class="prd-detail-con">
+            <img src="../../assets/images/content/detail_con.png" alt="">
+            <img src="../../assets/images/content/sample.jpg" alt="">
+          </div>
+          <button class="prd-detail-more">
+            <span class="prd-detail-more-view">상품정보 더보기</span>
+          </button>
+        </div>
+        <!-- /prd-detail -->
+        <div class="prd-fordable">
+          <a class="prd-fordable-title" href="#none">
+            리뷰 <span class="arr"></span>
+          </a>
+          <div class="prd-fordable-con" style="display: none;"></div>
+        </div>
+        <div class="prd-fordable is-active">
+          <a class="prd-fordable-title" href="#none">
+            배송/반품/교환 <span class="arr"></span>
+          </a>
+          <div class="prd-fordable-con">
+            <div class="prd-caution-title">상품 배송안내</div>
+            <ul class="prd-caution-disc">
+              <li class="prd-caution-disc-item">공급업체 : 이월드_로이드</li>
+              <li class="prd-caution-disc-item">배송비 : 2,500원 (30,000원 이상 무료배송), 전국</li>
+              <li class="prd-caution-disc-item">배송정보 : 평균 14일 이내 발송(토,일,공휴일제외)</li>
+            </ul>
+            <div class="prd-caution-title">주문취소</div>
+            <p class="prd-caution-disc">
+              주문취소는 입금대기/입금완료에서 가능합니다.<br>
+              가구 등 주문제작상품의 경우에는 상품준비중 단계부터 불가능하며 상품 수령 후, 반품 신청을 하실 수 있습니다.
+            </p>
+            <div class="prd-caution-title">반품/교환</div>
+            <p class="prd-caution-disc">
+              배송비 : 2,500원 예상 (편도기준)<br>
+              반품/교환 배송비는 고객 변심의 경우에만 발생됩니다.
+              구매 후 반품/교환 시 예상금액과 차이가 있을 수 있습니다.
+            </p>
+            <p class="prd-caution-disc">
+              반품/교환은 상품 수령일 7일 이내에 신청해주셔야 하며 단순 고객변심으로 인한 왕복 배송비는 고객님께서 부담하셔야 합니다.
+            </p>
+            <p class="prd-caution-disc">
+              표시광고와 상이하여 상품에 하자가 있는 경우 상품수령 후 3개월 이내, 해당사실을 안(알 수 있었던)날로부터 30일 이내에 교환/반품을 신청을 할 수 있습니다.
+              반품/교환 시 제품 원형 그대로 보내 주셔야 가능 합니다.
+            </p>
+          </div>
+        </div>
+        <div class="prd-fordable qna is-active">
+          <a class="prd-fordable-title" href="#none">
+            <span class="qna">Q&A</span> <span class="arr"></span>
+          </a>
+          <div class="prd-fordable-con p-0">
+            <div class="prd-qna-intro">
+              <p class="prd-qna-intro-disc">상품에 대해 궁금한 점을 남겨주세요.<br>확인후 답변을 드립니다.</p>
+              <button class="prd-qna-btn" type="button" onclick="openPopup('qnaPopup')">문의하기</button>
+            </div>
+            <!-- prd-qna -->
+            <div class="prd-qna">
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item is-open">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status is-complete">답변완료</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요 안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                  <div class="prd-qna-answer">
+                    <em>A.</em>
+                    <div class="prd-qna-answer-disc">
+                      <p>
+                        안녕하세요<br>
+                        배송 소요기간은 영업일 기준 14일 정도 소요됩니다.
+                        구매해 주셔서 감사합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-paging">
+                <a class="prd-qna-paging-item is-first" href="#"><span class="blind">first</span></a>
+                <a class="prd-qna-paging-item is-prev" href="#"><span class="blind">prev</span></a>
+                <a class="prd-qna-paging-item is-active" href="#">1</a>
+                <a class="prd-qna-paging-item" href="#">2</a>
+                <a class="prd-qna-paging-item" href="#">3</a>
+                <a class="prd-qna-paging-item" href="#">4</a>
+                <a class="prd-qna-paging-item" href="#">5</a>
+                <a class="prd-qna-paging-item is-next" href="#"><span class="blind">next</span></a>
+                <a class="prd-qna-paging-item is-last" href="#"><span class="blind">last</span></a>
+              </div>
+            </div>
+            <!-- /prd-qna -->
+          </div>
+        </div>
+        <div class="prd-reco">
+          <div class="prd-reco-title">좋아할 만한 상품</div>
+            <ul class="prd-reco-list">
+              <li class="prd-reco-item">
+                <a class="prd-reco-link" href="#">
+                  <img src="http://placehold.it/88x88/eeeeee">
+                </a>
+              </li>
+              <li class="prd-reco-item">
+                <a class="prd-reco-link" href="#">
+                  <img src="http://placehold.it/88x88/eeeeee">
+                </a>
+              </li>
+              <li class="prd-reco-item">
+                <a class="prd-reco-link" href="#">
+                  <img src="http://placehold.it/88x88/eeeeee">
+                </a>
+              </li>
+              <li class="prd-reco-item">
+                <a class="prd-reco-link" href="#">
+                  <img src="http://placehold.it/88x88/eeeeee">
+                </a>
+              </li>
+              <li class="prd-reco-item">
+                <a class="prd-reco-link" href="#">
+                  <img src="http://placehold.it/88x88/eeeeee">
+                </a>
+              </li>
+              <li class="prd-reco-item">
+                <a class="prd-reco-link" href="#">
+                  <img src="http://placehold.it/88x88/eeeeee">
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <!-- /구매상세 -->
+    </div>
+    <div class="bottom-fixed-box">
+      <div class="quick-chatbot">
+        <a class="bottom-fixed-btn" href="#;" onclick="openPopup('chatbotPopup')"></a>
+      </div>
+      <div class="quick-top">
+        <a class="bottom-fixed-btn" href="#none"></a>
+      </div>
+    </div>
+    <footer class="prd-footer">
+      <div class="prd-footer-contact">
+        <dl class="prd-footer-contact-box">
+          <dt class="prd-footer-contact-title">고객센터</dt>
+          <dd><a class="prd-footer-contact-tel" href="tel:1600-0455">1600-0455</a></dd>
+        </div>
+        <div class="prd-footer-contact-box">
+          <dt class="prd-footer-contact-title">A/S 문의</dt>
+          <dd><a class="prd-footer-contact-tel" href="tel:1600-0455">1600-0455</a></dd>
+        </dl>
+      </div>
+      <div class="prd-footer-hours">
+        <p class="prd-footer-disc">
+          상담시간 <em>: AM 09:00 ~ PM 06:00</em>(토요일, 공휴일 휴무)
+        </p>
+        <p class="prd-footer-disc">
+          <span class="break">Break</span> <em>: PM 12:00 ~ PM 01:00</em>
+        </p>
+      </div>
+      <div class="prd-footer-disc">
+        <a href="#;">개인정보처리방침</a>|<a href="#;">이용약관안내</a>|<a href="#;">사업자정보확인</a>
+      </div>
+      <p class="prd-footer-etc">
+        상호 : (주)이월드 쥬얼리사업부 가산<br>
+        대표 : 이수원<span class="prd-footer-etc-space">개인정보관리책임자 : 이수원</span><span class="prd-footer-etc-space">전화 : 1600-0455</span><br>
+        이메일 : LLOYD_ONLINE@eland.co.kr<br>
+        주소 : 서울특별시 금천구 가산디지털 1로 159,4층(가산동)<br>
+        사업자등록번호 : 678-85-01134<span class="prd-footer-etc-space">통신판매 : 2019-서울금천-0098</span>
+      </p>
+      <p class="prd-footer-etc">Copyright ⓒ by 로이드기프트닷컴 ALL RIGHT RESERVED.</p>
+    </footer>
+  </div>
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <div class="bottom-bar-left">
+        <div class="buy-link">
+          <div class="buy-link-box">
+            <a href="#;" class="buy-link-item link-like" onclick="openPopup('likePopup')"><span class="blind">like</span></a>
+            <a href="#;" class="buy-link-item link-share"><span class="blind">share</span></a>
+            <a href="#;" class="buy-link-item link-cart" id="btnCart"><span class="blind">cart</span></a>
+          </div>
+        </div>
+        <!-- 옵션 선택 미완료시 no-select 추가-->
+        <button class="bottom-btn-left with-buy" id="btnCartDetail">
+          CART
+        </button>
+      </div>
+      <!-- 옵션 선택 미완료시 no-select 추가-->
+      <button class="bottom-btn-right" id="btnBuy">
+        BUY
+      </button>
+      <!-- <button class="bottom-btn-black">재입고알림</button> -->
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <!-- popup -->
+  <div class="popup" id="viewPopup">
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">view</div>
+          <button class="popup-full-close" onclick="closePopup('viewPopup')"><img src="../../assets/images/icons/close.png" alt="close"></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="qnaPopup">
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">Q&A</div>
+          <button class="popup-full-close" onclick="openPopup('cancelPopup')"><img src="../../assets/images/icons/close.png" alt="close"></button>
+        </div>
+        <div class="popup-full-content">
+          <div class="popup-qna-name">로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</div>
+          <div class="popup-qna-post">
+            <textarea class="popup-qna-input" placeholder="상품에 관한 문의가 아닌 반품/교환/배송 관련 문의는 고객센터의 1:1 문의 게시판을 이용해 주세요." maxlength="1000"></textarea>
+            <span class="popup-qna-count">100</span>
+            <div class="popup-qna-info">
+              <div class="qna-info-text">
+                고객님의 개인정보 노출을 막기 위하여 게시글에 이메일, 휴대폰번호, 주민번호와 같은 개인정보는 기록하지 않도록 주의하여 주십시오.<br><br>
+                상품과 관련 없는 내용, 비속어, 미풍양속을 해치는 글, 특정 성분의 효능을 언급하는 글, 지나치게 주관적인 글은 통보 없이 삭제될 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="openPopup('savePopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="optionPopup">
+    <div class="popup-dim"></div>
+    <div class="popup-option">
+      <div class="popup-option-box">
+        <button class="popup-close-box">
+          <span class="popup-close-bar"></span>
+          <span class="popup-close-bar"></span>
+        </button>
+        <div class="popup-option-content">
+          <div class="option-select">
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">캐럿/컬러를 선택하세요</span>
+                <span class="option-select-extra">+50,000</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check1" class="option-select-row">
+                    <input type="checkbox" id="check1" class="select-row-checkbox">
+                    <span class="select-row-text">10K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check2" class="option-select-row">
+                    <input type="checkbox" id="check2" class="select-row-checkbox">
+                    <span class="select-row-text">14K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check3" class="option-select-row">
+                    <input type="checkbox" id="check3" class="select-row-checkbox">
+                    <span class="select-row-text">18K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check4" class="option-select-row">
+                    <input type="checkbox" id="check4" class="select-row-checkbox">
+                    <span class="select-row-text">10K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check5" class="option-select-row">
+                    <input type="checkbox" id="check5" class="select-row-checkbox">
+                    <span class="select-row-text">14K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check6" class="option-select-row">
+                    <input type="checkbox" id="check6" class="select-row-checkbox">
+                    <span class="select-row-text">18K 옐로우골드</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">스톤을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check7" class="option-select-row">
+                    <input type="checkbox" id="check7" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check8" class="option-select-row">
+                    <input type="checkbox" id="check8" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check9" class="option-select-row">
+                    <input type="checkbox" id="check9" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check10" class="option-select-row">
+                    <input type="checkbox" id="check10" class="select-row-checkbox">
+                    <span class="select-row-text">탄자나이트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check11" class="option-select-row">
+                    <input type="checkbox" id="check11" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check12" class="option-select-row">
+                    <input type="checkbox" id="check12" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check13" class="option-select-row">
+                    <input type="checkbox" id="check13" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check14" class="option-select-row">
+                    <input type="checkbox" id="check14" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이탄자나이트어</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">이니셜을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check15" class="option-select-row">
+                    <input type="checkbox" id="check15" class="select-row-checkbox">
+                    <span class="select-row-text">A</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check16" class="option-select-row">
+                    <input type="checkbox" id="check16" class="select-row-checkbox">
+                    <span class="select-row-text">B</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check17" class="option-select-row">
+                    <input type="checkbox" id="check17" class="select-row-checkbox">
+                    <span class="select-row-text">C</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">호수를 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check18" class="option-select-row">
+                    <input type="checkbox" id="check18" class="select-row-checkbox">
+                    <span class="select-row-text">14</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check19" class="option-select-row">
+                    <input type="checkbox" id="check19" class="select-row-checkbox">
+                    <span class="select-row-text">14.5</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check20" class="option-select-row">
+                    <input type="checkbox" id="check20" class="select-row-checkbox">
+                    <span class="select-row-text">15</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check21" class="option-select-row">
+                    <input type="checkbox" id="check21" class="select-row-checkbox">
+                    <span class="select-row-text">16</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check22" class="option-select-row">
+                    <input type="checkbox" id="check22" class="select-row-checkbox">
+                    <span class="select-row-text">17</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">각인을 선택하세요</span>
+                <span class="option-select-extra"></span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check23" class="option-select-row has-input">
+                    <input type="checkbox" id="check23" class="select-row-checkbox">
+                    <span class="select-row-text">겉각인</span>
+                    <input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input">
+                  </label>
+                </li>
+                <li>
+                  <label for="check24" class="option-select-row has-input">
+                    <input type="checkbox" id="check24" class="select-row-checkbox">
+                    <span class="select-row-text">속각인</span>
+                    <input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input">
+                  </label>
+                </li>
+                <li>
+                  <label for="check25" class="option-select-row">
+                    <input type="checkbox" id="check25" class="select-row-checkbox">
+                    <span class="select-row-text">사용안함</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="option-result">
+            <div class="option-result-item">
+              <div class="option-result-title">선택 01.</div>
+              <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+              <div class="option-result-bottom">
+                <div class="option-result-spinner">
+                  <button class="spinner-btn spinner-remove"><span class="blind">remove</span></button>
+                  <div class="spinner-value">1</div>
+                  <button class="spinner-btn spinner-add"><span class="blind">add</span></button>
+                </div>
+                <div class="option-result-price">320,100원</div>
+              </div>
+              <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+            </div>
+            <div class="option-result-item">
+              <div class="option-result-title">선택 01.</div>
+              <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+              <div class="option-result-bottom">
+                <div class="option-result-spinner">
+                  <button class="spinner-btn spinner-remove"><span class="blind">remove</span></button>
+                  <div class="spinner-value">1</div>
+                  <button class="spinner-btn spinner-add"><span class="blind">add</span></button>
+                </div>
+                <div class="option-result-price">320,100원</div>
+              </div>
+              <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="option-total">
+          <span class="option-total-desc">총 상품 금액</span>
+          <span class="option-total-price">644,200</span>
+          <span class="option-total-currency">원</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="deliOptionPopup">
+    <div class="popup-full">
+      <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">오늘도착 안내</div>
+          <button class="popup-full-close" onclick="closePopup('deliOptionPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="openPopup('savePopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cancelPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">취소하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cancelPopup')">CANCEL</button>
+          <button class="popup-btn popup-btn-right" onclick="closePopup('cancelPopup'), closePopup('qnaPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="deletePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">삭제하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('deletePopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="savePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">등록되었습니다</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('savePopup'), closePopup('qnaPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="likePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선택하신 상품을 찜 목록에 추가하였습니다.<br>찜 목록으로 이동하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('likePopup')">BACK</button>
+          <button class="popup-btn popup-btn-right">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cartPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선택한 상품을 추가하였습니다.<br>장바구니로 이동하시겠습니까 ?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cartPopup')">BACK</button>
+          <button class="popup-btn popup-btn-right">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="noOptionPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">옵션이 선택되지 않았습니다.<br>옵션을 선택해 주세요.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('noOptionPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //popup  -->
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Customer service - My ask</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/fonts.css" media="none" onload=" this.media='all';"/>
+  <link rel="stylesheet" href="../../assets/css/reboot.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/vendors/jquery-ui.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+    </div>
+    <div class="header-title">
+      <button class="title-ko">주문/배송 조회</button>
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- menu-wrap -->
+  <div class="menu-wrap top">
+  <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+  <div class="menu-dim"></div>
+
+  <div class="menu-content">
+    <nav class="menu">
+      <ul class="dep1-list">
+        <li>
+          <a href="#;" class="dep1-item">Jewelry</a>
+          <ul class="dep2-list">
+            <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+            <li><a href="#;" class="dep2-item">Bracelet</a></li>
+            <li><a href="#;" class="dep2-item">Ring</a></li>
+            <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Watch</a>
+          <ul class="dep2-list">
+            <li><a href="#;" class="dep2-item">Women's watch</a></li>
+            <li><a href="#;" class="dep2-item">Men's watch</a></li>
+            <li><a href="#;" class="dep2-item">Couple</a></li>
+            <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Gift</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /menu-content -->
+  </div>
+  <!-- /menu-wrap -->
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail">
+      <!-- pd-subtab -->
+      <div class="pd-subtab">
+        <div class="inner">
+          <div class="subtab customer">
+            <ul class="subtab-list">
+              <li class="subtab-item"><a href="#;" class="subtab-link">1주일</a></li>
+              <li class="subtab-item is-current"><a href="#;" class="subtab-link">1개월</a></li>
+              <li class="subtab-item"><a href="#;" class="subtab-link">3개월</a></li>
+              <li class="subtab-item"><a href="#;" class="subtab-link">6개월</a></li>
+            </ul>
+            <div class="subtab-bar" style="width: 113px; left: 1px;"></div>
+          </div>
+        </div>
+      </div>
+      <!--/ pd-subtab -->
+      <!-- date box -->
+      <div class="date-box">
+        <div class="center-date">
+          <div class="center-date-box">
+            <div class="center-date-btn">
+              <input class="center-date-value datepicker" id="datepickerStart" readonly="readonly">
+            </div>
+            <span class="center-date-sign">~</span>
+            <div class="center-date-btn">
+              <input class="center-date-value datepicker" id="datepickerEnd" readonly="readonly">
+            </div>
+            <button class="center-date-apply">조회</button>
+          </div>
+        </div>
+        <div class="date-box-noti">최대 6개월 이내로 조회하실 수 있습니다.</div>
+      </div>
+      <!-- /date box -->
+      <!-- calendar -->
+      <div class="calendar-dim"></div>
+      <!-- /calendar -->
+      <!-- order state -->
+      <div class="order-state">
+        <div class="order-state-deliver">
+          <div class="gift-deliver">
+            <ul class="gift-deliver-list">
+              <li class="gift-deliver-item">
+                <div class="gift-deliver-step">입금<br>대기중</div>
+                <div class="gift-deliver-num">0</div>
+              </li>
+              <li class="gift-deliver-item">
+                <div class="gift-deliver-step">결제<br>완료</div>
+                <div class="gift-deliver-num">0</div>
+              </li>
+              <li class="gift-deliver-item">
+                <div class="gift-deliver-step">배송<br>준비중</div>
+                <div class="gift-deliver-num">0</div>
+              </li>
+              <li class="gift-deliver-item is-current">
+              <!-- 활성화된 step에 is-current 클래스 추가-->
+                <div class="gift-deliver-step">배송<br>중</div>
+                <div class="gift-deliver-num">4</div>
+              </li>
+              <li class="gift-deliver-item">
+                <div class="gift-deliver-step">배송<br>완료</div>
+                <div class="gift-deliver-num">0</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="order-state-after">
+          <ul class="order-state-list">
+            <li class="order-state-item">
+              <a href="#;" class="order-state-link">
+                <div class="order-state-text">취소/반품/교환</div>
+                <div class="order-state-value">2</div>
+              </a>
+            </li>
+            <li class="order-state-item">
+              <a href="#;" class="order-state-link">
+                <div class="order-state-text">구매확정</div>
+                <div class="order-state-value">4</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /order state -->
+      <div class="restock-list-wrap">
+        <ul class="restock-list">
+          <!-- 입금대기중 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">입금 대기중</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">배송지 변경</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /입금대기중 -->
+          <!-- 결제완료 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">결제완료</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">배송지 변경</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /결제완료 -->
+          <!-- 배송준비중 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">배송 준비중</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /배송준비중 -->
+          <!-- 배송중 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">배송중</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">배송완료</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /배송중 -->
+          <!-- 배송완료 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">배송완료</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">교환 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn">반품 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">구매 확정</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /배송완료 -->
+          <!-- 구매확정 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">구매확정</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">모바일 보증서</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">리뷰 작성 및 수정</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /구매확정 -->
+          <!-- 상품 + 증정사은품 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">배송완료</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">교환 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn">반품 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">구매 확정</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="restock-item-reply-box">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">배송중</span>
+                    </div>
+                    <a href="#;" class="thumb-title">[사은품]로이드 미니 손거울</a>
+                    <div class="restock-content-deliver">
+                      <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- /상품 + 증정사은품 -->
+          <!-- 상품 + 구매 사은품 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">배송완료</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">교환 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn">반품 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">구매 확정</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="restock-item-reply-box">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">배송 준비중</span>
+                    </div>
+                    <a href="#;" class="thumb-title">[사은품]테디베어 미니어처 키링</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-new"><span class="price">54,900</span>원 / </span><span class="price-new"><span class="price">1</span>개</span>
+                    </div>
+                    <div class="restock-content-deliver">
+                      <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /상품 + 구매 사은품 -->
+          <!-- 복수상품 + 구매 사은품 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">배송완료</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">교환 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn">반품 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">구매 확정</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">배송완료</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트 비쥬참 10K 골드 펜던트</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">교환 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn">반품 신청</button>
+                  </li>
+                  <li>
+                    <button class="restock-bottom-btn-dark">구매 확정</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="restock-item-reply-box">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">배송 준비중</span>
+                    </div>
+                    <a href="#;" class="thumb-title">[사은품]테디베어 미니어처 키링</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-new"><span class="price">54,900</span>원 / </span><span class="price-new"><span class="price">1</span>개</span>
+                    </div>
+                    <div class="restock-content-deliver">
+                      <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /복수상품 + 구매 사은품 -->
+          <!-- 구매금액 합산에 따른 사은품 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-wait">배송 준비중</span>
+                    </div>
+                    <a href="#;" class="thumb-title">[사은품]테디베어 미니어처 키링</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-new"><span class="price">54,900</span>원 / </span><span class="price-new"><span class="price">1</span>개</span>
+                    </div>
+                    <div class="restock-content-deliver">
+                      <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /구매금액 합산에 따른 사은품 -->
+          <!-- 선물하기 -->
+          <li class="restock-item">
+            <div class="restock-label">
+              <a href="#;" class="restock-num">M15111602268123</a>
+            </div>
+            <div class="restock-item-box with-status">
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                  <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">결제완료</span><span class="thumb-date">2021.01.05</span><span class="thumb-gift-name"><span class="thumb-gift-name-mont">to.</span>권애린</span>
+                    </div>
+                    <a href="#;" class="thumb-title">[선물하기]오너먼트 스타 볼 콜렉트링 <span class="num">10K Gold </span>미스링</a>
+                    <div class="thumb-price-wrap">
+                      <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                    </div>
+                    <div class="thumb-detail-box">
+                      <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="restock-content-deliver">
+                <span class="gift-content-deliver-title">CJ대한통운</span><a href="#;" class="gift-content-deliver-val" onclick="openPopup('deliverPopup')">123456789</a>
+              </div>
+              <div class="restock-bottom-box">
+                <ul>
+                  <li>
+                    <button class="restock-bottom-btn">주문 취소 신청</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <!-- /선물하기 -->
+        </ul>
+        <div class="restock-more">
+          <button class="restock-more-btn"><span class="restock-more-text">더보기</span></button>
+        </div>
+      </div>
+      <!-- info -->
+      <div class="myp-info">
+        <div class="myp-info-box">
+          - 가상계좌 결제건은 주문 익일 자정까지 입금하지 않을 경우 주문이 자동 취소됩니다. <br><br>
+          - 주문 취소와 배송지 변경은 [입금대기] [입금완료] 상태에서만 가능합니다.<br><br>
+          - 배송준비중 단계에서는 택배사로 배송정보가 전송되어 변경 및 취소가 불가능 합니다.<br><br>
+          - 교환 및 반품 신청은 [배송완료] 상태에서만 가능합니다.<br><br>
+          - 배송완료 후 7일이 지나면 [ 구매확정] 상태로 자동 변경됩니다.<br><br>
+          - 구매확정 이후에는 반품 및 교환이 불가합니다.
+        </div>
+      </div>
+      <!-- /info -->
+    </div>
+    <!-- /container -->
+  </div>
+
+  <!-- bottom-nav -->
+  <div class="bottom-nav">
+    <ul class="bottom-nav-box">
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-home"><span class="blind">Home Select</span></button>
+      </li>
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-category"><span class="blind">Category Select</span></button>
+      </li>
+      <li class="bottom-nav-item ar">
+        <button class="bottom-nav-link link-ar"><span class="blind">AR</span></button>
+      </li>
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-recent"><span class="blind">Recently Select</span></button>
+      </li>
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-my active"><span class="blind">My Select</span></button>
+      </li>
+    </ul>
+  </div>
+  <!-- /bottom-nav -->
+
+  <!-- popup -->
+  <div class="popup" id="deliverPopup">
+    <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">배송조회</div>
+          <button class="popup-full-close" onclick="closePopup('deliverPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup" id="guaranteePopup">
+    <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">모바일 보증서</div>
+          <button class="popup-full-close" onclick="closePopup('guaranteePopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="receiptPopup">
+    <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">영수증 보기</div>
+          <button class="popup-full-close" onclick="closePopup('receiptPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /popup -->
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/vendors/jquery-ui.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

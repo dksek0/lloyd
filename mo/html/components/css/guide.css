@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*=========================================================
+  Style
+=========================================================*/
+.Component {
+  padding: 50px 16px;
+  max-width: 407px;
+  margin: 0 auto;
+}
+.ComponentBoxHeader {
+  margin-bottom: 20px;
+}
+
+.c-TitleBgLine {
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+}
+
+.c-TitleBgLine:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.c-TitleBgLine-title {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #000;
+  font-weight: 500;
+  padding-right: 24px;
+}
+
+.ab-text {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+.ComponentBox {
+  margin-top: 70px;
+}
+
+.ComponentBox:first-child {
+  margin-top: 0px;
+}
+
+.ComponentBoxView {
+  border: solid 1px #dddddd;
+}
+
+.ComponentBoxView-content {
+  padding: 20px 20px;
+  position: relative;
+}
+
+.ComponentBoxView-footer {
+  padding: 10px 20px;
+  border-top: dashed 1px #dddddd;
+}
+
+.ComponentBoxView-link {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/expand.svg);
+  background-size: 20px 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.is-view .ComponentBoxView-link {
+  background-image: url(../images/unexpand.svg);
+}
+
+.ComponentBoxCode {
+  display: none;
+  padding: 10px 20px;
+  border: solid 1px #dddddd;
+  border-top: none;
+}
+
+.is-view .ComponentBoxCode {
+  display: block;
+}

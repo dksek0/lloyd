@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+    </div>
+    <div class="header-title">
+      <!-- <button class="title-btn">Earring</button> -->
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- menu-wrap -->
+  <div class="menu-wrap top">
+  <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+  <div class="menu-dim"></div>
+
+  <div class="menu-content">
+    <div class="menu-inner">
+      <nav class="menu">
+        <ul class="dep1-list">
+          <li>
+            <a href="#;" class="dep1-item">Jewelry</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+              <li><a href="#;" class="dep2-item">Bracelet</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+              <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Watch</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Women's watch</a></li>
+              <li><a href="#;" class="dep2-item">Men's watch</a></li>
+              <li><a href="#;" class="dep2-item">Couple</a></li>
+              <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Gift</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- /menu-content -->
+  </div>
+  <!-- /menu-wrap -->
+  <div class="wrapper">
+    <div class="container detail">
+      <!-- 구매상세 -->
+      <div class="detail-slide">
+        <div class="detail-slide-link-icon">
+          <button class="detail-view-icon" onclick="openPopup('viewPopup')"><span class="ab-text">View</span></button>
+          <button class="detail-ar-icon"><span class="ab-text">AR</span></button>
+        </div>
+        <div class="detail-thumbnail-tab">
+          <ul class="detail-thumbnail-tab-list">
+            <li class="detail-thumbnail-tab-item is-current">
+              <!-- option slider -->
+              <div class="detail-slide-color-container">
+                <!-- detail-slide-thumbnail  -->
+                <div class="detail-slide-thumbnail">
+                  <div class="detail-slide-thumbnail-container swiper-container">
+                    <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                      <li class="detail-slide-thumbnail-item swiper-slide">
+                        <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="../../assets/images/content/detail-slide1-1.png" alt="" /></div>
+                      </li>
+                      <li class="detail-slide-thumbnail-item swiper-slide">
+                        <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="../../assets/images/content/detail-slide1-1.png" alt="" /></div>
+                      </li>
+                      <li class="detail-slide-thumbnail-item swiper-slide">
+                        <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="../../assets/images/content/detail-slide1-1.png" alt="" /></div>
+                      </li>
+                    </ul>
+                    <!-- Add Scrollbar -->
+                    <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                  </div>
+                </div>
+                <!-- .detail-slide-thumbnail  -->
+              </div>
+              <!-- .option slider -->
+            </li>
+            <li class="detail-thumbnail-tab-item">
+              <!-- option slider -->
+              <div class="detail-slide-stone-container">
+                <!-- detail-slide-thumbnail  -->
+                <div class="detail-slide-thumbnail">
+                  <div class="detail-slide-thumbnail-container swiper-container">
+                    <ul class="detail-slide-thumbnail-list swiper-wrapper">
+                      <li class="detail-slide-thumbnail-item swiper-slide">
+                        <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="../../assets/images/content/detail-slide1-1.png" alt="" /></div>
+                      </li>
+                      <li class="detail-slide-thumbnail-item swiper-slide">
+                        <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="../../assets/images/content/detail-slide1-1.png" alt="" /></div>
+                      </li>
+                      <li class="detail-slide-thumbnail-item swiper-slide">
+                        <div class="detail-slide-thumbnail-box"><img class="detail-slide-thumbnail-img" src="../../assets/images/content/detail-slide1-1.png" alt="" /></div>
+                      </li>
+                    </ul>
+                    <!-- Add Scrollbar -->
+                    <div class="swiper-scrollbar detail-slide-thumbnail-scrollbar"></div>
+                  </div>
+                </div>
+                <!-- .detail-slide-thumbnail  -->
+              </div>
+              <!-- .option slider -->
+            </li>
+          </ul>
+        </div>
+        <!-- detail-slide-tab  -->
+        <div class="detail-slide-tab">
+          <ul class="detail-slide-tab-list">
+            <li class="detail-slide-tab-item is-current">
+              <a href="#;" class="detail-slide-tab-link">캐럿/컬러</a>
+            </li>
+            <li class="detail-slide-tab-item">
+              <a href="#;" class="detail-slide-tab-link">스톤</a>
+            </li>
+          </ul>
+          <div class="detail-slide-tab-bar"></div>
+        </div>
+        <!-- detail-slide-tab  -->
+        <!-- detail-slide-option -->
+        <div class="detail-slide-option">
+          <ul class="detail-slide-option-list">
+            <li class="detail-slide-option-item is-current">
+              <div class="detail-option-color-inner">
+                <div class="detail-option-carat">
+                  <ul class="detail-option-carat-list">
+                    <li class="detail-option-carat-item is-current"><input class="detail-option-carat-input" type="radio" id="carat10k" name="carat" checked><label class="detail-option-link" for="carat10k">10K</label></li>
+                    <li class="detail-option-carat-item"><input class="detail-option-carat-input" type="radio" id="carat14k" name="carat"><label class="detail-option-link" for="carat14k">14K</label></li>
+                    <li class="detail-option-carat-item"><input class="detail-option-carat-input" type="radio" id="carat18k" name="carat"><label class="detail-option-link" for="carat18k">18K</label></li>
+                  </ul>
+                </div>
+                <div class="detail-option-slidetab">
+                  <ul class="detail-option-slidetab-list">
+                    <li class="detail-option-slidetab-item is-current">
+                      <div class="detail-option-color">
+                        <div class="detail-option-color-container">
+                          <ul class="detail-option-color-list">
+                            <li class="detail-option-color-item is-current">
+                              <input class="detail-option-color-input" type="radio" id="optionColor1" name="optionColor" checked>
+                              <label class="detail-option-color-box" for="optionColor1">
+                                <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/detail-carat-white.png" alt="" /></div>
+                                <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 화이트골드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-color-item">
+                              <input class="detail-option-color-input" type="radio" id="optionColor2" name="optionColor">
+                              <label class="detail-option-color-box" for="optionColor2">
+                                <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/detail-carat-rose.png" alt="" /></div>
+                                <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 로즈골드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-color-item">
+                              <input class="detail-option-color-input" type="radio" id="optionColor3" name="optionColor">
+                              <label class="detail-option-color-box" for="optionColor3">
+                                <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/detail-carat-yellow.png" alt="" /></div>
+                                <div class="detail-option-color-text"><span class="detail-option-color-sub">10K</span> 옐로골드</div>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="detail-slide-option-item">
+              <div class="detail-option-stone-inner">
+                <div class="detail-option-slidetab">
+                  <ul class="detail-option-slidetab-list">
+                    <li class="detail-option-slidetab-item is-current">
+                      <div class="detail-option-stone">
+                        <div class="detail-option-stone-container">
+                          <ul class="detail-option-stone-list">
+                            <li class="detail-option-stone-item is-current">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone1" name="optionStone" checked>
+                              <label class="detail-option-stone-box" for="optionStone1">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="../../assets/images/content/detail-stone-sapphire.png" alt="" /></div>
+                                <div class="detail-option-stone-text">블루사파이어</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone2" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone2">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="../../assets/images/content/detail-stone-sapphire.png" alt="" /></div>
+                                <div class="detail-option-stone-text">다이아몬드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone3" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone3">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="../../assets/images/content/detail-stone-sapphire.png" alt="" /></div>
+                                <div class="detail-option-stone-text">루비</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone4" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone4">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="../../assets/images/content/detail-stone-sapphire.png" alt="" /></div>
+                                <div class="detail-option-stone-text">블루사파이어</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone5" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone5">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="../../assets/images/content/detail-stone-sapphire.png" alt="" /></div>
+                                <div class="detail-option-stone-text">다이아몬드</div>
+                              </label>
+                            </li>
+                            <li class="detail-option-stone-item">
+                              <input class="detail-option-stone-input" type="radio" id="optionStone6" name="optionStone">
+                              <label class="detail-option-stone-box" for="optionStone6">
+                                <div class="detail-option-stone-icon"><img class="detail-option-stone-img" src="../../assets/images/content/detail-stone-sapphire.png" alt="" /></div>
+                                <div class="detail-option-stone-text">루비</div>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- detail-slide-option -->
+      </div>
+      <!-- 팝업 -->
+      <div class="guide-detail-popup" style="display: none;">
+        <div class="guide-text-box">
+          오른쪽으로 밀어보세요<br />AR 서비스를 경험하실 수 있습니다.
+        </div>
+      </div>
+      <!-- .팝업 -->
+      <div class="prd-detail">
+        <div class="prd-info">
+          <span class="prd-badge is-new">NEW</span>
+          <span class="prd-badge">오늘도착</span>
+          <div class="prd-info-name">
+            로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트
+          </div>
+          <div class="prd-info-code">LRT2005T</div>
+          <div class="prd-info-price">
+            <span class="num">139,900<span class="won">원</span></span>
+            <span class="num-sale">172,500<span class="won">원</span></span>
+          </div>
+        </div>
+        <div class="prd-info-more">
+          <div class="point">
+            포인트 <span>450P</span>
+          </div>
+          <div class="gift">
+            사은품 <span>인형</span>
+          </div>
+        </div>
+        <div class="prd-deliver">
+          <div class="title">배송정보</div>
+          <div class="prd-deliver-inner">
+            <div class="prd-deliver-title"><span>택배</span></div>
+            <div class="prd-deliver-con">
+              <div class="prd-deliver-item">
+                <em>2,500</em>원 <span>(30,000원 이상 무료배송)</span>
+              </div>
+              <div class="prd-deliver-item">
+                <em>15</em>일 이내 배송가능 <span>(토,일,공휴일 제외) </span>
+              </div>
+            </div>
+          </div>
+          <div class="prd-deliver-inner">
+            <div class="prd-deliver-title"><span>오늘도착</span></div>
+            <div class="prd-deliver-con">
+              <div class="prd-deliver-item">
+                <em>2,500</em>원 또는 <em>5,000</em>원
+                <button class="today-info-button" onclick="openPopup('deliOptionPopup')"><img src="../../assets/images/icons/option-info.png" alt="delivery info"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- prd-detail -->
+        <div class="prd-detail-wrap">
+          <div class="prd-detail-con">
+            <img src="../../assets/images/content/sample.jpg" alt="">
+          </div>
+          <button class="prd-detail-more">
+            <span class="prd-detail-more-view">상품정보 더보기</span>
+          </button>
+        </div>
+        <!-- /prd-detail -->
+        <div class="prd-fordable">
+          <a class="prd-fordable-title" href="#none">
+            리뷰 <span class="arr"></span>
+          </a>
+          <div class="prd-fordable-con" style="display: none;"></div>
+        </div>
+        <div class="prd-fordable is-active">
+          <a class="prd-fordable-title" href="#none">
+            배송/반품/교환 <span class="arr"></span>
+          </a>
+          <div class="prd-fordable-con">
+            <div class="prd-caution-title">상품 배송안내</div>
+            <ul class="prd-caution-disc">
+              <li class="prd-caution-disc-item">공급업체 : 이월드_로이드</li>
+              <li class="prd-caution-disc-item">배송비 : 2,500원 (30,000원 이상 무료배송), 전국</li>
+              <li class="prd-caution-disc-item">배송정보 : 평균 14일 이내 발송(토,일,공휴일제외)</li>
+            </ul>
+            <div class="prd-caution-title">주문취소</div>
+            <p class="prd-caution-disc">
+              주문취소는 입금대기/입금완료에서 가능합니다.<br>
+              가구 등 주문제작상품의 경우에는 상품준비중 단계부터 불가능하며 상품 수령 후, 반품 신청을 하실 수 있습니다.
+            </p>
+            <div class="prd-caution-title">반품/교환</div>
+            <p class="prd-caution-disc">
+              배송비 : 2,500원 예상 (편도기준)<br>
+              반품/교환 배송비는 고객 변심의 경우에만 발생됩니다.
+              구매 후 반품/교환 시 예상금액과 차이가 있을 수 있습니다.
+            </p>
+            <p class="prd-caution-disc">
+              반품/교환은 상품 수령일 7일 이내에 신청해주셔야 하며 단순 고객변심으로 인한 왕복 배송비는 고객님께서 부담하셔야 합니다.
+            </p>
+            <p class="prd-caution-disc">
+              표시광고와 상이하여 상품에 하자가 있는 경우 상품수령 후 3개월 이내, 해당사실을 안(알 수 있었던)날로부터 30일 이내에 교환/반품을 신청을 할 수 있습니다.
+              반품/교환 시 제품 원형 그대로 보내 주셔야 가능 합니다.
+            </p>
+          </div>
+        </div>
+        <div class="prd-fordable qna is-active">
+          <a class="prd-fordable-title" href="#none">
+            <span class="qna">Q&A</span> <span class="arr"></span>
+          </a>
+          <div class="prd-fordable-con p-0">
+            <div class="prd-qna-intro">
+              <p class="prd-qna-intro-disc">상품에 대해 궁금한 점을 남겨주세요.<br>확인후 답변을 드립니다.</p>
+              <button class="prd-qna-btn" type="button" onclick="openPopup('qnaPopup')">문의하기</button>
+            </div>
+            <!-- prd-qna -->
+            <div class="prd-qna">
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item is-open">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status is-complete">답변완료</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                  <div class="prd-qna-answer">
+                    <em>A.</em>
+                    <div class="prd-qna-answer-disc">
+                      <p>
+                        안녕하세요<br>
+                        배송 소요기간은 영업일 기준 14일 정도 소요됩니다.
+                        구매해 주셔서 감사합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-item">
+                <div class="prd-qna-info">
+                  <span class="prd-qna-status">답변대기</span>
+                  <div class="prd-qna-info-etc">
+                    <span>abc****</span> | <span>2021.01.05</span>
+                  </div>
+                </div>
+                <div class="prd-qna-con">
+                  <div class="prd-qna-title">
+                    안녕하세요 오늘 주문했는데 대략 얼마나 걸리는지 알 수 있을까요
+                  </div>
+                </div>
+              </div>
+              <div class="prd-qna-paging">
+                <a class="prd-qna-paging-item is-first" href="#"><span class="blind">first</span></a>
+                <a class="prd-qna-paging-item is-prev" href="#"><span class="blind">prev</span></a>
+                <a class="prd-qna-paging-item is-active" href="#">1</a>
+                <a class="prd-qna-paging-item" href="#">2</a>
+                <a class="prd-qna-paging-item" href="#">3</a>
+                <a class="prd-qna-paging-item" href="#">4</a>
+                <a class="prd-qna-paging-item" href="#">5</a>
+                <a class="prd-qna-paging-item is-next" href="#"><span class="blind">next</span></a>
+                <a class="prd-qna-paging-item is-last" href="#"><span class="blind">last</span></a>
+              </div>
+            </div>
+            <!-- /prd-qna -->
+          </div>
+        </div>
+        <div class="prd-reco">
+          <div class="prd-reco-title">연관 추천 상품</div>
+            <ul class="prd-reco-list">
+              <li class="prd-reco-item">
+                <div class="product-basic">
+                  <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                  <a href="#;" class="product-basic-link">
+                    <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                    <div class="product-basic-content">
+                      <div class="product-basic-state new">NEW</div>
+                      <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                      <div class="product-basic-price">
+                        <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                        <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="prd-reco-item">
+                <div class="product-basic">
+                  <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                  <a href="#;" class="product-basic-link">
+                    <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                    <div class="product-basic-content">
+                      <div class="product-basic-state">BEST</div>
+                      <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                      <div class="product-basic-price">
+                        <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                        <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="prd-reco-item">
+                <div class="product-basic">
+                  <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                  <a href="#;" class="product-basic-link">
+                    <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                    <div class="product-basic-content">
+                      <div class="product-basic-state new">NEW</div><div class="product-basic-state">BEST</div>
+                      <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                      <div class="product-basic-price">
+                        <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                        <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="prd-reco-item">
+                <div class="product-basic">
+                  <button type="button" class="product-basic-like is-active"><span class="ab-text">like</span></button>
+                  <a href="#;" class="product-basic-link">
+                    <div class="product-basic-thumbnail"><img class="product-basic-img" src="../../assets/images/product/pd_card_01.jpg" alt="" /><span class="product-basic-ar"><span class="ab-text">AR</span></span></div>
+                    <div class="product-basic-content">
+                      <div class="product-basic-state new">NEW</div><div class="product-basic-state">BEST</div>
+                      <h4 class="product-basic-title">크리스마스 트리 비쥬참</h4>
+                      <div class="product-basic-price">
+                        <span class="product-basic-price-before">79,900<span class="text-eng">원</span></span>
+                        <span class="product-basic-price-after">59,900<span class="text-eng">원</span></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <!-- /구매상세 -->
+    </div>
+    <div class="bottom-fixed-box">
+      <div class="quick-chatbot">
+        <a class="bottom-fixed-btn" href="#;" onclick="openPopup('chatbotPopup')"></a>
+      </div>
+      <div class="quick-top">
+        <a class="bottom-fixed-btn" href="#none"></a>
+      </div>
+    </div>
+    <footer class="prd-footer">
+      <div class="prd-footer-contact">
+        <dl class="prd-footer-contact-box">
+          <dt class="prd-footer-contact-title">고객센터</dt>
+          <dd><a class="prd-footer-contact-tel" href="tel:1600-0455">1600-0455</a></dd>
+        </div>
+        <div class="prd-footer-contact-box">
+          <dt class="prd-footer-contact-title">A/S 문의</dt>
+          <dd><a class="prd-footer-contact-tel" href="tel:1600-0455">1600-0455</a></dd>
+        </dl>
+      </div>
+      <div class="prd-footer-hours">
+        <p class="prd-footer-disc">
+          상담시간 <em>: AM 09:00 ~ PM 06:00</em>(토요일, 공휴일 휴무)
+        </p>
+        <p class="prd-footer-disc">
+          <span class="break">Break</span> <em>: PM 12:00 ~ PM 01:00</em>
+        </p>
+      </div>
+      <div class="prd-footer-disc">
+        <a href="#;">개인정보처리방침</a>|<a href="#;">이용약관안내</a>|<a href="#;">사업자정보확인</a>
+      </div>
+      <p class="prd-footer-etc">
+        상호 : (주)이월드 쥬얼리사업부 가산<br>
+        대표 : 이수원<span class="prd-footer-etc-space">개인정보관리책임자 : 이수원</span><span class="prd-footer-etc-space">전화 : 1600-0455</span><br>
+        이메일 : LLOYD_ONLINE@eland.co.kr<br>
+        주소 : 서울특별시 금천구 가산디지털 1로 159,4층(가산동)<br>
+        사업자등록번호 : 678-85-01134<span class="prd-footer-etc-space">통신판매 : 2019-서울금천-0098</span>
+      </p>
+      <p class="prd-footer-etc">Copyright ⓒ by 로이드기프트닷컴 ALL RIGHT RESERVED.</p>
+    </footer>
+  </div>
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <div class="bottom-bar-left">
+        <div class="buy-link">
+          <div class="buy-link-box">
+            <a href="#;" class="buy-link-item link-like" onclick="openPopup('likePopup')"><span class="blind">like</span></a>
+            <a href="#;" class="buy-link-item link-share"><span class="blind">share</span></a>
+            <a href="#;" class="buy-link-item link-cart" id="btnCart"><span class="blind">cart</span></a>
+          </div>
+        </div>
+        <div class="option-btn-left">
+        <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+          <a href="#;" class="option-btn-gift" id="btnGift">
+            <img src="../../assets/images/icons/option-gift.png" alt="선물하기">
+          </a>
+        </div>
+      </div>
+      <div class="option-btn-right">
+      <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+        <button class="option-btn-cart" id="btnCartDetail">
+          CART
+        </button>
+        <button class="option-btn-buy" id="btnBuy">
+          BUY
+        </button>
+      </div>
+      <!-- <button class="bottom-btn-black">재입고알림</button> -->
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <!-- popup -->
+  <div class="popup" id="viewPopup">
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">6dof</div>
+          <button class="popup-full-close" onclick="closePopup('viewPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="qnaPopup">
+    <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+    <div class="popup-full">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">Q&A</div>
+          <button class="popup-full-close" onclick="openPopup('cancelPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+          <div class="popup-qna-name">로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</div>
+          <div class="popup-qna-post">
+            <textarea class="popup-qna-input" placeholder="상품에 관한 문의가 아닌 반품/교환/배송 관련 문의는 고객센터의 1:1 문의 게시판을 이용해 주세요." maxlength="1000" maxlength="1000"></textarea>
+            <span class="popup-qna-count">100</span>
+            <div class="popup-qna-checkbox">
+              <div class="check-box medium">
+                <!-- 우측 숫자 있을 경우 .with-num 클래스 추가 -->
+                <label for="check1">
+                  <input type="checkbox" name="" id="check1">
+                  <span class="text">비공개로 문의하기</span>
+                </label>
+              </div>
+            </div>
+            <div class="popup-qna-info">
+              <div class="qna-info-text">
+                고객님의 개인정보 노출을 막기 위하여 게시글에 이메일, 휴대폰번호, 주민번호와 같은 개인정보는 기록하지 않도록 주의하여 주십시오.<br><br>
+                상품과 관련 없는 내용, 비속어, 미풍양속을 해치는 글, 특정 성분의 효능을 언급하는 글, 지나치게 주관적인 글은 통보 없이 삭제될 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="openPopup('savePopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="optionPopup">
+    <div class="popup-dim"></div>
+    <div class="popup-option">
+      <div class="popup-option-box">
+        <button class="popup-close-box">
+          <span class="popup-close-bar"></span>
+          <span class="popup-close-bar"></span>
+        </button>
+        <!-- 오늘도착 -->
+        <div class="option-today">
+          <div class="option-today-top">
+            <label for="checkToday" class="option-today-label">
+              <input type="checkbox" id="checkToday" class="option-today-checkbox">
+              <span class="option-today-text">오늘 도착으로 받아보시겠어요?</span>
+            </label>
+            <button class="option-today-info" onclick="openPopup('deliOptionPopup')">
+              <span class="today-info-label">오늘도착 안내</span>
+              <img src="../../assets/images/icons/option-info.png" alt="delivery info" class="today-info-icon">
+            </button>
+          </div>
+          <div class="option-today-box">
+            <div class="today-box-desc">
+              <div class="today-box-new">
+                등록된 배송지가 없습니다<br>
+                배송지를 등록해 주세요.
+              </div>
+            </div>
+            <button class="today-box-btn" onclick="openPopup('addAddressPopup')">배송지 등록</button>
+          </div>
+        </div>
+        <!-- //오늘도착 -->
+        <div class="popup-option-content">
+          <div class="option-select">
+            <!-- 세트상품일 경우에만 노출 -->
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label disabled">
+              <!-- 셀렉트박스 비활성화시 disabled 클래스 추가 -->
+                <span class="option-select-text">배송지 등록 시 상품을 확인할 수 있습니다.</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="option-total">
+          <span class="option-total-desc">총 상품 금액</span>
+          <span class="option-total-price">644,200</span>
+          <span class="option-total-currency">원</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="deliOptionPopup">
+    <div class="popup-full">
+      <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">오늘도착 안내</div>
+          <button class="popup-full-close" onclick="closePopup('deliOptionPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="openPopup('savePopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- deliver change -->
+  <div class="popup" id="deliverPopup">
+    <div class="popup-full with-btn">
+      <!-- 하단 버튼 있는 경우 with-btn 클래스 추가-->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">배송지 변경</div>
+          <button class="popup-full-close" onclick="closePopup('deliverPopup')"><img src="../../assets/images/icons/close.png"></button>
+        </div>
+        <!-- popup-full-con -->
+        <div class="popup-full-content">
+          <div class="my-addr">
+            <button class="btn-add-addr" type="button" onclick="openPopup('addAddressPopup')">
+              <img class="btn-add-addr-ico" src="../../assets/images/icons/ico_addr_add.png" alt="add">배송지추가
+            </button>
+          </div>
+          <!-- my-addr -->
+          <div class="my-addr">
+            <!-- my-addr-inner -->
+            <div class="my-addr-inner">
+              <!-- my-addr-item-->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio1" name="addressRadio" value="" checked>
+                  <label class="my-addr-radio-label" for="radio1">
+                    <span class="my-addr-item-title">회사(기본)/강진홍</span>
+                    <span class="my-addr-item-con">
+                      (12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층 (12312)서울특별시 뚝섬로 1길 25 서울
+                      <span class="my-addr-item-phone">010-1234-1234</span>
+                    </span>
+                  </label>
+                </span>
+                <div class="my-addr-edit-wrap">
+                  <button class="my-addr-edit" type="button">수정</button>
+                  <button class="my-addr-edit" type="button">삭제</button>
+                </div>
+              </div>
+              <!-- /my-addr-item-->
+              <!-- my-addr-item-->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio2" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio2">
+                    <span class="my-addr-item-title">집/권애린</span>
+                    <span class="my-addr-item-con">
+                      (12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층
+                      <span class="my-addr-item-phone">010-1234-1234</span>
+                    </span>
+                  </label>
+                </span>
+                <div class="my-addr-edit-wrap">
+                  <button class="my-addr-edit" type="button">수정</button>
+                  <button class="my-addr-edit" type="button">삭제</button>
+                </div>
+              </div>
+              <!-- /my-addr-item-->
+              <!-- my-addr-item-->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio3" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio3">
+                    <span class="my-addr-item-title">집/권애린</span>
+                    <span class="my-addr-item-con">
+                      (12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층
+                      <span class="my-addr-item-phone">010-1234-1234</span>
+                    </span>
+                  </label>
+                </span>
+                <div class="my-addr-edit-wrap">
+                  <button class="my-addr-edit" type="button">수정</button>
+                  <button class="my-addr-edit" type="button">삭제</button>
+                </div>
+              </div>
+              <!-- /my-addr-item-->
+            </div>
+            <!-- /my-addr-inner -->
+          </div>
+          <!-- /my-addr -->
+        </div>
+        <!-- /popup-full-con -->
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="closePopup('deliverPopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+  <!-- /deliver change -->
+
+  <!-- address add -->
+  <div class="popup" id="addAddressPopup">
+    <div class="popup-full with-btn">
+      <!-- 하단 버튼 있는 경우 with-btn 클래스 추가-->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">배송지 등록</div>
+          <button class="popup-full-close" onclick="openPopup('cancelAddrPopup')"><img src="../../assets/images/icons/close.png"></button>
+        </div>
+        <div class="popup-full-content">
+          <ul class="today-address-list">
+            <li class="today-address-item">
+              <div class="today-address-box required">
+                <!-- 필수 입력값일 경우 .required 클래스 추가 -->
+                <span class="today-address-title">배송지명</span>
+                <div class="today-input-box">
+                  <!-- 유효하지 않을 경우 .error 클래스 추가 -->
+                  <!-- 우편번호 검색 버튼 있을 경우 .with-btn 클래스 추가 -->
+                  <label for="addressName" class="sr-only">배송지명</label>
+                  <input type="text" name="addressName" id="addressName" placeholder="배송지명을 입력해주세요." value="회사" class="today-input-text">
+                  <p class="input-error-msg">올바른 배송지명을 입력하세요</p>
+                </div>
+              </div>
+            </li>
+            <li class="today-address-item">
+              <div class="today-address-box required">
+                <span class="today-address-title">받는사람</span>
+                <div class="today-input-box error">
+                  <label for="receiver" class="sr-only">받는사람</label>
+                  <input type="text" name="receiver" id="receiver" placeholder="이름을 입력해주세요." value="" class="today-input-text">
+                  <p class="input-error-msg">올바른 이름을 입력하세요</p>
+                </div>
+              </div>
+            </li>
+            <li class="today-address-item">
+              <div class="today-address-box required">
+                <span class="today-address-title">배송주소</span>
+                <div class="today-input-box with-btn">
+                  <label for="address" class="sr-only">우편번호</label>
+                  <input type="text" name="address" id="address" placeholder="우편번호를 검색해주세요." value="" class="today-input-text">
+                  <a href="#;" class="address-search-btn">우편번호 검색</a>
+                </div>
+                <div class="today-input-box">
+                  <label for="addressDetail" class="sr-only">기본주소</label>
+                  <input type="text" name="addressDetail" id="addressDetail" placeholder="기본주소를 입력해주세요." value="" class="today-input-text">
+                </div>
+                <div class="today-input-box">
+                  <label for="addressDetail" class="sr-only">상세주소</label>
+                  <input type="text" name="addressDetail" id="addressDetail" placeholder="상세주소를 입력해주세요." value="" class="today-input-text">
+                  <p class="input-error-msg">올바른 주소를 입력하세요</p>
+                </div>
+              </div>
+            </li>
+            <li class="today-address-item">
+              <div class="today-address-box required">
+                <span class="today-address-title">연락처1</span>
+                <ul class="today-address-contact">
+                  <li class="today-input-box input-phone">
+                    <a href=#; class="input-phone-label">
+                      <div class="input-phone-text">010</div>
+                    </a>
+                    <div class="input-phone-box">
+                      <ul class="input-phone-list">
+                        <li class="input-phone-item active"><a href="#;" class="input-phone-link">010</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">011</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">012</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">016</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">017</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">018</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">019</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">02</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">032</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="today-input-box">
+                    <label for="tel1" class="sr-only">연락처1</label>
+                    <input type="tel" name="tel1" id="tel1" placeholder="연락처를 입력해주세요."  value="" class="today-input-text">
+                    <p class="input-error-msg">올바른 연락처를 입력하세요</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="today-address-item">
+              <div class="today-address-box">
+                <span class="today-address-title">연락처2</span>
+                <ul class="today-address-contact">
+                  <li class="today-input-box input-phone">
+                    <a href=#; class="input-phone-label">
+                      <div class="input-phone-text">010</div>
+                    </a>
+                    <div class="input-phone-box">
+                      <ul class="input-phone-list">
+                        <li class="input-phone-item active"><a href="#;" class="input-phone-link">010</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">011</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">012</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">016</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">017</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">018</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">019</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">02</a></li>
+                        <li class="input-phone-item"><a href="#;" class="input-phone-link">032</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="today-input-box">
+                    <label for="tel2" class="sr-only">연락처2</label>
+                    <input type="tel" name="tel2" id="tel2" placeholder="연락처를 입력해주세요."  value="" class="today-input-text">
+                    <p class="input-error-msg">올바른 연락처를 입력하세요</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="today-address-item">
+              <div class="check-box medium">
+                <!-- 우측 숫자 있을 경우 .with-num 클래스 추가 -->
+                <label for="check1">
+                  <input type="checkbox" name="" id="check1">
+                  <span class="text">기본 배송지로 등록</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <!-- /today-address-list -->
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="closePopup('addAddressPopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+  <!-- /address add -->
+
+  <div class="popup" id="deliOptionPopup">
+    <div class="popup-full">
+      <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">오늘도착 안내</div>
+          <button class="popup-full-close" onclick="closePopup('deliOptionPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="openPopup('savePopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cancelPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">취소하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cancelPopup')">CANCEL</button>
+          <button class="popup-btn popup-btn-right" onclick="closePopup('cancelPopup'), closePopup('qnaPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="deletePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">삭제하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('deletePopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="savePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">등록되었습니다</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('savePopup'), closePopup('qnaPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="likePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선택하신 상품을 찜 목록에 추가하였습니다.<br>찜 목록으로 이동하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('likePopup')">BACK</button>
+          <button class="popup-btn popup-btn-right">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cartPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선택한 상품을 추가하였습니다.<br>장바구니로 이동하시겠습니까 ?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cartPopup')">BACK</button>
+          <button class="popup-btn popup-btn-right">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="noOptionPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">옵션이 선택되지 않았습니다.<br>옵션을 선택해 주세요.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('noOptionPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cancelAddrPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">배송지 추가를 그만하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cancelAddrPopup')">CANCEL</button>
+          <button class="popup-btn popup-btn-right" onclick="closePopup('cancelAddrPopup'), closePopup('addAddressPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //popup  -->
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

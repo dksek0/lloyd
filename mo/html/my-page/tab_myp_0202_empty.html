@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Customer service - My ask</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../../assets/css/fonts.css" media="none" onload=" this.media='all';"/>
+  <link rel="stylesheet" href="../../assets/css/reboot.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" href="../../assets/css/vendors/jquery-ui.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+    </div>
+    <div class="header-title">
+      <button class="title-ko">나의 상품평</button>
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- menu-wrap -->
+  <div class="menu-wrap top">
+  <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+  <div class="menu-dim"></div>
+
+  <div class="menu-content">
+    <nav class="menu">
+      <ul class="dep1-list">
+        <li>
+          <a href="#;" class="dep1-item">Jewelry</a>
+          <ul class="dep2-list">
+            <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+            <li><a href="#;" class="dep2-item">Bracelet</a></li>
+            <li><a href="#;" class="dep2-item">Ring</a></li>
+            <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Watch</a>
+          <ul class="dep2-list">
+            <li><a href="#;" class="dep2-item">Women's watch</a></li>
+            <li><a href="#;" class="dep2-item">Men's watch</a></li>
+            <li><a href="#;" class="dep2-item">Couple</a></li>
+            <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+        </li>
+        <li>
+          <a href="#;" class="dep1-item">Gift</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /menu-content -->
+  </div>
+  <!-- /menu-wrap -->
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail">
+      <!-- pd-subtab -->
+      <div class="pd-subtab">
+        <div class="inner">
+          <div class="subtab customer">
+            <ul class="subtab-list">
+              <li class="subtab-item"><a href="#;" class="subtab-link">1주일</a></li>
+              <li class="subtab-item is-current"><a href="#;" class="subtab-link">1개월</a></li>
+              <li class="subtab-item"><a href="#;" class="subtab-link">3개월</a></li>
+              <li class="subtab-item"><a href="#;" class="subtab-link">6개월</a></li>
+            </ul>
+            <div class="subtab-bar" style="width: 113px; left: 1px;"></div>
+          </div>
+        </div>
+      </div>
+      <!--/ pd-subtab -->
+      <!-- date box -->
+      <div class="date-box">
+        <div class="center-date">
+          <div class="center-date-box">
+            <div class="center-date-btn">
+              <input class="center-date-value datepicker" id="datepickerStart" readonly="readonly">
+            </div>
+            <span class="center-date-sign">~</span>
+            <div class="center-date-btn">
+              <input class="center-date-value datepicker" id="datepickerEnd" readonly="readonly">
+            </div>
+            <button class="center-date-apply">조회</button>
+          </div>
+        </div>
+        <div class="date-box-noti">최대 6개월 이내로 조회하실 수 있습니다.</div>
+      </div>
+      <!-- /date box -->
+      <!-- calendar -->
+      <div class="calendar-dim"></div>
+      <!-- /calendar -->
+      <div class="my-tab">
+        <ul class="my-tab-list">
+          <li class="my-tab-list-item is-current"><a class="my-tab-list-link" href="#;">작성 가능한 리뷰</a></li>
+          <li class="my-tab-list-item"><a class="my-tab-list-link" href="#;">내가 작성한 리뷰</a></li>
+        </ul>
+        <div class="my-tab-con">
+          <div class="my-tab-con-inner is-current">
+            <div class="myp-history-empty">
+              상품 구매 후 리뷰를 작성해 주세요.
+            </div>
+          </div>
+          <div class="my-tab-con-inner">
+            <div class="myp-history-empty">
+              작성한 리뷰가 없습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+
+  <!-- bottom-nav -->
+  <div class="bottom-nav">
+    <ul class="bottom-nav-box">
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-home"><span class="blind">Home Select</span></button>
+      </li>
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-category"><span class="blind">Category Select</span></button>
+      </li>
+      <li class="bottom-nav-item ar">
+        <button class="bottom-nav-link link-ar"><span class="blind">AR</span></button>
+      </li>
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-recent"><span class="blind">Recently Select</span></button>
+      </li>
+      <li class="bottom-nav-item">
+        <button class="bottom-nav-link link-my active"><span class="blind">My Select</span></button>
+      </li>
+    </ul>
+  </div>
+  <!-- /bottom-nav -->
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/vendors/jquery-ui.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

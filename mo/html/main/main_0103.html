@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no" />
+    <title>LLoyd</title>
+    <!-- .icon -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+  </head>
+<body>
+  <div class="wrapper">
+    <div class="container main">
+      <div class="main-permission">
+        <div class="main-permission-title">
+          <span class="main-permission-title-em">로이드몰</span> 이용을 위해<br>
+          아래와 같은 권한들을<br>
+          확인해주세요.
+        </div>
+        <div>
+          <ul class="main-permission-list">
+            <li class="main-permission-item">
+              <div class="main-permission-label">필수적 접근권한</div>
+              <div class="main-permission-info">2017년 3월 23일부터 시행되는 정보통신망법령에 맞추어 서비스에 꼭 필요한 항목만 필수 접근 권한으로 설정하고 있습니다.</div>
+              <div class="main-permission-desc">
+                <div class="main-permission-desc-title">앱 기록/관리 및 전화 걸기</div>
+                <div class="main-permission-desc-text">서비스 최적화 및 오류확인 등 사용성 개선</div>
+              </div>
+            </li>
+            <li class="main-permission-item">
+              <div class="main-permission-label">선택적 접근권한</div>
+              <div class="main-permission-info">선택적 접근권한은 동의하지 않아도 서비스 이용이 가능하나, 해당 권한이 필요한 기능은 제공이 제한될 수 있습니다.</div>
+              <div class="main-permission-desc">
+                <div class="main-permission-desc-title">사진,미디어, 파일 액세스, 카메라, 위치 정보</div>
+                <div class="main-permission-desc-text">포토상품평 및 친절상담 문의 시 사진첨부 및 배송 기능</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-black" onclick="openPopup('permissionPopup')">
+        내용 확인했어요!
+      </button>
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <div class="popup common on" id="permissionPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">
+            <span class="common-popup-default">
+              로이드몰에서 쇼핑혜택 알림<br>
+              메시지(특가,이벤트 등)를 보내고자 합니다.
+            </span>
+            <span class="common-popup-extratext align-center">
+              ‘카테고리 메뉴 > 설정 > 알림메시지 수신‘<br>
+              에서 설정 변경 가능
+            </span>
+          </span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('permissionPopup')">허용안함</button>
+          <button class="popup-btn popup-btn-right" onclick="closePopup('permissionPopup')">승인</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/vendors/ScrollMagic.min.js"></script>
+  <script src="../../assets/js/vendors/gsap.min.js"></script>
+  <script src="../../assets/js/vendors/animation.gsap.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

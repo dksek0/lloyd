@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+    </div>
+    <div class="header-title">
+      <!-- <button class="title-btn">Earring</button> -->
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- menu-wrap -->
+  <div class="menu-wrap top">
+  <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+  <div class="menu-dim"></div>
+
+  <div class="menu-content">
+    <div class="menu-inner">
+      <nav class="menu">
+        <ul class="dep1-list">
+          <li>
+            <a href="#;" class="dep1-item">Jewelry</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+              <li><a href="#;" class="dep2-item">Bracelet</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+              <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Watch</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Women's watch</a></li>
+              <li><a href="#;" class="dep2-item">Men's watch</a></li>
+              <li><a href="#;" class="dep2-item">Couple</a></li>
+              <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Gift</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- /menu-content -->
+  </div>
+  <!-- /menu-wrap -->
+
+  <div class="popup" id="orderItemCheckPopup">
+    <div class="popup-full with-btn" style="display: block;">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">주문상품 조회</div>
+          <button class="popup-full-close"><img src="../../assets/images/icons/close.png"></button>
+        </div>
+        <div class="popup-full-content">
+          <div class="order-check-popup">
+            <div class="static-search">
+              <input type="text" title="Search" placeholder="검색어를 입력해주세요." class="static-search-input">
+              <button class="search-top-clear"><img src="../../assets/images/icons/ico-delete-text.png"></button>
+              <input type="submit" class="static-search-submit" value="검색하기">
+            </div>
+          </div>
+          <!-- empty case -->
+          <div class="empty-wrap order">
+            <div class="empty-box">
+              <div class="empty-box-text">
+                검색된 상품이 없습니다
+              </div>
+            </div>
+          </div>
+          <!-- /empty case -->
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="openPopup('savePopup')">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="optionPopup">
+    <div class="popup-dim"></div>
+    <div class="popup-option">
+      <div class="popup-option-box">
+        <button class="popup-close-box">
+          <span class="popup-close-bar"></span>
+          <span class="popup-close-bar"></span>
+        </button>
+        <div class="popup-option-content">
+          <div class="option-select">
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">캐럿/컬러를 선택하세요</span>
+                <span class="option-select-extra">+50,000</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check1" class="option-select-row">
+                    <input type="checkbox" id="check1" class="select-row-checkbox">
+                    <span class="select-row-text">10K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check2" class="option-select-row">
+                    <input type="checkbox" id="check2" class="select-row-checkbox">
+                    <span class="select-row-text">14K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check3" class="option-select-row">
+                    <input type="checkbox" id="check3" class="select-row-checkbox">
+                    <span class="select-row-text">18K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check4" class="option-select-row">
+                    <input type="checkbox" id="check4" class="select-row-checkbox">
+                    <span class="select-row-text">10K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check5" class="option-select-row">
+                    <input type="checkbox" id="check5" class="select-row-checkbox">
+                    <span class="select-row-text">14K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check6" class="option-select-row">
+                    <input type="checkbox" id="check6" class="select-row-checkbox">
+                    <span class="select-row-text">18K 옐로우골드</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">스톤을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check7" class="option-select-row">
+                    <input type="checkbox" id="check7" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check8" class="option-select-row">
+                    <input type="checkbox" id="check8" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check9" class="option-select-row">
+                    <input type="checkbox" id="check9" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check10" class="option-select-row">
+                    <input type="checkbox" id="check10" class="select-row-checkbox">
+                    <span class="select-row-text">탄자나이트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check11" class="option-select-row">
+                    <input type="checkbox" id="check11" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check12" class="option-select-row">
+                    <input type="checkbox" id="check12" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check13" class="option-select-row">
+                    <input type="checkbox" id="check13" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check14" class="option-select-row">
+                    <input type="checkbox" id="check14" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이탄자나이트어</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">이니셜을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check15" class="option-select-row">
+                    <input type="checkbox" id="check15" class="select-row-checkbox">
+                    <span class="select-row-text">A</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check16" class="option-select-row">
+                    <input type="checkbox" id="check16" class="select-row-checkbox">
+                    <span class="select-row-text">B</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check17" class="option-select-row">
+                    <input type="checkbox" id="check17" class="select-row-checkbox">
+                    <span class="select-row-text">C</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">각인을 선택하세요</span>
+                <span class="option-select-extra"></span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check18" class="option-select-row has-input">
+                    <input type="checkbox" id="check18" class="select-row-checkbox">
+                    <span class="select-row-text">겉각인</span>
+                    <input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input" maxlength='10'>
+                  </label>
+                </li>
+                <li>
+                  <label for="check19" class="option-select-row has-input">
+                    <input type="checkbox" id="check19" class="select-row-checkbox">
+                    <span class="select-row-text">속각인</span>
+                    <input type="text" placeholder="공백포함 / 최대 10자" class="option-select-input"  maxlength='10'>
+                  </label>
+                </li>
+                <li>
+                  <label for="check20" class="option-select-row">
+                    <input type="checkbox" id="check20" class="select-row-checkbox">
+                    <span class="select-row-text">사용안함</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="option-result">
+            <div class="option-result-item">
+              <div class="option-result-title">선택 01.</div>
+              <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+              <div class="option-result-bottom">
+                <div class="option-result-spinner">
+                  <button class="spinner-btn spinner-remove"><span class="blind">remove</span></button>
+                  <div class="spinner-value">1</div>
+                  <button class="spinner-btn spinner-add"><span class="blind">add</span></button>
+                </div>
+                <div class="option-result-price">320,100원</div>
+              </div>
+              <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+            </div>
+            <div class="option-result-item">
+              <div class="option-result-title">선택 01.</div>
+              <div class="option-result-desc">택배 / 14K 옐로우도금 / 14.5 / B / 사파이어 / 각인 사용안함</div>
+              <div class="option-result-bottom">
+                <div class="option-result-spinner">
+                  <button class="spinner-btn spinner-remove"><span class="blind">remove</span></button>
+                  <div class="spinner-value">1</div>
+                  <button class="spinner-btn spinner-add"><span class="blind">add</span></button>
+                </div>
+                <div class="option-result-price">320,100원</div>
+              </div>
+              <button class="option-result-close"><img src="../../assets/images/icons/option_close.png" alt="close" class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="option-total">
+          <span class="option-total-desc">총 상품 금액</span>
+          <span class="option-total-price">644,200</span>
+          <span class="option-total-currency">원</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cancelPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">배송지 추가를 그만하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cancelPopup')">CANCEL</button>
+          <button class="popup-btn popup-btn-right" onclick="closePopup('cancelPopup'), closePopup('qnaPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="deletePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">삭제하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('deletePopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="savePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">등록되었습니다</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('savePopup'), closePopup('qnaPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="likePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선택하신 상품을 찜 목록에 추가하였습니다.<br>찜 목록으로 이동하시겠습니까?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('likePopup')">BACK</button>
+          <button class="popup-btn popup-btn-right">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="cartPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">선택한 상품을 추가하였습니다.<br>장바구니로 이동하시겠습니까 ?</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-left" onclick="closePopup('cartPopup')">BACK</button>
+          <button class="popup-btn popup-btn-right">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup common" id="noOptionPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">옵션이 선택되지 않았습니다.<br>옵션을 선택해 주세요.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('noOptionPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //popup  -->
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

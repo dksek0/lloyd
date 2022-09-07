@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no" />
+    <title>LLoyd</title>
+    <!-- .icon -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+  </head>
+<body>
+  <!-- header -->
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+    </div>
+    <div class="header-title">
+      <button class="title-btn title-ko">오늘도착</button>
+    </div>
+    <div class="header-right">
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- /header -->
+
+  <!-- top 2dep menu wrap -->
+  <div class="menu-wrap top">
+    <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+    <div class="menu-dim"></div>
+
+    <div class="menu-content">
+      <div class="menu-inner">
+        <nav class="menu">
+          <ul class="dep1-list">
+            <li>
+              <a href="#;" class="dep1-item">Jewelry</a>
+              <ul class="dep2-list">
+                <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+                <li><a href="#;" class="dep2-item">Bracelet</a></li>
+                <li><a href="#;" class="dep2-item">Ring</a></li>
+                <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;" class="dep1-item">Watch</a>
+              <ul class="dep2-list">
+                <li><a href="#;" class="dep2-item">Women's watch</a></li>
+                <li><a href="#;" class="dep2-item">Men's watch</a></li>
+                <li><a href="#;" class="dep2-item">Couple</a></li>
+                <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+            </li>
+            <li>
+              <a href="#;" class="dep1-item">Gift</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- /menu-content -->
+  </div>
+  <!-- /top 2dep menu wrap -->
+
+  <!-- today arriving banner -->
+  <div class="arriving-banner">
+    <div class="today-box-desc">
+      <div class="today-box-title">회사(기본)</div>
+      <div class="today-box-address">서울특별시 성동구 뚝섬로1길 25 서울숲 한라에코밸리 5501</div>
+    </div>
+    <button class="today-box-btn" onclick="openPopup('deliverPopup')">배송지 변경</button>
+  </div>
+  <!-- /today arriving banner -->
+
+  <div class="wrapper">
+    <div class="container has-banner">
+      <!-- empty case -->
+      <div class="empty-wrap order">
+        <div class="empty-box">
+          <img src="../../assets/images/content/empty_gift.png" alt="" class="empty-box-img-gift">
+          <div class="empty-box-text">
+            해당지역은 오늘도착 가능 상품이 없습니다
+          </div>
+        </div>
+      </div>
+      <!-- /empty case -->
+    </div>
+    <!-- /container -->
+  </div>
+
+  <!-- deliver change -->
+  <div class="popup" id="deliverPopup">
+    <div class="popup-full with-btn">
+      <!-- 하단 버튼 있는 경우 with-btn 클래스 추가-->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">배송지 변경</div>
+          <button class="popup-full-close" onclick="closePopup('deliverPopup')"><img src="../../assets/images/icons/close.png"></button>
+        </div>
+        <!-- popup-full-con -->
+        <div class="popup-full-content">
+          <div class="my-addr">
+            <button class="btn-add-addr" type="button" onclick="openPopup('addAddressPopup')">
+              <img class="btn-add-addr-ico" src="../../assets/images/icons/ico_addr_add.png" alt="add">배송지추가
+            </button>
+          </div>
+          <!-- my-addr -->
+          <div class="my-addr">
+            <!-- my-addr-inner -->
+            <div class="my-addr-inner">
+              <!-- my-addr-item-->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio1" name="addressRadio" value="" checked>
+                  <label class="my-addr-radio-label" for="radio1">
+                    <span class="my-addr-item-title">회사(기본)/강진홍</span>
+                    <span class="my-addr-item-con">
+                      (12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층 (12312)서울특별시 뚝섬로 1길 25 서울
+                      <span class="my-addr-item-phone">010-1234-1234</span>
+                    </span>
+                  </label>
+                </span>
+                <div class="my-addr-edit-wrap">
+                  <button class="my-addr-edit" type="button">수정</button>
+                  <button class="my-addr-edit" type="button">삭제</button>
+                </div>
+              </div>
+              <!-- /my-addr-item-->
+              <!-- my-addr-item-->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio2" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio2">
+                    <span class="my-addr-item-title">집/권애린</span>
+                    <span class="my-addr-item-con">
+                      (12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층
+                      <span class="my-addr-item-phone">010-1234-1234</span>
+                    </span>
+                  </label>
+                </span>
+                <div class="my-addr-edit-wrap">
+                  <button class="my-addr-edit" type="button">수정</button>
+                  <button class="my-addr-edit" type="button">삭제</button>
+                </div>
+              </div>
+              <!-- /my-addr-item-->
+              <!-- my-addr-item-->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio3" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio3">
+                    <span class="my-addr-item-title">집/권애린</span>
+                    <span class="my-addr-item-con">
+                      (12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층
+                      <span class="my-addr-item-phone">010-1234-1234</span>
+                    </span>
+                  </label>
+                </span>
+                <div class="my-addr-edit-wrap">
+                  <button class="my-addr-edit" type="button">수정</button>
+                  <button class="my-addr-edit" type="button">삭제</button>
+                </div>
+              </div>
+              <!-- /my-addr-item-->
+            </div>
+            <!-- /my-addr-inner -->
+          </div>
+          <!-- /my-addr -->
+        </div>
+        <!-- /popup-full-con -->
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="closePopup('deliverPopup')">SAVE</button>
+      </div>
+    </div>
+  </div>
+  <!-- /deliver change -->
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/jquery-mobile.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

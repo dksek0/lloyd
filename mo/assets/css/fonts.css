@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* Cormorant Garamond */
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/CormorantGaramond-Light.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/CormorantGaramond-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/CormorantGaramond-Medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/CormorantGaramond-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/CormorantGaramond-LightItalic.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/CormorantGaramond-MediumItalic.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/CormorantGaramond-BoldItalic.woff") format('woff');
+}
+
+/* SpoqaHanSansNeo */
+@font-face {
+  font-family: "SpoqaHanSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/SpoqaHanSansNeo-Light.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpoqaHanSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/SpoqaHanSansNeo-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpoqaHanSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/SpoqaHanSansNeo-Medium.woff") format('woff');
+}
+
+@font-face {
+  font-family: "SpoqaHanSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/SpoqaHanSansNeo-Bold.woff") format('woff');
+}
+
+/* Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/montserrat-300.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-500.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-600.woff") format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-700.woff") format('woff');
+}
+
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NanumMyeongjo-Regular.woff") format('woff');
+}
+
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NanumMyeongjo-Bold.woff") format('woff');
+}
+
+@font-face {
+  font-family: "NanumMyeongjo";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/NanumMyeongjo-ExtraBold.woff") format('woff');
+}

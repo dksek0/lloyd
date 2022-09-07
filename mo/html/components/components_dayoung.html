@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Components - LLoyd</title>
+    <!-- .icon -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+    <link rel="stylesheet" type="text/css" href="./css/guide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/vs.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="Component">
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Header</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="header" style="position: relative;">
+                <!-- <div class="header-left">
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+                </div> -->
+                <div class="header-title">
+                  <span class="title">Category</span>
+                  <!-- <button class="title-btn">Earring</button> -->
+                </div>
+                <div class="header-right">
+                  <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a> -->
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>
+    &lt;div class="header" style="position: relative;"&gt;
+  &lt;!-- &lt;div class="header-left"&gt;
+    &lt;a href="#;" class="header-btn"&gt;&lt;img src="../../assets/images/icons/back.png" alt=""&gt;&lt;span class="sr-only"&gt;이전페이지&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt; --&gt;
+  &lt;div class="header-title"&gt;
+    &lt;span class="title"&gt;Category&lt;/span&gt;
+    &lt;!-- &lt;button class="title-btn"&gt;Earring&lt;/button&gt; --&gt;
+  &lt;/div&gt;
+  &lt;div class="header-right"&gt;
+    &lt;!-- &lt;a href="#;" class="header-btn"&gt;&lt;img src="../../assets/images/icons/home.png" alt=""&gt;&lt;span class="sr-only"&gt;홈&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#;" class="header-btn"&gt;&lt;img src="../../assets/images/icons/search.png" alt=""&gt;&lt;span class="sr-only"&gt;검색&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#;" class="header-btn"&gt;&lt;img src="../../assets/images/icons/shop.png" alt=""&gt;&lt;span class="sr-only"&gt;장바구니&lt;/span&gt;&lt;/a&gt; --&gt;
+    &lt;a href="#;" class="header-btn"&gt;&lt;img src="../../assets/images/icons/close.png" alt=""&gt;&lt;span class="sr-only"&gt;닫기&lt;/span&gt;&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">GNB</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <nav class="menu">
+                <ul class="dep1-list">
+                  <li>
+                    <a href="#;" class="dep1-item">Jewelry</a>
+                    <ul class="dep2-list">
+                      <li><a href="#;" class="dep2-item">All</a></li>
+                      <li><a href="#;" class="dep2-item">Necklace</a></li>
+                      <li><a href="#;" class="dep2-item">Earring</a></li>
+                      <li><a href="#;" class="dep2-item">Bracelet</a></li>
+                      <li><a href="#;" class="dep2-item">Ring</a></li>
+                      <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep1-item">
+                    <a href="#;" class="dep1-item">Watch</a>
+                    <ul class="dep2-list">
+                      <li><a href="#;" class="dep2-item">All</a></li>
+                      <li><a href="#;" class="dep2-item">Women's watch</a></li>
+                      <li><a href="#;" class="dep2-item">Men's watch</a></li>
+                      <li><a href="#;" class="dep2-item">Couple</a></li>
+                      <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep1-item">
+                    <a href="#;" class="dep1-item">Signature</a>
+                    <ul class="dep2-list">
+                      <li><a href="#;" class="dep2-item">Collection</a></li>
+                      <li><a href="#;" class="dep2-item">Chains</a></li>
+                      <li><a href="#;" class="dep2-item">Charms</a></li>
+                      <li><a href="#;" class="dep2-item">Ring</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep1-item">
+                    <a href="#;" class="dep1-item">Gift</a>
+                  </li>
+                </ul>
+                <div class="sub-box">
+                  <ul>
+                    <li><a href="#;">오늘도착</a></li>
+                    <li><a href="#;">New&amp;Release</a></li>
+                    <li><a href="#;">Event</a></li>
+                  </ul>
+                </div>
+                <div class="sub-box">
+                  <ul>
+                    <li><a href="#;">About LLOYD</a></li>
+                    <li><a href="#;">고객센터</a></li>
+                    <li><a href="#;">설정</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>
+    &lt;nav class="menu"&gt;
+  &lt;ul class="dep1-list"&gt;
+    &lt;li&gt;
+      &lt;a&gt; href="#;" class="dep1-item"&gt;Jewelry&lt;/a&gt;
+      &lt;ul class="dep2-list"&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Earring&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Bracelet&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Ring&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Couple Ring&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class="dep1-item"&gt;
+      &lt;a&gt; href="#;" class="dep1-item"&gt;Watch&lt;/a&gt;
+      &lt;ul class="dep2-list"&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Women's watch&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Men's watch&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Couple&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a&gt; href="#;" class="dep2-item"&gt;Smart Watch&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class="dep1-item"&gt;
+      &lt;a&gt; href="#;" class="dep1-item"&gt;Signature&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dep1-item"&gt;
+      &lt;a&gt; href="#;" class="dep1-item"&gt;Gift&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class="sub-box"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a&gt; href="#;"&gt;오늘도착&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt; href="#;"&gt;Event&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  &lt;div class="sub-box"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a&gt; href="#;"&gt;About LLOYD&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt; href="#;"&gt;고객센터&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt; href="#;"&gt;설정&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">2Dep Menu</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="header" id="header">
+                <div class="header-left">
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+                </div>
+                <div class="header-title">
+                  <button class="title-btn">Earring</button>
+                </div>
+                <div class="header-right">
+                  <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+                  <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+                  <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+                </div>
+              </div>
+        
+              <!-- menu-wrap -->
+              <div class="menu-wrap top">
+                <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+        
+                <div class="menu-dim"></div>
+        
+                <div class="menu-content">
+          
+                  <nav class="menu">
+                    <ul class="dep1-list">
+                      <li>
+                        <a href="#;" class="dep1-item">Jewelry</a>
+                        <ul class="dep2-list">
+                          <li><a href="#;" class="dep2-item">Necklace</a></li>
+                          <li><a href="#;" class="dep2-item">Earring</a></li>
+                          <li><a href="#;" class="dep2-item">Bracelet</a></li>
+                          <li><a href="#;" class="dep2-item">Ring</a></li>
+                          <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#;" class="dep1-item">Watch</a>
+                        <ul class="dep2-list">
+                          <li><a href="#;" class="dep2-item">Women's watch</a></li>
+                          <li><a href="#;" class="dep2-item">Men's watch</a></li>
+                          <li><a href="#;" class="dep2-item">Couple</a></li>
+                          <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#;" class="dep1-item">Signature</a>
+                        <ul class="dep2-list">
+                          <li><a href="#;" class="dep2-item">Collection</a></li>
+                          <li><a href="#;" class="dep2-i��FBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="thumb-gift-box">
+                <div class="thumb-text-wrap">
+                  <div class="thumb-left-box">
+                    <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                    <div class="thumb-text-box">
+                      <a href="#;" class="thumb-link-title short">곰돌이 미니어처 2종키트 곰돌�7미니어처 2종키트</a>
+                      <div class="thumb-price-wrap">
+                        <span class="price-new"><span class="price">3,000</span>원</span>
+                      </div>
+                      <a href="#;" class="thumb-gift-btn" onclick="openPopup('giftsPopup'); giftsPopup()">사은품 상세 ></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="option-result-close"><img src="../../assets/images/icons/option_close.png��Slt="close" class=""></button>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="thumb-gift-box"&gt;
+    &lt;a href="#;" class="thumb-gift-btn"&gt;사은품 상세 &gt;&lt;/a&gt;
+    &lt;div class="thumb-text-wrap"&gt;
+      &lt;div class="thumb-left-box"&gt;
+ ��    &lt;a href="#;" class="thumb-image-box"&gt;&lt;img src="../../assets/images/shopping/shopping_pd_01.png" alt=""&gt;&lt;/a&gt;
+        &lt;div class="thumb-text-box"&gt;
+          &lt;a href="#;" class="thumb-link-title short"&gt;곰돌이 미니어처 2종키트 곰돌이 미니어처 2종키트&lt;/a&gt;
+          &lt;div class="thumb-price-wrap"&gt;
+            &lt;span class="price-new"&gt;&lt;span class="price"&gt;3,000&lt;/span&gt;원&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="��Gmb-option-box"&gt;
+            &lt;div class="option-result-spinner"&gt;
+              &lt;button class="spinner-btn spinner-remove"&gt;&lt;span class="blind"&gt;remove&lt;/span&gt;&lt;/button&gt;
+              &lt;div class="spinner-value"&gt;1&lt;/div&gt;
+              &lt;button class="spinner-btn spinner-add"&gt;&lt;span class="blind"&gt;add&lt;/span&gt;&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="option��Wsult-close"&gt;&lt;img src="../../assets/images/icons/option_close.png" alt="close" class=""&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Thumbnail Text</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div c��As="ComponentBoxView-content">
+              <!-- code -->
+              <div class="thumb-check-wrap">
+                <div class="thumb-check-box">
+                  <div class="check-box no-text medium">
+                    <label for="check5">
+                      <input type="checkbox" name="" id="check5" checked="">
+                      <span class="text"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="thumb-text-wrap">
+             ��  <div class="thumb-left-box">
+                    <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                    <div class="thumb-text-box">
+                      <a href="#;" class="thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</a>
+                      <div class="thumb-price-wrap">
+                        <span class="price��^d"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                      </div>
+                      <div class="thumb-detail-box">
+                        <span class="thumb-detail-text">일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="thumb-bottom-box">
+                    <button cla��"thumb-bottom-btn">옵션/수량 선택</button>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="thumb-check-wrap"&gt;
+    &lt;div class="thumb-check-box"&gt;
+      &lt;div class="check-box no-text medium"&gt;
+��     &lt;label for="check5"&gt;
+          &lt;input type="checkbox" name="" id="check5" checked=""&gt;
+          &lt;span class="text"&gt;&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="thumb-text-wrap"&gt;
+      &lt;div class="thumb-left-box"&gt;
+        &lt;a href="#;" class="thumb-image-box"&gt;&lt;img src="../../assets/images/shopping/shopping_pd_01.png" alt=""&gt;&lt;/a&gt;
+        &lt;div class="thumb-text-box"&gt;
+          &lt;a href="#;" class="thumb-t��^e"&gt;로이드 퍼스트 스노우 비쥬참 &lt;span class="num"&gt;10K&lt;/span&gt; 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트&lt;/a&gt;
+          &lt;div class="thumb-price-wrap"&gt;
+            &lt;span class="price-old"&gt;&lt;del class="price"&gt;79,900&lt;/del&gt;원&lt;/span&gt;&lt;span class="price-new"&gt;&lt;span class="price"&gt;59,900&lt;/span&gt;원&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="thumb-detail-box"&gt;
+            &lt;span cla��"thumb-detail-text"&gt;일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="thumb-bottom-box"&gt;
+        &lt;button class="thumb-bottom-btn"&gt;옵션/수량 선택&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+    ��   <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Thumbnail Text</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="thumb-check-wrap">
+                <div class="thumb-check-box">
+                  <div class="check-box no-text medium">
+                    <label for="check6" class="disabled">
+     ��              <input type="checkbox" name="" id="check6" disabled>
+                      <span class="text"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="thumb-text-wrap soldout">
+                  <div class="thumb-left-box">
+                    <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+                    <div class="thumb-text-box">
+                      <a href="#;" cla��"thumb-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</a>
+                      <div class="thumb-price-wrap">
+                        <span class="price-old"><del class="price">79,900</del>원</span><span class="price-new"><span class="price">59,900</span>원</span>
+                      </div>
+                      <div class="thumb-detail-box">
+                        <span class="thumb-detail-teKG>일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="thumb-c[V@k-wrap"&gt;
+    &lt;div class="thumb-check-box"&gt;
+      &lt;div class="check-box no-text medium"&gt;
+        &lt;label for="check6" class="disabled"&gt;
+          &lt;input type="checkbox" name="" id="check6" disabled&gt;
+          &lt;span class="text"&gt;&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="thumb-text-wrap soldout"&gt;
+      &lt;div class="thumb-left-box"&gt;
+        &lt;a href="#;" class="thumb-image-box"&gt;&lt;img src="../../assets/images/shopCZMg/shopping_pd_01.png" alt=""&gt;&lt;/a&gt;
+        &lt;div class="thumb-text-box"&gt;
+          &lt;a href="#;" class="thumb-title"&gt;로이드 퍼스트 스노우 비쥬참 &lt;span class="num"&gt;10K&lt;/span&gt; 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트&lt;/a&gt;
+          &lt;div class="thumb-price-wrap"&gt;
+            &lt;span class="price-old"&gt;&lt;del class="price"&gt;79,900&lt;/del&gt;원&lt;/span&gt;&lt;span class="price-new"&gt;&lt;span class="price"&gt;5
+00&lt;/span&gt;원&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class="thumb-detail-box"&gt;
+            &lt;span class="thumb-detail-text"&gt;일반 배송 / 14K 옐로우골드 / 14.5 / B / 사파이어 / 각인 사용안함 / 1개&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class`omponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleBgLine-title">Thumbnail Text</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="thumb-text-wrap">
+                <div class="thumb-right-box">
+                  <a href="#;" class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></a>
+               <div class="thumb-text-box">
+                    <div class="thumb-info-box">
+                      <span class="thumb-badge-complete">답변대기</span><span class="thumb-badge-complete">비공개</span><span class="thumb-date">2021.01.05</span>
+                    </div>
+                    <a href="#;" class="thumb-right-title">오너먼트 스타 볼 콜렉트링 오너먼트 스타 볼 콜렉트링</a>
+                    <div class="thumb-edit-box">
+                      <button class="thumb-eWZW-btn">삭제</button>
+                      <button class="thumb-edit-btn">수정</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponentBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="thumb-text-wrap"&gt;
+    &lt;div class="thumQQight-box"&gt;
+      &lt;a href="#;" class="thumb-image-box"&gt;&lt;img src="../../assets/images/shopping/shopping_pd_01.png" alt=""&gt;&lt;/a&gt;
+      &lt;div class="thumb-text-box"&gt;
+        &lt;div class="thumb-info-box"&gt;
+          &lt;span class="thumb-badge-wait"&gt;답변대기&lt;/span&gt;&lt;span class="thumb-date"&gt;2021.01.05&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a href="#;" class="thumb-right-title"&gt;오너먼트 스타 볼 콜렉트링 오너먼트 스타 볼 콜렉트링&lt;/RDt;
+        &lt;div class="thumb-edit-box"&gt;
+          &lt;button class="thumb-edit-btn"&gt;삭제&lt;/button&gt;
+          &lt;button class="thumb-edit-btn"&gt;수정&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  </code></pre>
+          </div>
+        </div>
+        <!-- .component -->
+        <!-- component -->
+        <div class="ComponentBox">
+          <div class="ComponentBoxHeader">
+            <div class="c-TitleBgLine">
+              <h2 class="c-TitleqToine-title">Thumbnail Text</h2>
+            </div>
+          </div>
+          <div class="ComponentBoxView">
+            <div class="ComponentBoxView-content">
+              <!-- code -->
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio1" name="addressRadio" value="" checked>
+                  <label class="my-addr-radio-label" for="radio1">
+                    <div class="thumb-text-wrap">
+                   <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                          <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</spa]골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio2" name="addressRadio" value="">
+               <label class="my-addr-radio-label" for="radio2">
+                    <div class="thumb-text-wrap">
+                      <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                       <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+              <!-- .code -->
+            </div>
+            <div class="ComponV]WBoxView-footer"><a class="ComponentBoxView-link" href="#;"><span class="ab-text">코드보기</span></a></div>
+          </div>
+          <div class="ComponentBoxCode">
+  <pre><code>&lt;div class="my-addr-item"&gt;
+    &lt;span class="my-addr-radio"&gt;
+      &lt;input class="my-addr-radio-input" type="radio" id="radio1" name="addressRadio" value="" checked&gt;
+      &lt;label class="my-addr-radio-label" for="radio1"&gt;
+        &lt;div class="thumb-text-wrap"&gt;
+          &lt;div class="thumb-right-boxDt;
+            &lt;span class="thumb-image-box"&gt;&lt;img src="../../assets/images/shopping/shopping_pd_01.png" alt=""&gt;&lt;/span&gt;
+            &lt;div class="thumb-text-box"&gt;
+              &lt;div class="thumb-info-box"&gt;
+                &lt;span class="thumb-date"&gt;2021.01.05&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class="thumb-link-title"&gt;로이드 퍼스트 스노우 비쥬참 &lt;span class="num"&gt;10K&lt;/span&gt; 골드 펜던트 로이드 퍼스트 스노우it]OCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="../../assets/css/3:wts.css"
+    media="none"
+    onload="this.media='all';"
+  />
+  <link rel="stylesheet" href="../../assets/css/reboot.css">
+  <link rel="stylesheet" href="../../assets/css/page.css">
+  <link rel="stylesheet" href="../../assets/css/component.css">
+  <link rel="stylesheet" type="text/css" href="./css/guide.css" />
+  <link rel="stylesheet" type="text/css" href="./css/vs.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container ar" style="background-color: gray;">
+      <div class="ar-top">
+    uu9 <button class="ar-top-change"><img src="../../assets/images/icons/ar-screen-change.png" alt="screen change"></button>
+        <button class="ar-top-close"><img src="../../assets/images/icons/close_white.png" alt="close"></button>
+      </div>
+      <div class="ar-desc">
+        <div class="ar-desc-title">퓨어드롭 물방울 로즈컷 탄생석</div>
+        <div class="ar-desc-option">10k Gold 목걸이</div>
+        <div class="ar-desc-price">
+          <span class="ar-desc-preprice">79,900원</spank_9         <span class="ar-desc-sale">59,900</span>
+          <span class="ar-desc-currency">원</span>
+        </div>
+      </div>
+      <div class="ar-content">
+        <div class="ar-content-dim"></div>
+        <!-- dim 필요시 'on' 클래스 추가 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- AR defalt -->
+  <div class="popup-ar-box on" id="arRing">
+    <div class="try-item">
+      <div class="try-item-top">
+        <ul class="try-item-list">
+          <li class="try-item-item">
+            <a href="vn; class="try-item-link"><img src="../../assets/images/content/ar-carat-rose.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-yellow.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-white.png" alt=""></a>
+          </li>
+        </ul>
+        <a href="#;" class="try-item-change" o;6uick="closeArPopup('arRingChoice')">
+          <img src="../../assets/images/icons/ar-convert-ring.png" alt="">
+          <span class="try-item-change-text">Ring</span>
+        </a>
+      </div>
+      <div class="try-item-content">
+        <div class="detail-slide-option">
+          <div class="detail-option-color">
+            <div class="try-item-frame-box">
+              <div class="try-item-frame"></div>
+            </div>
+            <div class="detail-option-color-container ar swiper-container">
+   uu9        <ul class="swiper-wrapper">
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                  uu%div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+           uu9  </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-6:uor-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <9<9class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-ring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /AR defalt -->
+  <!-- ring -->
+  <div class="popup-ar-box" id="arEarring">
+    <div cl4&j="try-item">
+      <div class="try-item-top">
+        <a href="#;" class="try-item-reselect" onclick="closeArPopup('arRingChoice')"><img src="../../assets/images/icons/ar-reselect.png" alt="cart"></a>
+        <ul class="try-item-list">
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-rose.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../asse!&6images/content/ar-carat-yellow.png" alt=""></a>
+          </li>
+          <li class="try-item-item">
+            <a href="#;" class="try-item-link"><img src="../../assets/images/content/ar-carat-white.png" alt=""></a>
+          </li>
+        </ul>
+        <a href="#;" class="try-item-change" onclick="closeArPopup('arRing')">
+          <img src="../../assets/images/icons/ar-convert-earring.png" alt="">
+          <span class="try-item-change-text">Earring</span>
+        </a>
+      </div>
+      <div class="!'`-item-content">
+        <div class="detail-slide-option">
+          <div class="detail-option-color">
+            <div class="try-item-frame-box">
+              <div class="try-item-frame"></div>
+            </div>
+            <div class="detail-option-color-container ar swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-i6:w"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <l<uzlass="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="de!4pl-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-opt<:w-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-img" src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+                <li class="detail-option-color-item swiper-slide">
+                  <div class="detail-option-color-box">
+                    <div class="detail-option-color-icon"><img class="detail-option-color-i82; src="../../assets/images/content/ar-earring-rose01.png" alt=""></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /ring -->
+
+  <!-- ring 체험 방법 선택 -->
+  <div class="popup-ar-box" id="arRingChoice">
+    <div class="ring-nav">
+      <div class="ring-nav-top">
+        <div class="ring-nav-desc">Ring 상품을 체험할 방법을 선택하세요</div>
+        <a href="#" class="ring-n4#4back"><img src="../../assets/images/icons/back_white.png" alt="back"></a>
+      </div>
+      <div class="ring-nav-content">
+        <ul class="ring-nav-list">
+          <li class="ring-nav-item">
+            <a href="#" class="ring-nav-link">
+              <img src="../../assets/images/icons/ar-reshot.png" alt="" class="ring-nav-icon" onclick="closeArPopup('arEarring')">
+              <div class="ring-nav-text">새로 촬영</div>
+            </a>
+          </li>
+          <li class="ring-nav-item">
+    uu9     <a href="#" class="ring-nav-link">
+              <img src="../../assets/images/icons/ar-gallary.png" alt="" class="ring-nav-icon">
+              <div class="ring-nav-text">갤러리</div>
+            </a>
+          </li>
+          <li class="ring-nav-item">
+            <a href="#" class="ring-nav-link">
+              <img src="../../assets/images/icons/ar-ex-img.png" alt="" class="ring-nav-icon">
+              <div class="ring-nav-text">이전 사진</div>
+            </a>
+          </li>
+        </ 9'
+      </div>
+    </div>
+  </div>
+  <!-- /ring 체험 방법 선택 -->
+
+  <!-- 사진 저장 및 장바구니 -->
+  <div class="popup-ar-box" id="arSave">
+    <div class="save-nav">
+      <ul class="save-nav-list">
+        <li class="save-nav-item">
+          <a href="#" class="save-nav-link">
+            <img src="../../assets/images/icons/ar-save.png" alt="" class="save-nav-icon">
+          </a>
+        </li>
+        <li class="save-nav-item">
+          <a href="#" class="save-nav-link" onclick="close'Iopup('bottombar'); closeArPopup('optionPopup')">
+            <img src="../../assets/images/icons/bottom_cart.png" alt="" class="save-nav-icon">
+          </a>
+        </li>
+        <li class="save-nav-item">
+          <a href="#" class="save-nav-link">
+            <img src="../../assets/images/icons/ar-instagram.png" alt="" class="save-nav-icon">
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="save-nav-back">이전 화면</a>
+    </div>
+  </div>
+  <!-- /사진 저장 및 장바구니 --k_  <!-- bottom bar -->
+  <div class="bottom-bar pop" id="bottombar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-left" onclick="openPopup('likePopup')">
+        <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+        LIKE
+      </button>
+      <button class="bottom-btn-right" onclick="openPopup('cartPopup')">
+        <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+        CART
+      </button>
+    </div>
+  </div>
+  <!-- /bottom bar -->
+
+  <!-- popup option -->
+  <di#uzlass="popup pop" id="optionPopup">
+    <!-- <div class="popup-dim"></div> -->
+    <div class="popup-option">
+      <div class="popup-option-box">
+        <button class="popup-close-box">
+          <span class="popup-close-bar"></span>
+          <span class="popup-close-bar"></span>
+        </button>
+        <div class="popup-option-content">
+          <div class="option-select">
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span c94js="option-select-text">캐럿/컬러를 선택하세요</span>
+                <span class="option-select-extra">+50,000</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check1" class="option-select-row">
+                    <input type="checkbox" id="check1" class="select-row-checkbox">
+                    <span 69xss="select-row-text">10K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check2" class="option-select-row">
+                    <input type="checkbox" id="check2" class="select-row-checkbox">
+                    <span class="select-row-text">14K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check3" class="option-select-row">
+                    <input type="che6>{ox" id="check3" class="select-row-checkbox">
+                    <span class="select-row-text">18K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check4" class="option-select-row">
+                    <input type="checkbox" id="check4" class="select-row-checkbox">
+                    <span class="select-row-text">10K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <labelu3vr="check5" class="option-select-row">
+                    <input type="checkbox" id="check5" class="select-row-checkbox">
+                    <span class="select-row-text">14K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check6" class="option-select-row">
+                    <input type="checkbox" id="check6" class="select-row-checkbox">
+                    <span class="select-row-text">18K 옐로우골드</span>
+              uu9 </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">스톤을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check7" class="o%!pon-select-row">
+                    <input type="checkbox" id="check7" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check8" class="option-select-row">
+                    <input type="checkbox" id="check8" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                <z9p>
+                <li>
+                  <label for="check9" class="option-select-row">
+                    <input type="checkbox" id="check9" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check10" class="option-select-row">
+                    <input type="checkbox" id="check10" class="select-row-checkbox">
+                    <span class="select-row-text"��oOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../asset��Hss/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+    </div>
+    <div class=ݗNader-title">
+      <!-- <button class="title-btn">Earring</button> -->
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a��     <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container detail" style="height: 1000px; background-color: lightgray;">
+      <div style="margin-top: 50px;"><button onclick="openPopup('bottombar'); openPopup('optionPopup')">옵션/수량 선택</button></div>
+      <div style="margin-top: 50px;"><button onclick="openPopup('likeBottombar'); openPopup('lik��[tionPopup')">찜</button></div>
+      <div style="margin-top: 50px;"><button onclick="openPopup('changeInfoPopup')">주문자 정보 변경</button></div>
+      <div style="margin-top: 50px;"><button onclick="openPopup('giftsPopup'); giftsPopup()">사은품</button></div>
+      <div style="margin-top: 50px;"><button onclick="openPopup('nonMemberPopup')">비회원 주문 정보수집 동의</button></div>
+      <div style="margin-top: 50px;"><button onclick="openPopup('chatbotPopup')">챗봇팝업</button��div>
+    </div>
+  </div>
+
+  <!-- popup -->
+  <!-- bottom-bar -->
+  <!-- <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-black">
+        <span class="bottom-btn-number">119,800</span><span class="bottom-btn-text">원 결제하기</span><span class="bottom-btn-number">(2)</span>
+      </button>
+    </div>
+  </div> -->
+  <!-- //bottom-bar -->
+
+  <!-- bottom-bar with top -->
+  <div class="bottom-bar has-top">
+    <div class="bottom-bar-top">
+      <div class="bottom-��Y-top-box">
+        <span class="bottom-bar-top-desc">상품</span><span class="bottom-bar-top-num">119,800</span><span class="bottom-bar-top-plus">+</span>
+        <span class="bottom-bar-top-desc">배송비</span><span class="bottom-bar-top-num">2,500</span>
+      </div>
+    </div>
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-black">
+        <span class="bottom-btn-number">119,800</span><span class="bottom-btn-text">원 결제하기</span><span class="bottom-btn-number">(2)</span>
+  �� </button>
+    </div>
+  </div>
+  <!-- //bottom-bar with top -->
+
+  <!-- bottom bar pop -->
+  <div class="bottom-bar pop" id="bottombar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-left" onclick="openPopup('likePopup')">
+        <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+        CANCEL
+      </button>
+      <button class="bottom-btn-right" onclick="openPopup('cartPopup')">
+        <!-- 옵션 미선택시 'no-select' 클래스 추가 -->
+        DONE
+      </button>
+  ��/div>
+  </div>
+  <!-- /bottom bar pop -->
+
+  <!-- popup option pop-->
+  <div class="popup pop" id="optionPopup">
+    <div class="popup-dim"></div>
+    <div class="popup-option">
+      <div class="popup-option-box">
+        <button class="popup-close-box">
+          <span class="popup-close-bar"></span>
+          <span class="popup-close-bar"></span>
+        </button>
+        <div class="popup-option-content">
+          <div class="option-select">
+            <!-- 세트상품일 경우에만 노출 -->
+ ��        <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">상품을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check28" class="option-select-row">
+                    <input type="checkbox" id="check28"ߜGass="select-row-checkbox">
+                    <span class="select-row-text">상품1</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check29" class="option-select-row">
+                    <input type="checkbox" id="check29" class="select-row-checkbox">
+                    <span class="select-row-text">상품2</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check30" class="option-select-r��	>
+                    <input type="checkbox" id="check30" class="select-row-checkbox">
+                    <span class="select-row-text">상품3</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">캐럿/컬러를 선택하세요</span>
+                <span class="option-select-extra">+50,000</span>
+           ��  <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check1" class="option-select-row">
+                    <input type="checkbox" id="check1" class="select-row-checkbox">
+                    <span class="select-row-text">10K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <labelߙDr="check2" class="option-select-row">
+                    <input type="checkbox" id="check2" class="select-row-checkbox">
+                    <span class="select-row-text">14K 로즈골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check3" class="option-select-row">
+                    <input type="checkbox" id="check3" class="select-row-checkbox">
+                    <span class="select-row-text">18K 로즈골드</span>
+                  </��Iel>
+                </li>
+                <li>
+                  <label for="check4" class="option-select-row">
+                    <input type="checkbox" id="check4" class="select-row-checkbox">
+                    <span class="select-row-text">10K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check5" class="option-select-row">
+                    <input type="checkbox" id="check5" class="select-row-checkbox">
+                 ��<span class="select-row-text">14K 옐로우골드</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check6" class="option-select-row">
+                    <input type="checkbox" id="check6" class="select-row-checkbox">
+                    <span class="select-row-text">18K 옐로우골드</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="��]ne" class="option-select-label">
+                <span class="option-select-text">스톤을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check7" class="option-select-row">
+                    <input type="checkbox" id="check7" class="select-row-checkbox">
+                    <span class="select��]w-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check8" class="option-select-row">
+                    <input type="checkbox" id="check8" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check9" class="option-select-row">
+                    <input type="checkbox" id="chec�� class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check10" class="option-select-row">
+                    <input type="checkbox" id="check10" class="select-row-checkbox">
+                    <span class="select-row-text">탄자나이트</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check11" class="op��]n-select-row">
+                    <input type="checkbox" id="check11" class="select-row-checkbox">
+                    <span class="select-row-text">블루사파이어</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check12" class="option-select-row">
+                    <input type="checkbox" id="check12" class="select-row-checkbox">
+                    <span class="select-row-text">투어마린</span>
+                  </label>
+               ��li>
+                <li>
+                  <label for="check13" class="option-select-row">
+                    <input type="checkbox" id="check13" class="select-row-checkbox">
+                    <span class="select-row-text">시트린</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check14" class="option-select-row">
+                    <input type="checkbox" id="check14" class="select-row-checkbox">
+                    <span class="select-row-t��F">블루사파이탄자나이트어</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-text">이니셜을 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+    ��         <li>
+                  <label for="check15" class="option-select-row">
+                    <input type="checkbox" id="check15" class="select-row-checkbox">
+                    <span class="select-row-text">A</span>
+                  </label>
+                </li>
+                <li>
+                  <label for="check16" class="option-select-row">
+                    <input type="checkbox" id="check16" class="select-row-checkbox">
+                    <span class="select-row-text">B</span>
+     ��          </label>
+                </li>
+                <li>
+                  <label for="check17" class="option-select-row">
+                    <input type="checkbox" id="check17" class="select-row-checkbox">
+                    <span class="select-row-text">C</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="option-select-item">
+              <a href="#none" class="option-select-label">
+                <span class="option-select-te��>호수를 선택하세요</span>
+                <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-arrow">
+              </a>
+              <ul class="option-select-list">
+                <li>
+                  <label for="check18" class="option-select-row">
+                    <input type="checkbox" id="check18" class="select-row-checkbox">
+                    <span class="select-row-text">14</span>
+                  </label>
+                </li>
+         ��    <li>
+                  <label for="check19" class="option-select-row">
+                    <input type="checkbox" id="check19" class="select-row-checkbox">
+                    <span class="select-row-text">14.5

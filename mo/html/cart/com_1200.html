@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a> -->
+    </div>
+    <div class="header-title">
+      <button class="title-ko">주문완료</button>
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+      <!-- <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a> -->
+    </div>
+  </div>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail">
+      <div class="cart-inner">
+        <div class="cart-info-result-box">
+          <div class="cart-info-text">
+            <span class="cart-info-bold">주문/결제</span>가<br>
+            정상적으로 <span class="cart-info-bold">완료</span>되었습니다.
+          </div>
+          <div class="cart-info-order">주문번호<span class="cart-info-order-num">123456789</span></div>
+          <div class="cart-info-extra">
+            해당 상품의 주문,배송정보는<br>
+            카카오톡 또는 SMS 로 안내 드리겠습니다.
+          </div>
+        </div>
+        <div class="buy-accordion-wrap">
+          <div class="buy-accordion">
+            <div class="buy-accordion-label">결제금액</div>
+            <div class="buy-accordion-box">
+              <div class="buy-accordion-total">
+                <div class="basic-total cart-price-box">
+                  <ul>
+                    <li class="basic-total-item">
+                      <dl>
+                        <dt class="basic-total-title">상품금액</dt>
+                        <dd class="basic-total-text">119,800</dd>
+                      </dl>
+                      <div class="basic-total-detail">
+                        <span class="basic-total-detail-item">로이드 스타 <span class="basic-total-detail-mont">14 Gold</span>반지<span class="basic-total-detail-mont">:54,900</span>원</span>
+                        <span class="basic-total-detail-item">로이드 플라워 <span class="basic-total-detail-mont">14 Gold</span> 반지<span class="basic-total-detail-mont">:54,900</span>원</span>
+                      </div>
+                    </li>
+                    <li class="basic-total-item">
+                      <dl>
+                        <dt class="basic-total-title">사은품금액</dt>
+                        <dd class="basic-total-text">0</dd>
+                      </dl>
+                    </li>
+                    <li class="basic-total-item">
+                      <dl>
+                        <dt class="basic-total-title">쿠폰할인 금액</dt>
+                        <dd class="basic-total-text">0</dd>
+                      </dl>
+                    </li>
+                    <li class="basic-total-item">
+                      <dl>
+                        <dt class="basic-total-title">포인트 사용</dt>
+                        <dd class="basic-total-text minus">0</dd>
+                      </dl>
+                    </li>
+                    <li class="basic-total-item">
+                      <dl>
+                        <dt class="basic-total-title">배송비</dt>
+                        <dd class="basic-total-text minus">0</dd>
+                      </dl>
+                      <div class="basic-total-detail">
+                        <span class="basic-total-detail-item">일반상품 배송비 <span class="basic-total-detail-mont">0</span>원 + 오늘 도착 배송비 = <span class="basic-total-detail-mont">25,00</span>원</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="basic-total-last">
+                    <dl>
+                      <dt class="basic-total-last-title">총 상품 금액(총 수량 <span class="count">2</span>개)</dt>
+                      <dd class="basic-total-last-text">
+                        <span class="basic-total-last-price">119,800<span class="currency">원</span></span>
+                        <span class="basic-total-last-sub">적립 예정<span class="point">7p</span></span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy-accordion-wrap">
+          <div class="buy-accordion">
+            <div class="buy-accordion-label">배송 정보</div>
+            <div class="buy-accordion-box">
+              <div class="cart-tab-inner">
+                <div class="static-address">
+                  <dl class="static-address-item">
+                    <dt class="static-address-title">강진홍</dt>
+                    <dd class="static-address-content">
+                      <p class="static-address-text">(12312)서울특별시 뚝섬로 1길 25 서울숲 한라에코밸리 10층 에이치나인</p>
+                      <div class="static-address-tel">010-1234-1234</div>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- //wrapper -->
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-left font-14">
+        쇼핑 계속하기
+      </button>
+      <button class="bottom-btn-right font-14">
+        주문내역 상세보기
+      </button>
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+html {
+  position: static;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+}
+
+body {
+  position: relative;
+  background: #fff;
+  font-size: 14px;
+  line-height: normal;
+  color: #222;
+  word-wrap: break-word;
+  word-break: keep-all;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  font-weight: normal;
+  /* IE scrollbar custom */
+  scrollbar-base-color: transparent;
+  scrollbar-face-color: #f2f2f2;
+  scrollbar-3dlight-color: #f2f2f2;
+  scrollbar-highlight-color: #f2f2f2;
+  scrollbar-track-color: transparent;
+  scrollbar-arrow-color: #fff;
+  scrollbar-shadow-color: #f2f2f2;
+  scrollbar-dark-shadow-color: #f2f2f2;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar:hover {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3c3c3;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "SpoqaHanSans", "Montserrat", "Cormorant Garamond", Arial,
+    sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+input[type="reset"],
+input[type="tel"],
+input[type="password"],
+input[type="url"],
+input[type="search"],
+input[type="file"],
+button,
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  font-family: "SpoqaHanSans", "Montserrat", "Cormorant Garamond", Arial,
+    sans-serif;
+  font-size: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-box-sizing: border-box;
+  caret-color: #2c4c3f;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  color: #bdbdbd;
+}
+
+::-moz-placeholder,
+::-webkit-input-placeholder,
+:-ms-input-placeholder {
+  color: #bdbdbd !important;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  caret-color: #2c4c3f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+a:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+button::-moz-focus-inner {
+  margin-top: -2px;
+  margin-bottom: -2px;
+  padding: 0;
+  border: 0;
+}
+
+input::-moz-focus-inner {
+  margin-top: -2px;
+  margin-bottom: -2px;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+input[type="text"]::-ms-clear {
+  display: none;
+}
+
+input[type="email"]::-ms-clear {
+  display: none;
+}
+
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+.ui-loader {
+  display: none;
+}

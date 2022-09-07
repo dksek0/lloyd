@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header transparent" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn">
+        <img src="../../assets/images/icons/back-white.png" alt="" class="header-btn-white"><img src="../../assets/images/icons/back.png" alt="" class="header-btn-black"><span class="sr-only">이전페이지</span>
+      </a>
+      <a href="#;" class="header-btn">
+        <img src="../../assets/images/icons/home-white.png" alt="" class="header-btn-white"><img src="../../assets/images/icons/home.png" alt="" class="header-btn-black"><span class="sr-only">홈</span>
+      </a>
+    </div>
+    <div class="header-title">
+      <button class="title-ko">마이 페이지</button>
+    </div>
+    <div class="header-right">
+      <a href="#;" class="header-btn">
+        <img src="../../assets/images/icons/search-white.png" alt="" class="header-btn-white"><img src="../../assets/images/icons/search.png" alt="" class="header-btn-black"><span class="sr-only">검색</span>
+      </a>
+      <a href="#;" class="header-btn">
+        <img src="../../assets/images/icons/shop-white.png" alt="" class="header-btn-white"><img src="../../assets/images/icons/shop.png" alt="" class="header-btn-black"><span class="sr-only">장바구니</span>
+      </a>
+    </div>
+  </div>
+  <!-- wrapper -->
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail">
+      <div class="mypage-main-bg"></div>
+      <div class="mypage-inner">
+        <div class="mypage-intro">
+          <div class="mypage-intro-title">
+            <span class="mypage-intro-name">강진홍</span>님의<br>
+            구매 등급은<br>
+            <a href="#;" class="mypage-intro-grade" onclick="openPopup('gradePopup')">Friends</a>입니다.
+          </div>
+          <div class="mypage-intro-link">
+            <a href="#;" class="mypage-intro-link-text">내 정보 관리</a>
+          </div>
+        </div>
+        <div class="mypage-card">
+          <ul class="mypage-card-list">
+            <li class="mypage-card-item">
+              <a href="#;" class="mypage-card-link">
+                <div class="mypage-card-name">쿠폰</div>
+                <div class="mypage-card-value">2</div>
+              </a>
+            </li>
+            <li class="mypage-card-item">
+              <a href="#;" class="mypage-card-link">
+                <div class="mypage-card-name">작성 가능 리뷰</div>
+                <div class="mypage-card-value">4</div>
+              </a>
+            </li>
+            <li class="mypage-card-item">
+              <a href="#;" class="mypage-card-link">
+                <div class="mypage-card-name">로이드 포인트</div>
+                <div class="mypage-card-value">25P</div>
+              </a>
+            </li>
+            <li class="mypage-card-item">
+              <a href="#;" class="mypage-card-link">
+                <div class="mypage-card-name">E-POINT</div>
+                <div class="mypage-card-value">1,340P</div>
+              </a>
+            </li>
+            <li class="mypage-card-item">
+              <a href="#;" class="mypage-card-barcode" onclick="openPopup('barcodePopup')">
+                <img src="../../assets/images/content/barcode-intro.png" alt="E-Point Card" class="mypage-card-barcode-img">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="buy-accordion-wrap">
+          <div class="buy-accordion">
+            <div class="buy-accordion-label">나의 쇼핑정보</div>
+            <div class="buy-accordion-box">
+              <div class="mypage-category">
+                <ul class="mypage-category-item">
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">주문/배송 조회</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">취소/교환/반품 내역</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">나의 상품평</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">선물함</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">포인트 조회</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">쿠폰 조회</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy-accordion-wrap">
+          <div class="buy-accordion">
+            <div class="buy-accordion-label">나의 상품정보</div>
+            <div class="buy-accordion-box">
+              <div class="mypage-category">
+                <ul class="mypage-category-item">
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">나의 문의/답변</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">나의 찜 목록</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">최근 본 상품</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">재입고 알림 내역</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy-accordion-wrap">
+          <div class="buy-accordion">
+            <div class="buy-accordion-label">회원정보</div>
+            <div class="buy-accordion-box">
+              <div class="mypage-category">
+                <ul class="mypage-category-item">
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">배송지 관리</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">환불 계좌 관리</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">SNS 연동관리</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">비밀번호 변경</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">온라인 회원 탈퇴</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link" onclick="openPopup('appSettingPopup')">앱 설정</a>
+                  </li>
+                  <li class="mypage-category-list">
+                    <a href=#; class="mypage-category-link">로그아웃</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- //wrapper -->
+
+  <div class="popup on" id="gradePopup">
+    <div class="popup-full">
+    <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">구매등급</div>
+          <button class="popup-full-close" onclick="closePopup('gradePopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+          <div class="mypage-inner">
+            <div class="grade-intro">
+              <div class="grade-intro-title">
+                <span class="grade-intro-name">강진홍</span>님의<br>
+                <span class="grade-intro-month">1</span>월 구매 등급은<br>
+                <a href="#;" class="grade-intro-value">Friends</a>입니다.
+              </div>
+              <div class="grade-intro-desc">
+                산정기간 : 2020. 10 ~ 2020. 12 배송 완료된 주문 기준 
+              </div>
+            </div>
+            <div class="grade-coupon">
+              <a href="#;" class="grade-coupon-download" onclick="openPopup('downloadPopup')">전체 쿠폰 다운로드</a>
+              <!-- disabled 클래스 추가-->
+              <!-- <a href="#;" class="grade-coupon-download disabled">쿠폰 받기 완료</a> -->
+            </div>
+            <div class="grade-benefit">
+              <div class="buy-accordion-wrap">
+                <div class="buy-accordion">
+                  <div class="buy-accordion-label">등급별 혜택</div>
+                  <div class="buy-accordion-box">
+                    <div class="grade-benefit-box">
+                      <div class="grade-benefit-top">
+                        <div class="grade-benefit-title">VVIP</div>
+                        <div class="grade-benefit-desc">
+                          <div class="grade-benefit-text">최근 1년간 쥬얼리 상품 구매</div>
+                          <div class="grade-benefit-subtext">누적실적 100만원 이상</div>
+                        </div>
+                      </div>
+                      <ul class="grade-benefit-list">
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-green.png" alt="">
+                            <span class="grade-benefit-item-desc">10%</span>
+                          </div>
+                          <div class="grade-benefit-item-text">온라인 전용</div>
+                        </li>
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-green.png" alt="">
+                            <span class="grade-benefit-item-desc">10%</span>
+                          </div>
+                          <div class="grade-benefit-item-text">오프라인</div>
+                        </li>
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-black.png" alt="">
+                            <span class="grade-benefit-item-desc">E-Point</span>
+                          </div>
+                          <div class="grade-benefit-item-text">실 결제 금액의<br>1.5% 적립</div>
+                        </li>
+                      </ul>
+                      <div class="grade-benefit-info">*온,오프라인 10% 쿠폰 월 1회 지급(1만원 이상 정상가 상품 적용)</div>
+                    </div>
+                    <div class="grade-benefit-box">
+                      <div class="grade-benefit-top">
+                        <div class="grade-benefit-title">VIP</div>
+                        <div class="grade-benefit-desc">
+                          <div class="grade-benefit-text">최근 1년간 쥬얼리 상품 구매</div>
+                          <div class="grade-benefit-subtext">누적실적 50만원 이상</div>
+                        </div>
+                      </div>
+                      <ul class="grade-benefit-list">
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-green.png" alt="">
+                            <span class="grade-benefit-item-desc">10%</span>
+                          </div>
+                          <div class="grade-benefit-item-text">온라인 전용</div>
+                        </li>
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-green.png" alt="">
+                            <span class="grade-benefit-item-desc">10%</span>
+                          </div>
+                          <div class="grade-benefit-item-text">오프라인</div>
+                        </li>
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-black.png" alt="">
+                            <span class="grade-benefit-item-desc">E-Point</span>
+                          </div>
+                          <div class="grade-benefit-item-text">실 결제 금액의<br>1% 적립</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="grade-benefit-box">
+                      <div class="grade-benefit-top">
+                        <div class="grade-benefit-title">Premium</div>
+                        <div class="grade-benefit-desc">
+                          <div class="grade-benefit-text">최근 3개월간 구매금액</div>
+                          <div class="grade-benefit-subtext">누적실적 10만원 이상</div>
+                        </div>
+                      </div>
+                      <ul class="grade-benefit-list">
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-black.png" alt="">
+                            <span class="grade-benefit-item-desc">E-Point</span>
+                          </div>
+                          <div class="grade-benefit-item-text">실 결제 금액의<br>1% 적립</div>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="grade-benefit-box">
+                      <div class="grade-benefit-top">
+                        <div class="grade-benefit-title">Friends</div>
+                        <div class="grade-benefit-desc">
+                          <div class="grade-benefit-subtext">회원가입시</div>
+                        </div>
+                      </div>
+                      <ul class="grade-benefit-list">
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-green.png" alt="">
+                            <span class="grade-benefit-item-desc">10%</span>
+                          </div>
+                          <div class="grade-benefit-item-text">온라인 전용</div>
+                        </li>
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-black.png" alt="">
+                            <span class="grade-benefit-item-desc">E-Point</span>
+                          </div>
+                          <div class="grade-benefit-item-text">실 결제 금액의<br>1% 적립</div>
+                        </li>
+                      </ul>
+                      <div class="grade-benefit-info">*온라인 웰컴 10% 쿠폰 최초 로그인시 1회 지급(1만원 이상 정상가 상품 적용)</div>
+                    </div>
+                    <div class="grade-benefit-box">
+                      <div class="grade-benefit-top">
+                        <div class="grade-benefit-title lang-ko">전체 회원<br>혜택</div>
+                        <div class="grade-benefit-desc">
+                          <div class="grade-benefit-subtext">기념일 10% 쿠폰</div>
+                        </div>
+                      </div>
+                      <ul class="grade-benefit-list">
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-green.png" alt="">
+                            <span class="grade-benefit-item-desc">10%</span>
+                          </div>
+                          <div class="grade-benefit-item-text">온라인 전용</div>
+                        </li>
+                        <li class="grade-benefit-item">
+                          <div class="grade-benefit-item-img">
+                            <img src="../../assets/images/icons/coupon-black.png" alt="">
+                            <span class="grade-benefit-item-desc">E-Point</span>
+                          </div>
+                          <div class="grade-benefit-item-text">실 결제 금액의<br>1% 적립</div>
+                        </li>
+                      </ul>
+                      <div class="grade-benefit-info">*회원정보에 기입된 생일 30일전 발급(1만원 이상 정상가 상품 적용)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grade-info">
+            <div class="grade-info-title">꼭! 읽어 주세요.</div>
+            <div class="grade-info-desc">
+              - 최근 1년기준, 매월 1일 누적금액에 따라 등급이 산정 / 변경됩니다.<br><br>
+              - 현재 등급 기준 구매액의 주문취소 및 반품으로 구매실적 변동 시 등급은 익월 1일 재조정 됩니다.<br><br>
+              - 해당 등급은 최대 1년 동안 유지할 수 있습니다.<br><br>
+              - 쿠폰할인은 정상 상품에만 적용되며 중복할인은 적용되지 않습니다.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="appSettingPopup">
+    <div class="popup-full">
+    <!-- 버튼 활성화시 with-btn 클래스 추가 -->
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">앱 설정</div>
+          <button class="popup-full-close" onclick="closePopup('appSettingPopup')"><img src="../../assets/images/icons/close.png" alt=""></button>
+        </div>
+        <div class="popup-full-content">
+          <div class="app-setting">
+            <ul class="app-setting-list">
+              <li class="app-setting-item">
+                <div class="app-setting-desc">
+                  <div class="app-setting-item-title">광고성 정보 (PUSH) 수신 설정</div>
+                </div>
+                <div class="app-setting-btn">
+                  <input type="checkbox" class="app-setting-checkbox" checked>
+                  <div class="app-setting-bg"></div>
+                  <div class="app-setting-circle"></div>
+                </div>
+              </li>
+              <li class="app-setting-item">
+                <div class="app-setting-desc">
+                  <div class="app-setting-item-title">위치기반 서비스 이용</div>
+                  <div class="app-setting-item-text">위치기반 서비스는 GPS, Bluetooth, Wi-fi 를 이용하여 사용자의 대략적인 위치를 확인합니다.</div>
+                </div>
+                <div class="app-setting-btn">
+                  <input type="checkbox" class="app-setting-checkbox">
+                  <div class="app-setting-bg"></div>
+                  <div class="app-setting-circle"></div>
+                </div>
+              </li>
+              <li class="app-setting-item">
+                <div class="app-setting-desc">
+                  <div class="app-setting-item-title">주변 매장 혜택 안내</div>
+                  <div class="app-setting-item-text">주변의 매장 위치 안내를 받기 위해서는 위치기반 서비스 이용도 자동으로 켜집니다.</div>
+                </div>
+                <div class="app-setting-btn">
+                  <input type="checkbox" class="app-setting-checkbox">
+                  <div class="app-setting-bg"></div>
+                  <div class="app-setting-circle"></div>
+                </div>
+              </li>
+            </ul>
+            <div class="app-setting-icon">
+              <div class="app-setting-icon-img"><img src="../../assets/images/icons/appicon.png" alt=""></div>
+              <div class="app-setting-icon-text">1,0(최신버전)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="popup common" id="barcodePopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">사용 가능 포인트</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="popup common" id="downloadPopup">
+    <div class="popup-dim"></div>
+    <div class="common-popup">
+      <div class="common-popup-box">
+        <div class="common-popup-content">
+          <span class="common-popup-text">쿠폰이 정상적으로 다운로드되었습니다.<br>다운로드한 쿠폰은 쿠폰 조회에서 확인 가능합니다.</span>
+        </div>
+        <div class="common-popup-btn">
+          <button class="popup-btn popup-btn-full" onclick="closePopup('downloadPopup')">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>

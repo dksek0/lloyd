@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no" />
+  <title>Components - LLoyd</title>
+  <!-- .icon -->
+  <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../assets/css/fonts.css"
+      media="none"
+      onload="this.media='all';"
+    />
+    <link rel="stylesheet" href="../../assets/css/reboot.css">
+    <link rel="stylesheet" href="../../assets/css/page.css">
+    <link rel="stylesheet" href="../../assets/css/component.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="header-left">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/back.png" alt=""><span class="sr-only">이전페이지</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/home.png" alt=""><span class="sr-only">홈</span></a>
+    </div>
+    <div class="header-title">
+      <button class="title-ko">1:1 문의 작성</button>
+    </div>
+    <!-- <div class="header-right">
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/search.png" alt=""><span class="sr-only">검색</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/shop.png" alt=""><span class="sr-only">장바구니</span></a>
+      <a href="#;" class="header-btn"><img src="../../assets/images/icons/close.png" alt=""><span class="sr-only">닫기</span></a>
+    </div> -->
+  </div>
+  <!-- menu-wrap -->
+  <div class="menu-wrap top">
+  <!-- 하단 버튼 있을 경우 .with-btn 클래스 추가 -->
+
+  <div class="menu-dim"></div>
+
+  <div class="menu-content">
+    <div class="menu-inner">
+      <nav class="menu">
+        <ul class="dep1-list">
+          <li>
+            <a href="#;" class="dep1-item">Jewelry</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Necklace</a></li>
+              <li><a href="#;" class="dep2-item">Earring</a></li>
+              <li><a href="#;" class="dep2-item">Bracelet</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+              <li><a href="#;" class="dep2-item">Couple Ring</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Watch</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Women's watch</a></li>
+              <li><a href="#;" class="dep2-item">Men's watch</a></li>
+              <li><a href="#;" class="dep2-item">Couple</a></li>
+              <li><a href="#;" class="dep2-item">Smart Watch</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Signature</a>
+            <ul class="dep2-list">
+              <li><a href="#;" class="dep2-item">Collection</a></li>
+              <li><a href="#;" class="dep2-item">Chains</a></li>
+              <li><a href="#;" class="dep2-item">Charms</a></li>
+              <li><a href="#;" class="dep2-item">Ring</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#;" class="dep1-item">Gift</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!-- /menu-content -->
+  </div>
+  <!-- /menu-wrap -->
+
+  <div class="wrapper">
+    <!-- container -->
+    <div class="container detail">
+      <ul class="today-address-list">
+        <li class="today-address-item">
+          <div class="today-address-box required">
+            <!-- 필수 입력값일 경우 .required 클래스 추가 -->
+            <span class="today-address-title">문의 유형</span>
+            <div class="today-select-box">
+              <!-- 유효하지 않을 경우 .error 클래스 추가 -->
+              <!-- 우편번호 검색 버튼 있을 경우 .with-btn 클래스 추가 -->
+              <div class="option-select-plain-item">
+                <a href="#none" class="option-select-plain-label">
+                  <span class="option-select-plain-text">문의 유형을 선택하세요.</span>
+                  <img src="../../assets/images/icons/option_arrow_down.png" alt="view more" class="option-select-plain-arrow">
+                </a>
+                <ul class="option-select-plain-list">
+                  <li>
+                    <label for="check1" class="option-select-plain-row">
+                      <input type="checkbox" id="check1" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">회원/멤버십</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check2" class="option-select-plain-row">
+                      <input type="checkbox" id="check2" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">상품</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check3" class="option-select-plain-row">
+                      <input type="checkbox" id="check3" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">주문/결제</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check4" class="option-select-plain-row">
+                      <input type="checkbox" id="check4" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">배송</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check5" class="option-select-plain-row">
+                      <input type="checkbox" id="check5" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">교환/반품/환불</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check6" class="option-select-plain-row">
+                      <input type="checkbox" id="check6" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">이벤트</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label for="check7" class="option-select-plain-row">
+                      <input type="checkbox" id="check7" class="select-plain-row-checkbox">
+                      <span class="select-plain-row-text">기타</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <p class="input-error-msg">올바른 문의 유형을 선택하세요</p>
+            </div>
+          </div>
+        </li>
+        <li class="today-address-item">
+          <div class="today-address-box">
+            <span class="today-address-title">주문 상품명</span>
+            <div class="today-input-box with-btn">
+              <label for="orderedItem" class="sr-only">상품명</label>
+              <input type="text" name="orderedItem" id="orderedItem" placeholder="주문상품을 조회해주세요." value="" class="today-input-text">
+              <a href="#;" class="address-search-btn" onclick="openPopup('orderItemCheckPopup')">주문상품 조회</a>
+            </div>
+            <div class="today-tag-wrap">
+              <ul class="today-tag-list">
+                <li class="today-tag-item">
+                  <div class="today-tag-box">
+                    <span class="today-tag-text">오너먼트 스타 볼 콜렉 오너먼트 스타 볼 콜렉</span>
+                    <button class="today-tag-close">삭제</button>
+                  </div>
+                </li>
+                <li class="today-tag-item">
+                  <div class="today-tag-box">
+                    <span class="today-tag-text">오너먼트 스타 볼 콜렉 오너먼트 스타 볼 콜렉</span>
+                    <button class="today-tag-close">삭제</button>
+                  </div>
+                </li>
+                <li class="today-tag-item">
+                  <div class="today-tag-box">
+                    <span class="today-tag-text">오너먼트 스타 볼 콜렉 오너먼트 스타 볼 콜렉</span>
+                    <button class="today-tag-close">삭제</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="today-address-item">
+          <div class="today-address-box required">
+            <span class="today-address-title">문의 내용</span>
+            <div class="order-textarea-box">
+              <!-- 유효하지 않을 경우 .error 클래스 추가 -->
+              <textarea class="order-textarea" placeholder="내용을 입력하세요."></textarea>
+              <p class="input-error-msg">문의 내용을 입력하세요</p>
+            </div>
+          </div>
+        </li>
+        <li class="today-address-item">
+          <div class="today-address-box">
+            <span class="today-address-title">사진 첨부</span>
+            <div class="today-fileupload">
+              <div class="today-fileupload-item">
+                <div class="today-fileupload-attatched">
+                  <img class="today-fileupload-img" src="../../assets/images/content/detail-recommend01.png" alt="">
+                  <button class="today-btn-delete-fileupload" type="button"><span class="sr-only">delete file</span></button>
+                </div>
+              </div>
+              <div class="today-fileupload-item">
+                <div class="today-fileupload-box">
+                  <input type="file" class="today-fileupload-input" id="today-fileupload2" accept="image/*">
+                  <label for="today-fileupload2" class="today-fileupload-label"></label>
+                </div>
+              </div>
+            </div>
+            <div class="today-fileupload-info">
+              - 10MB 미만의 JPG,JPEG, GIF, PNG 파일만 등록 가능합니다.<br>
+              - 주문취소/교환/환불은 마이페이지>주문/배송 조회에서 신청<br>하실 수 있습니다.<br>
+              - 상품 정보(사이즈,실측, 예상 배송일 등) 관련 문의는 해당 상품 <br>문의에 남기셔야 빠른 답변이 가능합니다.
+            </div>
+          </div>
+        </li>
+        <li class="today-address-item">
+          <div class="today-address-box required">
+            <span class="today-address-title">답변알림 수신여부</span>
+            <div class="col-check-box">
+              <!-- 유효하지 않을 경우 .error 클래스 추가 -->
+              <ul class="col-check-list">
+                <li class="col-check-item">
+                  <div class="check-box medium text-small">
+                    <label for="check1">
+                      <input type="checkbox" name="" id="check1" checked="">
+                      <span class="text">SMS 수신</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="col-check-item">
+                  <div class="check-box medium text-small">
+                    <label for="check2">
+                      <input type="checkbox" name="" id="check2">
+                      <span class="text">이메일 수신</span>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+              <p class="input-error-msg">답변알림 수신여부를 선택하세요</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- //container -->
+  </div>
+
+  <!-- bottom-bar -->
+  <div class="bottom-bar">
+    <div class="bottom-bar-box">
+      <button class="bottom-btn-black">SAVE</button>
+    </div>
+  </div>
+  <!-- //bottom-bar -->
+
+  <div class="popup" id="orderItemCheckPopup">
+    <div class="popup-full with-btn">
+      <div class="popup-full-box">
+        <div class="popup-full-top">
+          <div class="popup-full-title">주문상품 조회</div>
+          <button class="popup-full-close" onclick="closePopup('orderItemCheckPopup')"><img src="../../assets/images/icons/close.png"></button>
+        </div>
+        <div class="popup-full-content">
+          <div class="order-check-popup">
+            <div class="static-search">
+              <input type="text" title="Search" placeholder="검색어를 입력해주세요." class="static-search-input">
+              <button class="search-top-clear"><img src="../../assets/images/icons/ico-delete-text.png"></button>
+              <input type="submit" class="static-search-submit" value="검색하기">
+            </div>
+          </div>
+          <div class="order-check-box">
+            <div class="inner">
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio1" name="addressRadio" value="" checked>
+                  <label class="my-addr-radio-label" for="radio1">
+                    <div class="thumb-text-wrap">
+                      <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                          <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio2" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio2">
+                    <div class="thumb-text-wrap">
+                      <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                          <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio3" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio3">
+                    <div class="thumb-text-wrap">
+                      <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                          <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio4" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio4">
+                    <div class="thumb-text-wrap">
+                      <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                          <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+              <div class="my-addr-item">
+                <span class="my-addr-radio">
+                  <input class="my-addr-radio-input" type="radio" id="radio5" name="addressRadio" value="">
+                  <label class="my-addr-radio-label" for="radio5">
+                    <div class="thumb-text-wrap">
+                      <div class="thumb-right-box">
+                        <span class="thumb-image-box"><img src="../../assets/images/shopping/shopping_pd_01.png" alt=""></span>
+                        <div class="thumb-text-box">
+                          <div class="thumb-info-box">
+                            <span class="thumb-date">2021.01.05</span>
+                          </div>
+                          <span class="thumb-link-title">로이드 퍼스트 스노우 비쥬참 <span class="num">10K</span> 골드 펜던트 로이드 퍼스트 스노우 비쥬참 10K 골드 펜던트</span>
+                          <span class="thumb-pd-num">LRT2005T</span>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup-full-bottom">
+        <button class="popup-full-btn" onclick="closePopup('orderItemCheckPopup')">OK</button>
+      </div>
+    </div>
+  </div>
+  <!-- //popup  -->
+  <script src="../../assets/js/vendors/jquery_3.4.0.min.js"></script>
+  <script src="../../assets/js/vendors/swiper-bundle.min.js"></script>
+  <script src="../../assets/js/ui.js"></script>
+</body>
+</html>
